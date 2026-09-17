@@ -214,6 +214,86 @@ main section {
   max-width: 100%;
 }
 
+/* 楽天ウィジェット内のinline styleはCSPでブロックされるため、
+   楽天生成HTML(URL・tracking parameter・rel属性・style属性)は一切変更せず、
+   同じ見た目を構造セレクタで再現する。picttext 240x240テンプレート依存。 */
+.rakuten-widget > table > tbody > tr > td > div {
+  border: 1px solid #95a5a6;
+  border-radius: .75rem;
+  background-color: #ffffff;
+  width: 504px;
+  max-width: 100%;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.rakuten-widget a {
+  word-wrap: break-word;
+}
+
+.rakuten-widget table table td:first-child {
+  width: 240px;
+  vertical-align: top;
+}
+
+.rakuten-widget table table td:first-child img {
+  margin: 2px;
+}
+
+.rakuten-widget table table td:last-child {
+  vertical-align: top;
+  width: 248px;
+  display: block;
+}
+
+.rakuten-widget table table td:last-child > p {
+  font-size: 12px;
+  line-height: 1.4em;
+  text-align: left;
+  margin: 0;
+  padding: 2px 6px;
+}
+
+.rakuten-widget table table td:last-child > p span:last-child {
+  color: #bbbbbb;
+}
+
+.rakuten-widget table table td:last-child > div {
+  margin: 10px;
+}
+
+.rakuten-widget table table td:last-child > div a:first-child img {
+  float: left;
+  max-height: 27px;
+  width: auto;
+  margin-top: 0;
+}
+
+.rakuten-widget table table td:last-child > div a:last-child div {
+  float: right;
+  width: 41%;
+  height: 27px;
+  background-color: #bf0000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-left: 1px;
+  padding: 0 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.rakuten-widget > table > tbody > tr > td > p {
+  color: #000000;
+  font-size: 12px;
+  line-height: 1.4em;
+  margin: 5px;
+}
+
 /* フッター */
 .site-footer {
   border-top: 1px solid var(--color-border);
