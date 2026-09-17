@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  注意: <loc> は本番ドメイン確定前のプレースホルダーです。
-  Cloudflare Pagesで公開URLが確定次第、下記の your-domain.example を
-  実際のドメインに置き換えてください。詳細はREADME.mdを参照。
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain.example/</loc>
+    <loc>https://senior-dog-guide.pages.dev/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/articles/slip-prevention/</loc>
+    <loc>https://senior-dog-guide.pages.dev/articles/slip-prevention/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/about/</loc>
+    <loc>https://senior-dog-guide.pages.dev/about/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/privacy/</loc>
+    <loc>https://senior-dog-guide.pages.dev/privacy/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/disclosure/</loc>
+    <loc>https://senior-dog-guide.pages.dev/disclosure/</loc>
   </url>
 </urlset>

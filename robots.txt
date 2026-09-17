@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# 本番ドメインが確定次第、以下のSitemap行を有効化してください
-# Sitemap: https://<your-domain>/sitemap.xml
+Sitemap: https://senior-dog-guide.pages.dev/sitemap.xml

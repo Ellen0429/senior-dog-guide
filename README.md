@@ -51,10 +51,12 @@ python3 -m http.server 8000
 
 ## 公開URL取得後のTODO
 
-- [ ] Cloudflare Pages で公開URL(`*.pages.dev` または独自ドメイン)を取得
-- [ ] `sitemap.xml` を実際の公開URLへ更新
-- [ ] `robots.txt` の `Sitemap:` 行を有効化
-- [ ] 全ページへ `canonical` URLを追加
-- [ ] 必要に応じて `og:url` を追加
+- [x] Cloudflare Pages で公開URL(`*.pages.dev` または独自ドメイン)を取得
+      → `https://senior-dog-guide.pages.dev/`
+- [x] `sitemap.xml` を実際の公開URLへ更新
+- [x] `robots.txt` の `Sitemap:` 行を有効化
+- [x] 全ページへ `canonical` URLを追加
+- [x] 必要に応じて `og:url` を追加
 - [ ] 実画像を用意した場合のみ `og:image` を追加
 - [ ] 問い合わせ先が確定した場合のみ `about/index.html` へ追加
+- [ ] 独自ドメインを使用する場合は、上記URLを独自ドメインへ再度更新
