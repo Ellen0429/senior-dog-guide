@@ -1,0 +1,239 @@
+/* シニア犬のくらし手帖 - ベーススタイル
+   モバイルファースト / 外部フォント・外部リソース不使用 */
+
+:root {
+  --color-bg: #faf7f2;
+  --color-surface: #ffffff;
+  --color-text: #4a3f35;
+  --color-text-muted: #7a6f63;
+  --color-accent: #7c9473;
+  --color-accent-dark: #5f7756;
+  --color-border: #e6ddd0;
+  --color-notice-bg: #f3ede1;
+  --font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+a {
+  color: var(--color-accent-dark);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+/* ヘッダー */
+.site-header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+}
+
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.site-nav a {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.site-nav a:first-child {
+  margin-left: 0;
+}
+
+/* ヒーロー */
+.hero {
+  padding: 2.5rem 0 1.5rem;
+}
+
+.hero h1 {
+  font-size: 1.7rem;
+}
+
+.hero p {
+  color: var(--color-text-muted);
+}
+
+/* セクション共通 */
+main section {
+  padding: 1.5rem 0;
+}
+
+.intro {
+  border-top: 1px solid var(--color-border);
+}
+
+/* カテゴリカード */
+.category-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.category-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.category-card h3 {
+  margin: 0 0 0.35rem;
+}
+
+.category-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.category-card--soon h3 {
+  color: var(--color-text-muted);
+}
+
+/* 記事一覧 */
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+
+.article-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-list a {
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+/* 記事本文 */
+.article-body {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.article-lead {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+/* 商品準備中の告知ボックス */
+.notice-box {
+  background-color: var(--color-notice-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.notice-box p:last-child {
+  margin-bottom: 0;
+}
+
+.disclosure-inline {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* フッター */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem 0 2.5rem;
+  margin-top: 2rem;
+}
+
+.ad-notice {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.footer-nav a {
+  display: inline-block;
+  margin: 0 1rem 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* タブレット以上 */
+@media (min-width: 600px) {
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
