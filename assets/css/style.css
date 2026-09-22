@@ -203,6 +203,36 @@ main section {
   color: var(--color-text-muted);
 }
 
+/* シンプルな商品リンク(Rakuten公式ウィジェットのサムネイル・トラッキング
+   ピクセル画像を持たない記事向け)。CSPでインラインstyleがブロックされる
+   ため、.rakuten-widget と同様にクラスセレクタで見た目を再現する。 */
+.product-name {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.rakuten-cta {
+  display: inline-block;
+  background-color: #bf0000;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.rakuten-cta:hover,
+.rakuten-cta:focus {
+  background-color: #a00000;
+  color: #ffffff;
+}
+
+.article-conclusion {
+  margin-top: 1.5rem;
+}
+
 /* 楽天アフィリエイトウィジェットのモバイル表示対応 */
 .rakuten-widget {
   overflow-x: auto;
