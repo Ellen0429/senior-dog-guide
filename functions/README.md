@@ -1,12 +1,10 @@
-# Verified affiliate click tracking (STEP 7E) — status: LIVE
+# Verified affiliate click tracking (STEP 7D) — status: NOT DEPLOYED
 
-D1 database `senior-dog-clicks` is created, its `clicks` table exists,
-it is bound to this Pages project as `CLICKS_DB`, `functions/_data/
-redirect-map.json` holds the real verified mapping, and the `care-bed`
-article's three affiliate links now route through `GET /go`. See STEP
-7E's report (sales_ai_employee conversation history) for the exact
-verification performed (test click, D1 row check, production smoke
-tests) before this was committed.
+This directory is a **local-only scaffold**. Nothing here has been
+deployed, and no Cloudflare configuration (dashboard settings,
+`wrangler.toml`, D1 databases, DNS, CSP, build settings) has been
+touched. See the STEP 7D report (sales_ai_employee conversation history)
+for the full investigation this design is based on.
 
 ## Why this design
 
@@ -20,43 +18,53 @@ tests) before this was committed.
   usable-`affiliate_url` pairs (see `services.redirect_export_service`
   and `python -m sales_ai.cli redirect-map-export --out <path>`). That
   file, not the production database, is what this endpoint reads.
-- Click events are recorded in Cloudflare D1 — entirely separate storage
-  from the production AI DB, so the two never contend with each other
-  and a click-logging failure can never corrupt or block anything in
-  `sales_ai_employee`.
+- Click events are recorded in Cloudflare D1 (once provisioned) —
+  entirely separate storage from the production AI DB, so the two never
+  contend with each other and a click-logging failure can never corrupt
+  or block anything in `sales_ai_employee`.
 
 ## Files
 
 - `_lib/redirect-resolver.js` — pure validation/lookup logic (no
   Cloudflare APIs). Unit-tested via `_lib/redirect-resolver.test.js`
   (plain Node, `node functions/_lib/redirect-resolver.test.js`, zero
-  dependencies, 14/14 passing).
+  dependencies).
 - `_data/redirect-map.example.json` — a **fixture-only** example of the
   expected shape (RFC 2606 `example.invalid` URLs). Never contains real
   data.
-- `_data/redirect-map.json` — the **real** verified mapping, generated
-  from production `sales_ai_employee` data via `redirect-map-export`.
-  Currently one entry: content_id 6 → product_id 10. Regenerate and
-  replace this file (never hand-edit it) whenever a new content id is
-  published or an existing one's linked product changes.
-- `go.js` — the Cloudflare Pages Function (`GET /go`). Reads
-  `content_id`/`product_id`/`placement` only, resolves against the
-  mapping above, logs a click row to D1 (best-effort, never blocks the
-  redirect), and 302-redirects to the verified affiliate_url.
+- `go.js` — the actual Cloudflare Pages Function (`GET /go`). Requires
+  `_data/redirect-map.json` (the **real** export, not yet created — see
+  below) and, optionally, a D1 binding named `CLICKS_DB`.
 
-## Updating the mapping after publishing new content
+## What is NOT yet verified
 
-1. `python -m sales_ai.cli redirect-map-export --out redirect-map.json`
-   against the production DB snapshot (read-only against GCS).
-2. Replace `functions/_data/redirect-map.json` with the new file.
-3. Update the newly-published article's affiliate links to
-   `/go?content_id=<id>&product_id=<id>&placement=image|product_name|cta`.
-4. Commit and push as usual.
+No Node/Deno/Bun runtime was available in the environment this code was
+written in, so **none of the JavaScript here has actually been
+executed** — only manually reviewed. Before deploying:
 
-## Batch conversion import (unchanged from STEP 7C's design)
+1. Run `node functions/_lib/redirect-resolver.test.js` and confirm every
+   case passes.
+2. Run `wrangler pages dev` locally and exercise `GET /go?content_id=...
+   &product_id=...&placement=cta` against a real (or example) mapping
+   file.
 
-D1's click log is exported and reconciled against Rakuten's own
-affiliate report **manually, periodically, in batch** — never per-click
-— and confirmed conversions are recorded in `sales_ai_employee` via the
-existing `conversion-add` CLI (STEP 7C). This directory has no
-automation for that; it remains a deliberate Owner action.
+## Steps still needed before this can go live (all require explicit Owner approval — none were taken this step)
+
+1. Generate the real mapping: `python -m sales_ai.cli redirect-map-export
+   --out redirect-map.json` against the production DB snapshot, then
+   place it at `functions/_data/redirect-map.json` in this repo.
+2. Provision a Cloudflare D1 database and bind it to this Pages project
+   as `CLICKS_DB` (dashboard: Pages → this project → Settings →
+   Functions → D1 database bindings, or a `wrangler.toml`
+   `[[d1_databases]]` block — this repo has neither yet).
+3. Create the `clicks` table in that D1 database (schema in `go.js`'s own
+   comment: `id`, `content_id`, `product_id`, `placement`, `clicked_at`
+   only — no IP/User-Agent/cookie columns).
+4. Update the site's article templates (`articles/*/index.html`) to point
+   the image/product-name/cta links at `/go?content_id=...&product_id=...
+   &placement=...` instead of the affiliate URL directly.
+5. Periodically (manually, batch — never per-click) export D1's click log
+   and import confirmed conversions back into `sales_ai_employee` via the
+   existing STEP 7A/7C tooling.
+6. Redeploy via the normal Cloudflare Pages GitHub integration (a normal
+   `git push`, still not done as part of STEP 7D).
