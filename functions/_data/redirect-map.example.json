@@ -1,0 +1,6 @@
+{
+  "_comment": "EXAMPLE/FIXTURE ONLY -- illustrates the shape sales_ai_employee's `python -m sales_ai.cli redirect-map-export --out redirect-map.json` produces. Every URL below is RFC 2606 reserved (example.invalid), never a real Rakuten affiliate link. Before deploying, generate the REAL redirect-map.json from production data and place it at functions/_data/redirect-map.json (git-ignored or committed at deploy time -- see STEP 7D's report) -- do not rename this example file to that path with real data checked in casually.",
+  "6": {
+    "10": "https://example.invalid/fixture-affiliate-link"
+  }
+}
