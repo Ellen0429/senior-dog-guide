@@ -1,21 +1,27 @@
-// Pure, framework-agnostic verified-click resolution logic (STEP 7D).
+// Pure, framework-agnostic verified-click resolution logic (STEP 7D,
+// converted to ES Modules in STEP 7F).
 //
-// This module has NO Cloudflare-specific dependencies (no `env`, no D1
-// bindings, no Workers-only globals) so it can be unit-tested with plain
-// Node, independently of any live Cloudflare deployment. See
-// redirect-resolver.test.js (plain Node, zero dependencies) and that
-// file's own header comment for the important caveat: these tests were
-// NOT executed in the environment this code was written in (no Node/
-// Deno/Bun runtime was available there) -- run `node redirect-resolver.test.js`
-// yourself before relying on this in production.
+// STEP 7F root-cause note: Cloudflare Pages Functions' own documentation
+// (developers.cloudflare.com/pages/functions/module-support/) lists
+// exactly four supported module types -- ES Modules, WebAssembly, Text
+// Modules, and Binary Modules. CommonJS (require()/module.exports, this
+// file's STEP 7D/7E form) is not among them, which is why
+// functions/go.js was never registered as a route in production (STEP
+// 7E's 404) -- Cloudflare's build could not parse it as a Function at
+// all. This file (and go.js) now use ES Modules (import/export) only.
 //
-// functions/go.js is the thin Cloudflare Pages Function adapter that
-// wires this to an actual HTTP request and a D1 click-log write -- see
-// that file's own comments for what is, and is not, verified to work
-// against real Cloudflare infrastructure yet.
+// The .mjs extension here (rather than .js) is solely so plain Node can
+// run redirect-resolver.test.mjs directly, with zero package.json
+// anywhere in this repo -- adding a package.json at the repo root would
+// make Cloudflare Pages auto-detect a Node build step (npm clean-install
+// + a build command) for this otherwise build-less static site, which
+// STEP 7F deliberately avoids. Cloudflare's own Functions bundler
+// resolves a relative ".mjs" import (see go.js) the same way it would a
+// ".js" one -- both are ES Modules to it.
 //
 // Security model (mirrors sales_ai_employee's services.click_service /
-// services.redirect_export_service):
+// services.redirect_export_service) -- UNCHANGED from STEP 7D/7E, only
+// the module syntax changed:
 //   - resolveVerifiedClick()'s only inputs are contentId, productId, and
 //     placement -- never a URL. There is no parameter here that accepts
 //     an arbitrary redirect target from a query string or any other
@@ -31,32 +37,31 @@
 //     mistaken for a real mapping entry.
 //   - the (contentId, productId) pair must exist in `redirectMap`, a
 //     mapping this module never mutates and never fetches itself -- the
-//     caller supplies it, already loaded from the small JSON artifact
-//     sales_ai_employee's services.redirect_export_service produced.
-//     That artifact contains ONLY verified, published, non-ai_hypothesis,
-//     usable-affiliate_url (content_id, product_id) -> affiliate_url
-//     pairs -- nothing else about the production AI database is ever
-//     included there, and this module has no way to reach that database
-//     even if it wanted to.
+//     caller supplies it (go.js imports it from ./_data/redirect-map.js,
+//     the ES-module default export sales_ai_employee's
+//     services.redirect_export_service produced). That artifact contains
+//     ONLY verified, published, non-ai_hypothesis, usable-affiliate_url
+//     (content_id, product_id) -> affiliate_url pairs -- nothing else
+//     about the production AI database is ever included there, and this
+//     module has no way to reach that database even if it wanted to.
 //   - No IP address, User-Agent, cookie, or any other visitor-
 //     identifying value is read, returned, or referenced anywhere in
 //     this module.
 
-const ALLOWED_PLACEMENTS = Object.freeze(["image", "product_name", "cta"]);
+export const ALLOWED_PLACEMENTS = Object.freeze(["image", "product_name", "cta"]);
 
 const ID_RE = /^[0-9]+$/;
 
-class ClickNotAllowedError extends Error {}
+export class ClickNotAllowedError extends Error {}
 
 /**
- * @param {object} redirectMap - parsed JSON, shape:
- *   {"<contentId>": {"<productId>": "<affiliateUrl>"}}
+ * @param {object} redirectMap - shape: {"<contentId>": {"<productId>": "<affiliateUrl>"}}
  * @param {{contentId: string, productId: string, placement: string}} params
  * @returns {string} the verified affiliate_url to redirect to
  * @throws {ClickNotAllowedError} if any check fails -- fail closed, never
  *   a best-guess fallback.
  */
-function resolveVerifiedClick(redirectMap, { contentId, productId, placement }) {
+export function resolveVerifiedClick(redirectMap, { contentId, productId, placement }) {
   if (!ALLOWED_PLACEMENTS.includes(placement)) {
     throw new ClickNotAllowedError(`invalid placement: ${JSON.stringify(placement)}`);
   }
@@ -89,5 +94,3 @@ function resolveVerifiedClick(redirectMap, { contentId, productId, placement }) 
   }
   return affiliateUrl;
 }
-
-module.exports = { ALLOWED_PLACEMENTS, ClickNotAllowedError, resolveVerifiedClick };

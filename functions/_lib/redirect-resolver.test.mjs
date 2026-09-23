@@ -1,22 +1,23 @@
-// Plain Node test for redirect-resolver.js -- zero dependencies (uses
-// only Node's built-in `assert`), so it can run with just `node
-// redirect-resolver.test.js`, no npm install, no test framework.
+// Plain Node test for redirect-resolver.mjs -- zero dependencies (uses
+// only Node's built-in `assert`), runs with `node
+// functions/_lib/redirect-resolver.test.mjs`, no npm install, no test
+// framework, no package.json needed anywhere (the .mjs extension alone
+// tells Node this file, and the one it imports, are ES Modules).
 //
-// IMPORTANT: this file was written but NOT executed in the environment
-// it was authored in (no Node/Deno/Bun runtime was available there --
-// see STEP 7D's report). Run it yourself (`node functions/_lib/redirect-
-// resolver.test.js`) and confirm it prints "ALL TESTS PASSED" before
-// relying on redirect-resolver.js in production.
+// STEP 7F: converted from CommonJS (STEP 7D) to ES Modules, matching
+// redirect-resolver.mjs's own conversion (root cause: Cloudflare Pages
+// Functions does not support CommonJS -- see that file's header
+// comment). Every one of the original 14 cases is preserved unchanged.
 //
 // Every affiliate_url used here is a fixture (https://example.invalid/...
 // -- RFC 2606 reserved), never a real value.
 
-const assert = require("assert");
-const {
+import assert from "node:assert";
+import {
   ALLOWED_PLACEMENTS,
   ClickNotAllowedError,
   resolveVerifiedClick,
-} = require("./redirect-resolver.js");
+} from "./redirect-resolver.mjs";
 
 const FIXTURE_URL = "https://example.invalid/fixture-affiliate-link";
 
@@ -126,16 +127,11 @@ test("non-numeric product id cannot be used to probe the prototype chain", () =>
 test("no arbitrary redirect url can ever be injected -- there is no such parameter", () => {
   const params = { contentId: "6", productId: "10", placement: "cta" };
   assert.strictEqual(Object.prototype.hasOwnProperty.call(params, "url"), false);
-  // Even if a caller tried to smuggle one in, resolveVerifiedClick's
-  // destructuring signature only ever reads contentId/productId/placement.
   const url = resolveVerifiedClick(MAP, { ...params, url: "https://evil.example/phish" });
   assert.strictEqual(url, FIXTURE_URL);
 });
 
 test("resolveVerifiedClick never returns anything other than a redirectMap value", () => {
-  // Structural: the return value must always be traceable to a
-  // redirectMap[contentId][productId] entry, never derived from the
-  // input params themselves.
   const url = resolveVerifiedClick(MAP, { contentId: "6", productId: "10", placement: "cta" });
   assert.strictEqual(url, MAP["6"]["10"]);
 });

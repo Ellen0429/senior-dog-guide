@@ -1,96 +1,101 @@
 // Cloudflare Pages Function: GET /go
 //
-// STEP 7D scaffold -- NOT YET DEPLOYED. Cloudflare configuration itself
-// was deliberately left untouched this step (no wrangler.toml, no
-// dashboard changes, no D1 database was provisioned): see the STEP 7D
-// report for the exact remaining steps and why they need a separate,
-// explicit Owner-approved action. Concretely, before this can go live:
-//   1. `functions/_data/redirect-map.json` (the REAL verified mapping)
-//      must exist -- it does not yet. Generate it from production data
-//      with `python -m sales_ai.cli redirect-map-export --out
-//      redirect-map.json` (sales_ai_employee, STEP 7D) and place it
-//      here. Until then, this file's `require(...)` below points at a
-//      path that doesn't exist, and Cloudflare's build would fail on
-//      that alone -- a deliberate fail-closed default, not an oversight.
-//   2. A real Cloudflare D1 database must be created and bound to this
-//      Pages project as `CLICKS_DB` (via the dashboard's Pages ->
-//      Settings -> Functions -> D1 database bindings, or a wrangler.toml
-//      `[[d1_databases]]` block -- neither exists yet in this repo).
-//   3. The D1 database needs a `clicks` table -- see the schema comment
-//      near the INSERT below.
-//   4. This file's actual behavior against Cloudflare's real Pages
-//      Functions runtime has NOT been exercised (no live Cloudflare/
-//      Workers environment was available while writing it) -- only the
-//      pure logic in _lib/redirect-resolver.js was written to be
-//      Node-testable (see that file's own test, also not yet run in
-//      this environment -- no Node/Deno/Bun runtime was available
-//      either). Run `wrangler pages dev` locally and exercise this
-//      route for real before relying on it in production.
+// STEP 7F fix: STEP 7E's deployment of this file (then written in
+// CommonJS -- require()/module.exports) resulted in a production 404 on
+// every /go request, indistinguishable from "route does not exist".
+// Root cause, confirmed against Cloudflare's own documentation
+// (developers.cloudflare.com/pages/functions/module-support/): Pages
+// Functions support exactly four module types -- ES Modules,
+// WebAssembly, Text Modules, Binary Modules. CommonJS is not one of
+// them, so Cloudflare's build could not parse this file as a Function
+// at all, and it was never registered as a route. This file (and its
+// _lib/_data dependencies) now use ES Modules (import/export) only --
+// the one module format Cloudflare's own docs confirm is supported, not
+// a guess.
+//
+// D1 database "senior-dog-clicks" and its `clicks` table already exist
+// (STEP 7E) and remain unchanged; the Owner-configured CLICKS_DB binding
+// on this Pages project is reused as-is -- no new D1 database was
+// created this step.
 //
 // Only three query parameters are ever read: content_id, product_id,
 // placement. No other request data (headers, IP, cookies, User-Agent)
 // is read, stored, or forwarded anywhere -- this handler never touches
 // context.request.headers, and nothing here has a code path that could.
+//
+// TWO DELIBERATELY DIFFERENT FAILURE BEHAVIORS -- do not conflate them:
+//   1. SECURITY VALIDATION failure (resolveVerifiedClick throws
+//      ClickNotAllowedError: invalid placement, unknown/unpublished
+//      content, unrelated/ai_hypothesis product, no affiliate_url) ->
+//      the function returns 404 immediately. NO redirect happens. This
+//      is the fail-closed path STEP 7A-7D's whole design exists for.
+//   2. CLICK-LOGGING (D1 write) failure, AFTER validation already
+//      succeeded -> the redirect still happens. A measurement outage
+//      must never turn into a broken purchase flow for a real visitor
+//      who already has a verified, safe affiliate_url waiting -- losing
+//      one click-log row is far less harmful than that. This path is
+//      wrapped in its own try/catch, entirely separate from validation.
 
-const { resolveVerifiedClick, ClickNotAllowedError } = require("./_lib/redirect-resolver.js");
-const redirectMap = require("./_data/redirect-map.json");
+import { resolveVerifiedClick, ClickNotAllowedError } from "./_lib/redirect-resolver.mjs";
+import redirectMap from "./_data/redirect-map.js";
 
-async function onRequestGet(context) {
+function generateClickId() {
+  // A random, non-guessable opaque id for this one click event -- not a
+  // session/visitor identifier (nothing links two different clicks to
+  // the same person), just a unique row key. crypto.randomUUID() is a
+  // standard Web Crypto API available in the Workers/Pages Functions
+  // runtime.
+  return crypto.randomUUID();
+}
+
+export async function onRequestGet(context) {
   const url = new URL(context.request.url);
   const contentId = url.searchParams.get("content_id");
   const productId = url.searchParams.get("product_id");
   const placement = url.searchParams.get("placement");
 
+  // -- 1. Security validation: fail closed, no redirect on failure. --
   let affiliateUrl;
   try {
     affiliateUrl = resolveVerifiedClick(redirectMap, { contentId, productId, placement });
   } catch (err) {
     if (err instanceof ClickNotAllowedError) {
-      // Fail closed: unknown/unpublished/unrelated/ai_hypothesis/no-
-      // affiliate-url/invalid-placement all land here. Never echo the
-      // rejection reason (err.message) back to the client or into any
-      // log -- a plain 404 is all a visitor or a log line ever sees.
+      // Never echo the rejection reason (err.message) back to the
+      // client or into any log -- a plain 404 is all a visitor or a
+      // log line ever sees.
       return new Response("Not found", { status: 404 });
     }
     throw err;
   }
 
-  // Best-effort click logging to D1 -- a write failure here must never
-  // block or slow the redirect itself (the affiliate link is already
-  // verified safe to send the visitor to; losing one click log row is
-  // far less harmful than a broken/slow purchase flow).
+  // -- 2. Click logging: best-effort, fail OPEN (redirect still happens). --
   //
-  // Expected D1 schema (create once, manually, when the real D1
-  // database is provisioned -- STEP 7D deliberately does not run this
-  // migration against anything, since no real D1 database exists yet):
-  //
+  // clicks table (already exists in D1 -- see STEP 7E):
   //   CREATE TABLE clicks (
   //     id INTEGER PRIMARY KEY AUTOINCREMENT,
+  //     click_id TEXT NOT NULL UNIQUE,
   //     content_id TEXT NOT NULL,
   //     product_id TEXT NOT NULL,
-  //     placement TEXT NOT NULL,
+  //     placement TEXT NOT NULL CHECK (placement IN ('image','product_name','cta')),
   //     clicked_at TEXT NOT NULL DEFAULT (datetime('now'))
   //   );
-  //
-  // Exactly the five columns STEP 7D's requirements list -- no IP, no
-  // User-Agent, no cookie/session identifier, nothing else.
+  // Exactly these six columns -- no IP, no User-Agent, no cookie/session
+  // identifier, nothing else. affiliate_url is NEVER written to D1.
   if (context.env && context.env.CLICKS_DB) {
     try {
       await context.env.CLICKS_DB
         .prepare(
-          "INSERT INTO clicks (content_id, product_id, placement) VALUES (?, ?, ?)"
+          "INSERT INTO clicks (click_id, content_id, product_id, placement) " +
+          "VALUES (?, ?, ?, ?)"
         )
-        .bind(contentId, productId, placement)
+        .bind(generateClickId(), contentId, productId, placement)
         .run();
     } catch (_err) {
       // Swallow deliberately: never let a click-logging failure break
-      // the redirect, and never log the error (it could in principle
-      // embed request data) -- same caution as never logging
-      // affiliateUrl anywhere in this file.
+      // the redirect (see the module docstring's two-failure-paths
+      // note), and never log the error or affiliateUrl anywhere.
     }
   }
 
   return Response.redirect(affiliateUrl, 302);
 }
-
-module.exports = { onRequestGet };
