@@ -203,9 +203,24 @@ main section {
   color: var(--color-text-muted);
 }
 
-/* シンプルな商品リンク(Rakuten公式ウィジェットのサムネイル・トラッキング
-   ピクセル画像を持たない記事向け)。CSPでインラインstyleがブロックされる
-   ため、.rakuten-widget と同様にクラスセレクタで見た目を再現する。 */
+/* シンプルな商品リンク(Rakuten公式ウィジェットのトラッキングピクセル画像
+   を持たない記事向け)。CSPでインラインstyleがブロックされるため、
+   .rakuten-widget と同様にクラスセレクタで見た目を再現する。商品サムネイル
+   画像(image_url)がある場合は .product-image-link / .product-image を使う。 */
+.product-image-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.product-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
 .product-name {
   font-size: 0.95rem;
   margin-top: 1rem;
