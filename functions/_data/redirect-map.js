@@ -3,6 +3,9 @@
 // Regenerate and replace this whole file when published content
 // changes; do not add/remove entries by hand.
 export default {
+  "10": {
+    "18": "https://hb.afl.rakuten.co.jp/hgc/g00tyj6o.bhvod18b.g00tyj6o.bhvoe3db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flifeideas%2Fwjpppethotm01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flifeideas%2Fi%2F10023538%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "6": {
     "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
