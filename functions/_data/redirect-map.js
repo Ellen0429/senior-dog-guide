@@ -9,6 +9,9 @@ export default {
   "11": {
     "20": "https://hb.afl.rakuten.co.jp/hgc/g00r69mo.bhvod4dd.g00r69mo.bhvoefb5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpet-and-pet%2Fbowl-keat-l%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpet-and-pet%2Fi%2F10000265%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "13": {
+    "24": "https://hb.afl.rakuten.co.jp/hgc/g00u3cco.bhvod2f1.g00u3cco.bhvoea38/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiegeek%2Fyl-826%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiegeek%2Fi%2F10000000%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "6": {
     "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
