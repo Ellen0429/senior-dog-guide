@@ -18,6 +18,9 @@ export default {
   "15": {
     "28": "https://hb.afl.rakuten.co.jp/hgc/g00u3nao.bhvod4e3.g00u3nao.bhvoe423/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgreeneir%2F913-petmat-xl%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgreeneir%2Fi%2F10000037%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "16": {
+    "30": "https://hb.afl.rakuten.co.jp/hgc/g00pyeeo.bhvod20b.g00pyeeo.bhvoe311/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fashu%2Ft-090765-2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fashu%2Fi%2F10004216%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "6": {
     "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
