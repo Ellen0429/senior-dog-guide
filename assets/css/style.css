@@ -248,6 +248,32 @@ main section {
   margin-top: 1.5rem;
 }
 
+/* パンくずリスト */
+.breadcrumbs {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0 0 1.25rem;
+}
+
+.breadcrumbs a {
+  color: var(--color-text-muted);
+}
+
+.breadcrumb-sep {
+  margin: 0 0.35rem;
+}
+
+/* 関連記事 */
+.related-articles {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.related-articles h2 {
+  margin-top: 0;
+}
+
 /* 楽天アフィリエイトウィジェットのモバイル表示対応 */
 .rakuten-widget {
   overflow-x: auto;
