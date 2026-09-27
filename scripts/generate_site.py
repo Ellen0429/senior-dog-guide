@@ -192,6 +192,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dish-stand": "feeding-support",
     "pet-brush": "daily-grooming",
     "dental-care": "daily-grooming",
+    "body-wipes": "daily-grooming",
     "waterproof-sheet": "toilet-care",
     "dog-diaper": "toilet-care",
     "pet-camera": "safety-monitoring",

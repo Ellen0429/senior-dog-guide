@@ -27,6 +27,9 @@ export default {
   "18": {
     "34": "https://hb.afl.rakuten.co.jp/hgc/g00s5lzo.bhvod728.g00s5lzo.bhvoe8a4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fryouhin-monogatari%2F10000032%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fryouhin-monogatari%2Fi%2F10000051%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "19": {
+    "36": "https://hb.afl.rakuten.co.jp/hgc/g00pjh9o.bhvod56a.g00pjh9o.bhvoeca0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Funidy%2F202042%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Funidy%2Fi%2F11168880%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "6": {
     "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
