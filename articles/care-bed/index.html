@@ -11,6 +11,321 @@
 <meta property="og:url" content="https://senior-dog-guide.pages.dev/articles/care-bed/">
 <link rel="canonical" href="https://senior-dog-guide.pages.dev/articles/care-bed/">
 <link rel="stylesheet" href="/assets/css/style.css">
+<!-- care-bed専用スタイル(STEP: care-bed比較型レイアウト試作)。
+     すべて .cb- プレフィックスでスコープしており、このページ以外の
+     16記事は同じ共通CSSファイルしか読み込まないため影響しない。
+     他サイトのCSSはコピーしておらず、既存の共通CSS変数(--color-*)を
+     再利用した独自実装。 -->
+<style>
+.cb-hero {
+  padding-top: 0.5rem;
+}
+
+.cb-hero-eyebrow {
+  display: inline-block;
+  background-color: var(--color-notice-bg);
+  color: var(--color-accent-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  margin: 0 0 0.75rem;
+}
+
+.cb-hero-photo-link {
+  display: block;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+
+.cb-hero-photo {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background-color: var(--color-surface);
+}
+
+.cb-hero-jump {
+  display: inline-block;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-accent-dark);
+  border-bottom: 1px dashed var(--color-accent-dark);
+}
+
+.cb-section-title {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.cb-section-lead {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-top: -0.25rem;
+}
+
+/* 結論カード */
+.cb-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cb-summary-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.cb-summary-mark {
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cb-summary-text strong {
+  display: block;
+  font-size: 0.98rem;
+  margin-bottom: 0.15rem;
+}
+
+.cb-summary-text span {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* シニア犬向け注意カード */
+.cb-callout-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cb-callout-card {
+  background-color: var(--color-notice-bg);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+}
+
+.cb-callout-card strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.cb-callout-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
+/* 商品カード */
+.cb-product-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+
+.cb-product-photo-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cb-product-photo {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.cb-product-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.cb-product-name a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.cb-product-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.cb-product-features li {
+  background-color: var(--color-notice-bg);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+}
+
+.cb-product-fit,
+.cb-product-caution {
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.cb-product-caution {
+  color: var(--color-text-muted);
+}
+
+.cb-product-cta-wrap {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cb-product-more {
+  border: 1px dashed var(--color-border);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  margin-top: 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+/* 選び方の詳しい解説カード */
+.cb-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.cb-detail-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.cb-detail-card h3 {
+  margin: 0 0 0.4rem;
+}
+
+.cb-detail-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* 迷ったときの選び方 */
+.cb-decision-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.cb-decision-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+}
+
+.cb-decision-condition {
+  color: var(--color-text-muted);
+}
+
+.cb-decision-arrow {
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: bold;
+}
+
+.cb-decision-result {
+  font-weight: 600;
+}
+
+/* FAQ (details/summary、追加JSなし) */
+.cb-faq-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.cb-faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.15rem 1.1rem;
+}
+
+.cb-faq-item summary {
+  cursor: pointer;
+  padding: 0.75rem 0;
+  font-weight: 600;
+  list-style: none;
+}
+
+.cb-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.cb-faq-item summary::before {
+  content: "Q. ";
+  color: var(--color-accent-dark);
+}
+
+.cb-faq-item p {
+  margin: 0 0 0.9rem;
+  color: var(--color-text-muted);
+  font-size: 0.93rem;
+}
+
+.cb-summary-final {
+  background-color: var(--color-notice-bg);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  margin-top: 1rem;
+}
+
+/* タブレット以上では2カラムにできるカードだけ広げる */
+@media (min-width: 600px) {
+  .cb-summary-grid,
+  .cb-callout-list,
+  .cb-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
 
 <!-- AUTO-GENERATED:JSONLD:START (managed by scripts/generate_site.py -- do not edit by hand) -->
 <script type="application/ld+json">
@@ -60,47 +375,166 @@
   <a href="/">ホーム</a> <span class="breadcrumb-sep">›</span> <a href="/category/sleep-comfort/">寝床・室温対策</a> <span class="breadcrumb-sep">›</span> <span aria-current="page">シニア犬用介護ベッドの選び方ガイド</span>
 </nav>
 <!-- AUTO-GENERATED:BREADCRUMB:END -->
-      <h1>シニア犬用介護ベッドの選び方ガイド</h1>
-      <p class="article-lead">シニア犬を飼っている飼い主にとって、愛犬が快適に過ごせる空間を提供することはとても重要です。特にシニア犬は、加齢による体調の変化や関節の問題が多くなるため、適切な介護アイテムが必要です。ここでは、シニア犬用介護ベッドを選ぶ際のポイントを解説します。</p>
 
-    <section id="point-1">
-      <h2>1. サイズの確認</h2>
-      <p>愛犬の体格に合ったサイズのベッドを選びましょう。シニア犬は寝返りを打ったり、体勢を変えたりすることが多くなるため、十分なスペースが必要です。体重や体長を基に、適切なサイズを選びましょう。</p>
-    </section>
+      <div class="cb-hero">
+        <p class="cb-hero-eyebrow">寝床・室温対策 ／ シニア犬用介護ベッド</p>
+        <h1>シニア犬用介護ベッドの選び方ガイド</h1>
+        <p class="article-lead">シニア犬を飼っている飼い主にとって、愛犬が快適に過ごせる空間を提供することはとても重要です。特にシニア犬は、加齢による体調の変化や関節の問題が多くなるため、適切な介護アイテムが必要です。ここでは、シニア犬用介護ベッドを選ぶ際のポイントを解説します。</p>
+        <a class="cb-hero-photo-link" href="/go?content_id=6&amp;product_id=10&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
+          <img class="cb-hero-photo" src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=480x480" alt="ねどっこ 犬用介護ベッド" loading="lazy">
+        </a>
+        <a class="cb-hero-jump" href="#cb-summary">結論を先に見る ↓</a>
+      </div>
 
-    <section id="point-2">
-      <h2>2. 素材の選定</h2>
-      <p>ベッドの素材は重要な要素です。クッション性が高く、耐久性のある素材を選ぶことで、愛犬の快適さを保ちます。また、洗濯可能なカバーが付いていると、清潔を保つのが容易です。</p>
-    </section>
+      <section id="cb-summary">
+        <h2 class="cb-section-title">この記事の結論</h2>
+        <p class="cb-section-lead">記事全体を読まなくても、まず確認したい5つのポイントです。</p>
+        <ul class="cb-summary-grid">
+          <li class="cb-summary-card">
+            <span class="cb-summary-mark" aria-hidden="true">1</span>
+            <span class="cb-summary-text"><strong>サイズ</strong><span>体重・体長に合わせ、寝返りできる広さがあるか</span></span>
+          </li>
+          <li class="cb-summary-card">
+            <span class="cb-summary-mark" aria-hidden="true">2</span>
+            <span class="cb-summary-text"><strong>素材</strong><span>クッション性が高く、カバーが洗えるか</span></span>
+          </li>
+          <li class="cb-summary-card">
+            <span class="cb-summary-mark" aria-hidden="true">3</span>
+            <span class="cb-summary-text"><strong>体圧分散</strong><span>関節に負担をかけない設計か</span></span>
+          </li>
+          <li class="cb-summary-card">
+            <span class="cb-summary-mark" aria-hidden="true">4</span>
+            <span class="cb-summary-text"><strong>防水</strong><span>尿漏れなどに備えた防水加工があるか</span></span>
+          </li>
+          <li class="cb-summary-card">
+            <span class="cb-summary-mark" aria-hidden="true">5</span>
+            <span class="cb-summary-text"><strong>安全性</strong><span>出入りしやすい滑り止め・スロープ構造か</span></span>
+          </li>
+        </ul>
+      </section>
 
-    <section id="point-3">
-      <h2>3. 体圧分散機能</h2>
-      <p>関節に負担をかけず、身体のラインにフィットするベッドを選ぶことが望ましいです。体圧分散ができる設計や、適度な柔らかさを持ったマットレスタイプのベッドが人気です。</p>
-    </section>
+      <section id="cb-senior-notes">
+        <h2 class="cb-section-title">シニア犬ならここも確認</h2>
+        <p class="cb-section-lead">一般的な犬用ベッドと比べて、シニア犬の場合に特に気をつけたい点です。</p>
+        <ul class="cb-callout-list">
+          <li class="cb-callout-card">
+            <strong>関節への負担</strong>
+            <p>加齢により関節に負担がかかりやすくなるため、体圧分散を意識した選び方が普通の犬用ベッドより重要になります。</p>
+          </li>
+          <li class="cb-callout-card">
+            <strong>寝返り・体勢変化の増加</strong>
+            <p>シニア犬は寝返りや体勢を変える動作が増えることがあるため、十分な広さがあるかを確認しておきたいポイントです。</p>
+          </li>
+          <li class="cb-callout-card">
+            <strong>出入りのしやすさ</strong>
+            <p>自力での出入りが難しくなる場合があるため、滑り止めやスロープの有無も選ぶ際の判断材料になります。</p>
+          </li>
+        </ul>
+      </section>
 
-    <section id="point-4">
-      <h2>4. 防水機能</h2>
-      <p>シニア犬は尿漏れなどがある場合があるため、防水機能があるベッドも検討してください。防水加工が施された素材を選ぶことで、床の汚れを防ぎ、清潔を維持できます。</p>
-    </section>
-
-    <section id="point-5">
-      <h2>5. 安全性の確認</h2>
-      <p>ベッドの形状や構造も大切です。滑り止めやスロープが付いているベッドは、安全にベッドに出入りできるため、特におすすめです。年齢や体調に応じて、愛犬の安全を考慮した選択を心がけましょう。</p>
-    </section>
-
-      <p class="article-conclusion">シニア犬用介護ベッドを選ぶ際は、愛犬の体格や普段の過ごし方に合わせて、使いやすさやお手入れのしやすさを確認しましょう。ここまでのポイントを踏まえながら、今回ご紹介する商品も選択肢の一つとして、サイズや仕様などの最新情報を商品ページで確認してみてください。</p>
-
-      <section id="products" class="product-slot">
-        <h2>おすすめ用品</h2>
+      <section id="cb-product">
+        <h2 class="cb-section-title">おすすめ用品</h2>
         <div class="notice-box">
           <p>上記の選定ポイントに沿った商品の一例として、以下をご紹介します。価格や在庫状況はリンク先の楽天市場のページで随時更新されますので、最新の情報は商品ページでご確認ください。</p>
           <p class="disclosure-inline">本ページで商品をご紹介する際は、アフィリエイトリンク(楽天アフィリエイト等)を含む場合があります。詳しくは<a href="/disclosure/">広告・アフィリエイトについて</a>をご覧ください。</p>
-          <a class="product-image-link" href="/go?content_id=6&amp;product_id=10&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
-            <img class="product-image" src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=128x128" alt="【ランキング1位】 犬 犬用 介護用ベッド ペット シニア 介護 ケア ペットベッド ベッド ベット 介護用品 犬用ベッド クッション 床ずれ 防止 マット 洗える 寝たきり 体圧分散 体位交換 リハビリ 補助 防水 小型犬 中型犬 シニア犬 老犬 老犬介護用 猫 送料無料 ねどっこ" loading="lazy">
-          </a>
-          <p class="product-name"><a href="/go?content_id=6&amp;product_id=10&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">ねどっこ 犬用介護ベッド(体圧分散・防水・洗えるカバー)</a></p>
-          <a class="rakuten-cta" href="/go?content_id=6&amp;product_id=10&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で購入</a>
         </div>
+        <div class="cb-product-card">
+          <a class="cb-product-photo-link" href="/go?content_id=6&amp;product_id=10&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
+            <img class="cb-product-photo" src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=128x128" alt="【ランキング1位】 犬 犬用 介護用ベッド ペット シニア 介護 ケア ペットベッド ベッド ベット 介護用品 犬用ベッド クッション 床ずれ 防止 マット 洗える 寝たきり 体圧分散 体位交換 リハビリ 補助 防水 小型犬 中型犬 シニア犬 老犬 老犬介護用 猫 送料無料 ねどっこ" loading="lazy">
+          </a>
+          <p class="cb-product-name"><a href="/go?content_id=6&amp;product_id=10&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">ねどっこ 犬用介護ベッド(体圧分散・防水・洗えるカバー)</a></p>
+          <ul class="cb-product-features">
+            <li>体圧分散設計</li>
+            <li>防水加工</li>
+            <li>洗えるカバー</li>
+          </ul>
+          <p class="cb-product-fit"><strong>こんなシニア犬・飼い主に向いています:</strong> 関節への負担を減らしたい方、尿漏れ対策をしておきたい方、カバーを洗って清潔に保ちたい方にとって、選択肢の一つになります。</p>
+          <p class="cb-product-caution"><strong>確認しておきたい点:</strong> サイズ展開や詳しい仕様は商品ページでご確認ください。特定の効果を保証するものではありません。</p>
+          <div class="cb-product-cta-wrap">
+            <a class="rakuten-cta" href="/go?content_id=6&amp;product_id=10&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で詳細を見る</a>
+          </div>
+        </div>
+        <p class="cb-product-more">現時点で確認できる実商品は1点のみのご紹介です。比較できる商品が増えた際は、こちらに追加していきます。</p>
+      </section>
+
+      <section id="cb-details">
+        <h2 class="cb-section-title">選び方の詳しい解説</h2>
+        <div class="cb-detail-grid">
+          <div class="cb-detail-card">
+            <h3>1. サイズの確認</h3>
+            <p>愛犬の体格に合ったサイズのベッドを選びましょう。シニア犬は寝返りを打ったり、体勢を変えたりすることが多くなるため、十分なスペースが必要です。体重や体長を基に、適切なサイズを選びましょう。</p>
+          </div>
+          <div class="cb-detail-card">
+            <h3>2. 素材の選定</h3>
+            <p>ベッドの素材は重要な要素です。クッション性が高く、耐久性のある素材を選ぶことで、愛犬の快適さを保ちます。また、洗濯可能なカバーが付いていると、清潔を保つのが容易です。</p>
+          </div>
+          <div class="cb-detail-card">
+            <h3>3. 体圧分散機能</h3>
+            <p>関節に負担をかけず、身体のラインにフィットするベッドを選ぶことが望ましいです。体圧分散ができる設計や、適度な柔らかさを持ったマットレスタイプのベッドが人気です。</p>
+          </div>
+          <div class="cb-detail-card">
+            <h3>4. 防水機能</h3>
+            <p>シニア犬は尿漏れなどがある場合があるため、防水機能があるベッドも検討してください。防水加工が施された素材を選ぶことで、床の汚れを防ぎ、清潔を維持できます。</p>
+          </div>
+          <div class="cb-detail-card">
+            <h3>5. 安全性の確認</h3>
+            <p>ベッドの形状や構造も大切です。滑り止めやスロープが付いているベッドは、安全にベッドに出入りできるため、特におすすめです。年齢や体調に応じて、愛犬の安全を考慮した選択を心がけましょう。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cb-decision">
+        <h2 class="cb-section-title">迷ったときの選び方</h2>
+        <p class="cb-section-lead">当てはまる状況から、重視したいポイントを絞り込めます。</p>
+        <ul class="cb-decision-list">
+          <li class="cb-decision-row">
+            <span class="cb-decision-condition">体重が重め・寝返りが多い</span>
+            <span class="cb-decision-arrow" aria-hidden="true">→</span>
+            <span class="cb-decision-result">体圧分散を重視</span>
+          </li>
+          <li class="cb-decision-row">
+            <span class="cb-decision-condition">粗相・尿漏れの心配がある</span>
+            <span class="cb-decision-arrow" aria-hidden="true">→</span>
+            <span class="cb-decision-result">防水加工を重視</span>
+          </li>
+          <li class="cb-decision-row">
+            <span class="cb-decision-condition">自力での出入りが不安</span>
+            <span class="cb-decision-arrow" aria-hidden="true">→</span>
+            <span class="cb-decision-result">滑り止め・スロープを重視</span>
+          </li>
+          <li class="cb-decision-row">
+            <span class="cb-decision-condition">お手入れ・清潔さを重視したい</span>
+            <span class="cb-decision-arrow" aria-hidden="true">→</span>
+            <span class="cb-decision-result">洗えるカバーを重視</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="cb-faq">
+        <h2 class="cb-section-title">よくある質問</h2>
+        <div class="cb-faq-list">
+          <details class="cb-faq-item">
+            <summary>介護ベッドのサイズはどう選べばいいですか？</summary>
+            <p>愛犬の体重や体長を基準に、寝返りができる十分な広さがあるかを確認して選びましょう。</p>
+          </details>
+          <details class="cb-faq-item">
+            <summary>体圧分散ベッドとはどんなものですか？</summary>
+            <p>関節に負担をかけず、身体のラインにフィットするように設計されたベッドのことです。適度な柔らかさを持つマットレスタイプなどが人気です。</p>
+          </details>
+          <details class="cb-faq-item">
+            <summary>防水機能は必要ですか？</summary>
+            <p>シニア犬は尿漏れなどがある場合があるため、防水加工が施されたベッドを検討すると、床の汚れを防ぎ清潔を維持しやすくなります。</p>
+          </details>
+          <details class="cb-faq-item">
+            <summary>愛犬が自分でベッドに出入りしにくい場合はどうすればいいですか？</summary>
+            <p>滑り止めやスロープが付いているタイプを選ぶと、安全にベッドへ出入りしやすくなります。</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="cb-wrapup">
+        <h2 class="cb-section-title">まとめ</h2>
+        <p class="cb-summary-final">シニア犬用介護ベッドを選ぶ際は、愛犬の体格や普段の過ごし方に合わせて、使いやすさやお手入れのしやすさを確認しましょう。ここまでのポイントを踏まえながら、今回ご紹介する商品も選択肢の一つとして、サイズや仕様などの最新情報を商品ページで確認してみてください。</p>
       </section>
 
       <section id="note">
