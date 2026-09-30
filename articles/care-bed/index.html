@@ -11,286 +11,514 @@
 <meta property="og:url" content="https://senior-dog-guide.pages.dev/articles/care-bed/">
 <link rel="canonical" href="https://senior-dog-guide.pages.dev/articles/care-bed/">
 <link rel="stylesheet" href="/assets/css/style.css">
-<!-- care-bed専用スタイル(シニア犬専用 × 商品比較メディア型、全面再構築 v3)。
+<!-- care-bed専用スタイル(Owner提示の基準デザインに沿った構造、v4)。
      このページ自身の<head>内にのみ存在するインラインCSSで、
      assets/css/style.css(他16記事が共有するファイル)は無変更。
-     既存の --color-* トークンと .rakuten-cta / .notice-box /
-     .disclosure-inline を再利用しつつ、役割別の視覚階層(base / card /
-     commerce action)をこのページ内だけで作る。新規クラスはすべて
-     .cbv3- プレフィックスでスコープ(過去に却下されたUI由来のクラス/CSS
-     は一切引き継いでいない)。他サイトのHTML/CSS/文章はコピーしていない。 -->
+     既存の --color-* トークンをベースに、セクションごとの背景色
+     (white/warm/green/blue/pink)をこのページ内だけのトークンとして
+     追加している。新規クラスはすべて .cbv4- プレフィックスでスコープ
+     (a958698のcbv3、その前のcbv2/cbc由来のクラス/CSSは一切引き継いで
+     いない)。他サイトのHTML/CSS/文章はコピーしていない。
+
+     lifestyle/説明用のvisualが必要な箇所(.cbv4-hero-media,
+     .cbv4-point-visual)は、実画像が用意できるまでの間、CSSの淡い
+     グラデーションだけで構成した「差し替え用スロット」であり、
+     "画像なし"等の文言は一切表示しない。実画像(<img src="...">)を
+     追加するだけでそのまま完成する設計。 -->
 <style>
-.cbv3-page {
-  --cbv3-coral: #bf0000;
-  --cbv3-coral-dark: #950000;
-  --cbv3-warm-bg: #fdf6ee;
+.cbv4-page {
+  --cbv4-warm: var(--color-notice-bg);
+  --cbv4-green: #eaf4ec;
+  --cbv4-green-border: #bfe0c6;
+  --cbv4-blue: #eaf1fb;
+  --cbv4-blue-border: #c3d8f2;
+  --cbv4-pink: #fdecf0;
+  --cbv4-pink-border: #f3c7d3;
+  --cbv4-navy: #2b3446;
+  --cbv4-coral: #ff5277;
 }
 
-/* ---------- HERO ---------- */
-.cbv3-hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.1rem;
-  margin: 0.5rem 0 0;
-  padding: 1.25rem;
-  background-color: var(--cbv3-warm-bg);
-  border: 1px solid var(--color-border);
-  border-radius: 16px;
+.cbv4-page h2,
+.cbv4-page h3 {
+  color: var(--cbv4-navy);
 }
 
-.cbv3-eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--color-accent-dark);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  padding: 0.25rem 0.75rem;
-  margin: 0 0 0.6rem;
+/* ---------- 1. HERO ---------- */
+.cbv4-hero {
+  margin: 0.5rem -1.25rem 0;
+  border-radius: 0;
 }
 
-.cbv3-hero h1 {
-  margin: 0 0 0.6rem;
-  font-size: 1.5rem;
-  line-height: 1.35;
-}
-
-.cbv3-hero-lead {
-  margin: 0 0 0.8rem;
-  color: var(--color-text-muted);
-  font-size: 0.92rem;
-  line-height: 1.6;
-}
-
-.cbv3-hero-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 0.9rem;
-}
-
-.cbv3-hero-chips li {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  color: var(--color-accent-dark);
-  border-radius: 999px;
-  padding: 0.26rem 0.75rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-}
-
-.cbv3-hero-jump {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--color-accent-dark);
-  text-decoration: none;
-  border-bottom: 1px dashed var(--color-accent-dark);
-}
-
-.cbv3-hero-panel {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 14px;
-  padding: 0.9rem;
-}
-
-.cbv3-hero-panel-title {
-  margin: 0 0 0.7rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-text-muted);
-}
-
-.cbv3-hero-item {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  text-decoration: none;
-  padding: 0.5rem 0;
-}
-
-.cbv3-hero-item + .cbv3-hero-item {
-  border-top: 1px solid var(--color-border);
-}
-
-.cbv3-hero-item-img {
-  flex: none;
-  width: 56px;
-  height: 56px;
+.cbv4-hero-media {
+  position: relative;
   aspect-ratio: 1 / 1;
-  object-fit: contain;
-  background-color: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-}
-
-.cbv3-hero-item-name {
-  display: block;
-  font-size: 0.86rem;
-  font-weight: 700;
-  color: var(--color-text);
-  margin-bottom: 0.15rem;
-}
-
-.cbv3-hero-item-meta {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-}
-
-.cbv3-hero-item-meta strong {
-  color: var(--color-accent-dark);
-}
-
-/* ---------- section shell ---------- */
-.cbv3-section {
-  margin-top: 2rem;
-}
-
-.cbv3-section-title {
-  margin: 0 0 0.3rem;
-  font-size: 1.15rem;
-}
-
-.cbv3-section-lead {
-  margin: 0 0 0.9rem;
-  color: var(--color-text-muted);
-  font-size: 0.88rem;
-}
-
-/* ---------- QUICK SELECT ---------- */
-.cbv3-quickselect {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.6rem;
-}
-
-.cbv3-qs-item {
-  display: block;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-top: 3px solid var(--color-accent);
-  border-radius: 10px;
-  padding: 0.8rem 0.9rem;
-  text-decoration: none;
-}
-
-.cbv3-qs-num {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: var(--color-accent-dark);
-  margin-bottom: 0.35rem;
-}
-
-.cbv3-qs-condition {
-  display: block;
-  color: var(--color-text);
-  font-size: 0.92rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.45;
-}
-
-.cbv3-qs-result {
-  display: block;
-  font-weight: 700;
-  color: var(--cbv3-coral);
-  font-size: 0.9rem;
-}
-
-/* ---------- PRODUCT SHOWCASE ---------- */
-.cbv3-product-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.1rem;
-}
-
-.cbv3-product-card {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(74, 63, 53, 0.05);
+  background: linear-gradient(160deg, #f6ead9 0%, #f1e2c9 35%, var(--cbv4-green) 100%);
   overflow: hidden;
 }
 
-.cbv3-product-num {
+.cbv4-hero-media img {
   position: absolute;
-  margin: 0.7rem;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  color: var(--color-accent-dark);
-  font-weight: 800;
-  font-size: 0.8rem;
-  border-radius: 999px;
-  width: 1.8rem;
-  height: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cbv3-product-media {
-  position: relative;
-  display: block;
-  aspect-ratio: 1 / 1;
-  background-color: #ffffff;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.cbv3-product-media img {
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  padding: 1.4rem;
+  object-fit: cover;
 }
 
-.cbv3-product-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 1.1rem 1.15rem 1.2rem;
+.cbv4-hero-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem 1.25rem 1.4rem;
+  background: linear-gradient(0deg, rgba(20, 22, 18, 0.72) 0%, rgba(20, 22, 18, 0.42) 55%, rgba(20, 22, 18, 0) 100%);
 }
 
-.cbv3-product-purpose {
-  display: inline-block;
-  align-self: flex-start;
-  background-color: var(--color-notice-bg);
-  color: var(--color-accent-dark);
-  font-size: 0.76rem;
-  font-weight: 700;
-  padding: 0.24rem 0.7rem;
-  border-radius: 999px;
+.cbv4-hero-title {
   margin: 0 0 0.6rem;
+  color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 1.28;
+  font-weight: 800;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
 }
 
-.cbv3-product-name {
-  font-size: 1.06rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem;
+.cbv4-hero-sub {
+  margin: 0;
+  color: #f4f0ea;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cbv4-hero-meta {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+}
+
+.cbv4-hero-below {
+  padding: 0 1.25rem;
+}
+
+/* ---------- 2. この記事の結論 ---------- */
+.cbv4-conclusion-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.6rem;
+}
+
+.cbv4-conclusion-box .cbv4-section-title {
+  font-size: 1.02rem;
+  margin: 0 0 0.45rem;
+}
+
+.cbv4-conclusion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.55rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.cbv4-conclusion-list li {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.85rem;
   line-height: 1.4;
-}
-
-.cbv3-product-name a {
-  text-decoration: none;
   color: var(--color-text);
 }
 
-.cbv3-product-desc {
-  font-size: 0.87rem;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-  margin: 0 0 0.7rem;
+.cbv4-conclusion-list li::before {
+  content: "✓";
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: 800;
 }
 
-.cbv3-product-features {
+.cbv4-callout-green {
+  background-color: var(--cbv4-green);
+  border: 1px solid var(--cbv4-green-border);
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+}
+
+.cbv4-callout-green strong {
+  display: block;
+  color: var(--color-accent-dark);
+  font-size: 0.82rem;
+  margin-bottom: 0.15rem;
+}
+
+.cbv4-callout-green p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+/* ---------- shared section shell ---------- */
+.cbv4-section {
+  margin: 2rem -1.25rem 0;
+  padding: 1.5rem 1.25rem;
+}
+
+.cbv4-section--white {
+  background-color: var(--color-surface);
+}
+
+.cbv4-section--warm {
+  background-color: var(--cbv4-warm);
+}
+
+.cbv4-section--blue {
+  background-color: var(--cbv4-blue);
+}
+
+.cbv4-section--pink {
+  background-color: var(--cbv4-pink);
+}
+
+.cbv4-section--green {
+  background-color: var(--cbv4-green);
+}
+
+.cbv4-section-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.cbv4-section-lead {
+  margin: 0 0 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- 3 / 6. 4ポイント(compact / detailed) ---------- */
+.cbv4-point-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.cbv4-point {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.cbv4-point-num {
+  flex: none;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+  align-self: flex-start;
+  padding-top: 0.15rem;
+}
+
+.cbv4-point-visual {
+  flex: none;
+  width: 36%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--cbv4-green);
+  border: 1px solid var(--color-border);
+}
+
+.cbv4-point-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cbv4-point-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cbv4-point h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.96rem;
+}
+
+.cbv4-point p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+/* ---------- 6. 購入前に確認したいポイント(editorial, 写真なし) ---------- */
+.cbv4-check-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.cbv4-check-item {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  background-color: var(--cbv4-warm);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+}
+
+.cbv4-check-num {
+  flex: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+}
+
+.cbv4-check-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.cbv4-check-body h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  flex: none;
+}
+
+.cbv4-check-method {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- 4. 目的別おすすめ3選 ---------- */
+.cbv4-pick-list {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.cbv4-pick {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cbv4-pick-badge {
+  display: block;
+  margin: 0.9rem 0.9rem 0;
+  background-color: var(--cbv4-green);
+  border: 1px solid var(--cbv4-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.cbv4-pick-media {
+  display: block;
+  height: 160px;
+  background-color: #ffffff;
+  margin: 0.7rem 0.9rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cbv4-pick-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.6rem;
+}
+
+.cbv4-pick-body {
+  padding: 0.65rem 0.9rem 0.8rem;
+}
+
+.cbv4-pick-name {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.cbv4-pick-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.55rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.cbv4-pick-points li {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.cbv4-pick-points li::before {
+  content: "✓";
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: 800;
+}
+
+.cbv4-pick-price {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0 0 0.55rem;
+}
+
+.cbv4-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--cbv4-coral);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 14px rgba(255, 82, 119, 0.35);
+}
+
+.cbv4-cta:hover,
+.cbv4-cta:focus {
+  background-color: #e63e63;
+  color: #ffffff;
+}
+
+.cbv4-cta-secondary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-surface);
+  color: var(--color-accent-dark);
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid var(--color-accent);
+}
+
+/* ---------- 5. 比較表 ---------- */
+.cbv4-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--cbv4-blue-border);
+  border-radius: 14px;
+  background-color: var(--color-surface);
+}
+
+.cbv4-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.cbv4-table th,
+.cbv4-table td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--cbv4-blue-border);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.cbv4-table th:first-child,
+.cbv4-table td:first-child {
+  text-align: left;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.cbv4-table thead th {
+  background-color: var(--cbv4-blue);
+  color: var(--cbv4-navy);
+  font-weight: 800;
+}
+
+.cbv4-table-thumb {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  margin: 0 auto 0.4rem;
+}
+
+.cbv4-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- 7/8/9. 商品詳細 ---------- */
+.cbv4-detail {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.cbv4-detail-badge {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+  background-color: var(--cbv4-green);
+  border: 1px solid var(--cbv4-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.26rem 0.75rem;
+  border-radius: 999px;
+}
+
+.cbv4-detail-name {
+  margin: 0.7rem 1rem 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.cbv4-detail-media {
+  display: block;
+  aspect-ratio: 1 / 1;
+  background-color: #ffffff;
+  margin: 0.7rem 1rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.cbv4-detail-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.cbv4-detail-body {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.cbv4-detail-features {
   list-style: none;
   padding: 0;
   margin: 0 0 0.8rem;
@@ -299,174 +527,91 @@
   gap: 0.35rem;
 }
 
-.cbv3-product-features li {
-  background-color: var(--color-notice-bg);
+.cbv4-detail-features li {
+  background-color: var(--cbv4-warm);
   border-radius: 999px;
-  padding: 0.22rem 0.65rem;
-  font-size: 0.76rem;
+  padding: 0.24rem 0.7rem;
+  font-size: 0.78rem;
   color: var(--color-accent-dark);
 }
 
-.cbv3-product-price-row {
-  margin-top: auto;
-  padding-top: 0.6rem;
-  border-top: 1px dashed var(--color-border);
-  margin-bottom: 0.8rem;
+.cbv4-detail-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.85rem;
+  display: grid;
+  gap: 0.35rem;
 }
 
-.cbv3-product-price {
-  font-size: 1.3rem;
-  font-weight: 800;
+.cbv4-detail-points li {
+  display: flex;
+  gap: 0.45rem;
+  font-size: 0.88rem;
   color: var(--color-text);
 }
 
-.cbv3-product-price-label {
-  font-size: 0.72rem;
-  color: var(--color-text-muted);
-  display: block;
-  margin-bottom: 0.15rem;
-}
-
-.cbv3-cta {
-  display: block;
-  text-align: center;
-  background-color: var(--cbv3-coral);
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 0.85rem 1rem;
-  border-radius: 10px;
-  text-decoration: none;
-  box-shadow: 0 3px 10px rgba(191, 0, 0, 0.25);
-}
-
-.cbv3-cta:hover,
-.cbv3-cta:focus {
-  background-color: var(--cbv3-coral-dark);
-  color: #ffffff !important;
-}
-
-.cbv3-product-note {
-  text-align: center;
-  font-size: 0.72rem;
-  color: var(--color-text-muted);
-  margin: 0.6rem 0 0;
-}
-
-/* ---------- COMPARISON TABLE ---------- */
-.cbv3-table-wrap {
-  overflow-x: auto;
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-}
-
-.cbv3-table {
-  width: 100%;
-  min-width: 520px;
-  border-collapse: collapse;
-  font-size: 0.88rem;
-}
-
-.cbv3-table th,
-.cbv3-table td {
-  padding: 0.65rem 0.8rem;
-  border-bottom: 1px solid var(--color-border);
-  text-align: center;
-  white-space: nowrap;
-}
-
-.cbv3-table th:first-child,
-.cbv3-table td:first-child {
-  text-align: left;
-  font-weight: 700;
-  color: var(--color-text-muted);
-}
-
-.cbv3-table thead th {
-  background-color: var(--color-notice-bg);
+.cbv4-detail-points li::before {
+  content: "✓";
+  flex: none;
   color: var(--color-accent-dark);
-  font-weight: 700;
-}
-
-.cbv3-table-thumb {
-  display: block;
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  background-color: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  margin: 0 auto 0.35rem;
-}
-
-.cbv3-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-/* ---------- SELECTION GUIDE ---------- */
-.cbv3-guide-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.6rem;
-}
-
-.cbv3-guide-card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: 0.85rem 1rem;
-}
-
-.cbv3-guide-num {
-  display: block;
-  font-size: 1.1rem;
   font-weight: 800;
-  color: var(--color-accent-dark);
-  margin-bottom: 0.3rem;
 }
 
-.cbv3-guide-card h3 {
-  margin: 0 0 0.3rem;
-  font-size: 0.92rem;
-}
-
-.cbv3-guide-card p {
-  margin: 0;
-  color: var(--color-text-muted);
+.cbv4-detail-fit,
+.cbv4-detail-caution {
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
   font-size: 0.85rem;
   line-height: 1.55;
+  margin: 0 0 0.7rem;
 }
 
-/* ---------- CALLOUTS ---------- */
-.cbv3-callout-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.6rem;
+.cbv4-detail-link {
+  margin: 0 0 0.9rem;
 }
 
-.cbv3-callout-card {
-  background-color: var(--cbv3-warm-bg);
-  border: 1px solid var(--color-border);
-  border-left: 4px solid var(--color-accent);
-  border-radius: 10px;
-  padding: 0.75rem 0.95rem;
-}
-
-.cbv3-callout-card strong {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-size: 0.92rem;
-}
-
-.cbv3-callout-card p {
-  margin: 0;
-  color: var(--color-text-muted);
+.cbv4-detail-link a {
   font-size: 0.86rem;
-  line-height: 1.55;
+  font-weight: 600;
+  color: var(--color-accent-dark);
 }
 
-/* ---------- DECISION PATH ---------- */
-.cbv3-decision-list {
+.cbv4-detail-fit {
+  background-color: var(--cbv4-blue);
+  color: var(--color-text);
+}
+
+.cbv4-detail-caution {
+  background-color: var(--cbv4-pink);
+  color: var(--color-text);
+}
+
+.cbv4-detail-fit strong,
+.cbv4-detail-caution strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--cbv4-navy);
+}
+
+.cbv4-detail-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.cbv4-detail-price {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.cbv4-detail-price-note {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 10. 迷ったときの選び方 ---------- */
+.cbv4-decision-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -474,153 +619,125 @@
   gap: 0.55rem;
 }
 
-.cbv3-decision-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.3rem;
+.cbv4-decision-row {
+  display: block;
   background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--cbv4-pink-border);
   border-radius: 12px;
   padding: 0.75rem 0.95rem;
   text-decoration: none;
 }
 
-.cbv3-decision-condition {
+.cbv4-decision-condition {
+  display: block;
   color: var(--color-text);
   font-weight: 700;
   font-size: 0.9rem;
+  margin-bottom: 0.2rem;
 }
 
-.cbv3-decision-reason {
-  color: var(--color-text-muted);
-  font-size: 0.84rem;
+.cbv4-decision-condition::before {
+  content: "✓ ";
+  color: var(--color-accent-dark);
 }
 
-.cbv3-decision-link {
+.cbv4-decision-result {
+  display: block;
   color: var(--color-accent-dark);
   font-weight: 700;
   font-size: 0.86rem;
 }
 
-/* ---------- FAQ ---------- */
-.cbv3-faq-list {
+/* ---------- 11. FAQ ---------- */
+.cbv4-faq-list {
   display: grid;
   gap: 0.55rem;
 }
 
-.cbv3-faq-item {
+.cbv4-faq-item {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 10px;
   padding: 0 1.1rem;
 }
 
-.cbv3-faq-item summary {
+.cbv4-faq-item summary {
   cursor: pointer;
   padding: 0.75rem 0;
-  font-weight: 600;
+  font-weight: 700;
   list-style: none;
 }
 
-.cbv3-faq-item summary::-webkit-details-marker {
+.cbv4-faq-item summary::-webkit-details-marker {
   display: none;
 }
 
-.cbv3-faq-item summary::before {
+.cbv4-faq-item summary::before {
   content: "Q. ";
   color: var(--color-accent-dark);
 }
 
-.cbv3-faq-item p {
+.cbv4-faq-item p {
   margin: 0 0 0.85rem;
   color: var(--color-text-muted);
   font-size: 0.9rem;
   line-height: 1.6;
 }
 
-/* ---------- FINAL SUMMARY ---------- */
-.cbv3-summary-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.55rem;
+/* ---------- 12. まとめ ---------- */
+.cbv4-summary-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.05rem 1.15rem;
   margin-bottom: 0.9rem;
 }
 
-.cbv3-summary-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 10px;
-  padding: 0.6rem 0.9rem;
-  text-decoration: none;
-}
-
-.cbv3-summary-item-name {
-  color: var(--color-text);
-  font-weight: 700;
-  font-size: 0.88rem;
-}
-
-.cbv3-summary-item-meta {
-  color: var(--color-text-muted);
-  font-size: 0.8rem;
-  text-align: right;
-}
-
-.cbv3-summary-box {
-  background-color: var(--cbv3-warm-bg);
-  border-radius: 12px;
-  padding: 1rem 1.15rem;
-}
-
-.cbv3-summary-box p {
+.cbv4-summary-box p {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.65;
 }
 
+.cbv4-summary-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
 /* ---------- タブレット以上 ---------- */
 @media (min-width: 680px) {
-  .cbv3-hero {
-    grid-template-columns: 55fr 45fr;
-    padding: 2rem;
-    align-items: center;
+  .cbv4-hero-media {
+    aspect-ratio: 2 / 1;
   }
 
-  .cbv3-hero h1 {
-    font-size: 1.85rem;
+  .cbv4-hero-title {
+    font-size: 2.2rem;
   }
 
-  .cbv3-quickselect {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cbv3-product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cbv3-guide-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cbv3-callout-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cbv3-faq-list {
+  .cbv4-point-list {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cbv3-decision-row {
-    grid-template-columns: 1.2fr 1.6fr auto;
-    align-items: center;
-    gap: 0.8rem;
+  .cbv4-point-visual {
+    max-width: 190px;
   }
 
-  .cbv3-decision-link {
-    text-align: right;
+  /* 目的別おすすめ3選は意図的にPCでも横3列にしない -- 1商品ずつ
+     大きな写真で見せるため、単一カラムのまま最大幅だけ絞る。 */
+  .cbv4-pick-list {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .cbv4-pick-media {
+    height: 190px;
+  }
+
+  .cbv4-faq-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>
@@ -667,175 +784,163 @@
 
 <main>
   <article class="article-body">
-    <div class="container cbv3-page">
+    <div class="container cbv4-page">
 <!-- AUTO-GENERATED:BREADCRUMB:START (managed by scripts/generate_site.py -- do not edit by hand) -->
 <nav class="breadcrumbs" aria-label="breadcrumb">
   <a href="/">ホーム</a> <span class="breadcrumb-sep">›</span> <a href="/category/sleep-comfort/">寝床・室温対策</a> <span class="breadcrumb-sep">›</span> <span aria-current="page">シニア犬用介護ベッドの選び方ガイド</span>
 </nav>
 <!-- AUTO-GENERATED:BREADCRUMB:END -->
 
-      <section class="cbv3-hero">
-        <div>
-          <p class="cbv3-eyebrow">シニア犬の暮らしを考える商品比較</p>
-          <h1>シニア犬用介護ベッド<br>3商品を比較</h1>
-          <p class="cbv3-hero-lead">寝る時間が長くなったシニア犬のベッドは、やわらかさだけでなく、高さ・お手入れのしやすさ・寝姿勢なども確認したいポイントです。タイプの異なる3商品の実際の商品情報を比較しました。</p>
-          <ul class="cbv3-hero-chips" aria-hidden="true">
-            <li>介護ベッド</li>
-            <li>低反発</li>
-            <li>高反発マット</li>
+      <!-- ① HERO: .cbv4-hero-media は実lifestyle写真の差し替えスロット
+           (現在は<img>なし、CSSグラデーションのみ)。実画像を<img>として
+           追加するだけで完成する。 -->
+      <section class="cbv4-hero">
+        <div class="cbv4-hero-media">
+          <img src="/assets/images/care-bed/hero.png" alt="暖かい室内でシニアの犬が介護ベッドで休んでいる様子" loading="eager">
+          <div class="cbv4-hero-overlay">
+            <h1 class="cbv4-hero-title">シニア犬用<br>介護ベッドの<br>選び方と<br>おすすめ3選</h1>
+            <p class="cbv4-hero-sub">タイプの異なる3商品の実際の商品情報を比較して紹介します。</p>
+          </div>
+        </div>
+        <p class="cbv4-hero-meta">寝床・室温対策 ／ シニア犬用介護ベッドの選び方ガイド</p>
+      </section>
+
+      <div class="cbv4-hero-below">
+        <p class="disclosure-inline">本ページで商品をご紹介する際は、アフィリエイトリンク(楽天アフィリエイト等)を含む場合があります。詳しくは<a href="/disclosure/">広告・アフィリエイトについて</a>をご覧ください。</p>
+
+        <!-- ② この記事の結論(コンパクト版) -->
+        <div class="cbv4-conclusion-box">
+          <h2 class="cbv4-section-title">この記事の結論</h2>
+          <ul class="cbv4-conclusion-list">
+            <li>出入り・体圧分散・防水・サイズの4点をチェック</li>
+            <li>介護ベッド/低反発コーナー/高反発マットの3タイプを比較</li>
           </ul>
-          <a class="cbv3-hero-jump" href="#cbv3-products">比較を見る ↓</a>
+          <div class="cbv4-callout-green">
+            <strong>シニア犬ならここも確認</strong>
+            <p>シニア犬では、出入りのしやすさ・寝床の広さ・お手入れのしやすさも確認して選びましょう。</p>
+          </div>
         </div>
-        <div class="cbv3-hero-panel">
-          <p class="cbv3-hero-panel-title">今回比較する3商品</p>
-          <a class="cbv3-hero-item" href="#cbv3-product-1">
-            <img class="cbv3-hero-item-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=160x160" alt="" loading="lazy">
-            <span>
-              <span class="cbv3-hero-item-name">ねどっこ</span>
-              <span class="cbv3-hero-item-meta"><strong>7,990円</strong>・体圧分散</span>
-            </span>
-          </a>
-          <a class="cbv3-hero-item" href="#cbv3-product-2">
-            <img class="cbv3-hero-item-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/idog/cabinet/202407/16299_s00.jpg?_ex=160x160" alt="" loading="lazy">
-            <span>
-              <span class="cbv3-hero-item-name">UNAGE</span>
-              <span class="cbv3-hero-item-meta"><strong>10,450円</strong>・低反発</span>
-            </span>
-          </a>
-          <a class="cbv3-hero-item" href="#cbv3-product-3">
-            <img class="cbv3-hero-item-img" src="https://thumbnail.image.rakuten.co.jp/@0_mall/ashu/cabinet/thumb_on2/thumb_on3/cm-000m_on.jpg?_ex=160x160" alt="" loading="lazy">
-            <span>
-              <span class="cbv3-hero-item-name">ペットケアマットNEO</span>
-              <span class="cbv3-hero-item-meta"><strong>8,900円</strong>・高反発</span>
-            </span>
-          </a>
+      </div>
+
+      <!-- ③ ベッド選び4ポイント(コンパクト) -->
+      <section id="cbv4-points" class="cbv4-section cbv4-section--warm">
+        <h2 class="cbv4-section-title">シニア犬用ベッド選び<br>4つのポイント</h2>
+        <p class="cbv4-section-lead">選ぶときに確認しておきたい4つの観点です。</p>
+        <div class="cbv4-point-list">
+          <div class="cbv4-point cbv4-point--compact">
+            <span class="cbv4-point-num" aria-hidden="true">01</span>
+            <div class="cbv4-point-visual"><img src="/assets/images/care-bed/point-1-entry.png" alt="出入りしやすさの一例" loading="lazy"></div>
+            <div class="cbv4-point-body">
+              <h3>出入りしやすさ</h3>
+              <p>自力での出入りが難しくなる場合があるため、高さや周囲の段差を確認しましょう。</p>
+            </div>
+          </div>
+          <div class="cbv4-point cbv4-point--compact">
+            <span class="cbv4-point-num" aria-hidden="true">02</span>
+            <div class="cbv4-point-visual"><img src="/assets/images/care-bed/point-2-cushion.png" alt="体圧分散・クッション性の一例" loading="lazy"></div>
+            <div class="cbv4-point-body">
+              <h3>体圧分散・クッション性</h3>
+              <p>関節への負担を減らせるよう、体圧分散やクッション性を確認しましょう。</p>
+            </div>
+          </div>
+          <div class="cbv4-point cbv4-point--compact">
+            <span class="cbv4-point-num" aria-hidden="true">03</span>
+            <div class="cbv4-point-visual"><img src="/assets/images/care-bed/point-3-waterproof.png" alt="防水・洗いやすさの一例" loading="lazy"></div>
+            <div class="cbv4-point-body">
+              <h3>防水・洗いやすさ</h3>
+              <p>粗相や水こぼれに備えて、防水加工やお手入れのしやすさを確認しましょう。</p>
+            </div>
+          </div>
+          <div class="cbv4-point cbv4-point--compact">
+            <span class="cbv4-point-num" aria-hidden="true">04</span>
+            <div class="cbv4-point-visual"><img src="/assets/images/care-bed/point-4-size.png" alt="サイズ感の一例" loading="lazy"></div>
+            <div class="cbv4-point-body">
+              <h3>サイズ</h3>
+              <p>体格や寝返りのしやすさに合った広さかを確認しましょう。</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <p class="disclosure-inline">本ページで商品をご紹介する際は、アフィリエイトリンク(楽天アフィリエイト等)を含む場合があります。詳しくは<a href="/disclosure/">広告・アフィリエイトについて</a>をご覧ください。</p>
-
-      <section id="cbv3-quickselect" class="cbv3-section">
-        <h2 class="cbv3-section-title">条件から候補を見る</h2>
-        <p class="cbv3-section-lead">自分の場合はどれを見るべきか、すぐに絞り込めます。</p>
-        <div class="cbv3-quickselect">
-          <a class="cbv3-qs-item" href="#cbv3-product-1">
-            <span class="cbv3-qs-num">01</span>
-            <span class="cbv3-qs-condition">体圧分散・防水を確認したい</span>
-            <span class="cbv3-qs-result">ねどっこ →</span>
-          </a>
-          <a class="cbv3-qs-item" href="#cbv3-product-2">
-            <span class="cbv3-qs-num">02</span>
-            <span class="cbv3-qs-condition">低反発＋囲われた形を確認したい</span>
-            <span class="cbv3-qs-result">UNAGE →</span>
-          </a>
-          <a class="cbv3-qs-item" href="#cbv3-product-3">
-            <span class="cbv3-qs-num">03</span>
-            <span class="cbv3-qs-condition">高反発マット型を検討したい</span>
-            <span class="cbv3-qs-result">ペットケアマットNEO →</span>
-          </a>
-        </div>
-      </section>
-
-      <section id="cbv3-products" class="cbv3-section">
-        <h2 class="cbv3-section-title">比較する3商品</h2>
-        <div class="notice-box">
-          <p>いずれも取得時点で確認できた実際の商品情報をもとにご紹介しています。価格や在庫状況はリンク先の楽天市場のページで随時更新されますので、最新の情報は商品ページでご確認ください。</p>
-        </div>
-        <div class="cbv3-product-grid">
-          <article class="cbv3-product-card" id="cbv3-product-1">
-            <a class="cbv3-product-media" href="/go?content_id=6&amp;product_id=10&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
-              <span class="cbv3-product-num" aria-hidden="true">01</span>
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=500x500" alt="ねどっこ 犬用介護ベッド" loading="lazy">
+      <!-- ④ 目的別おすすめ3選(各カードは商品詳細セクションへのページ内アンカー。
+           外部/goはここでは増やさず、実際の/goトラッキングは商品詳細
+           セクションに集約している) -->
+      <section id="cbv4-picks" class="cbv4-section cbv4-section--white">
+        <h2 class="cbv4-section-title">目的別おすすめ3選</h2>
+        <p class="cbv4-section-lead">目的に合わせて、3つのタイプから確認できます。</p>
+        <div class="cbv4-pick-list">
+          <article class="cbv4-pick">
+            <p class="cbv4-pick-badge">体圧分散・防水・洗えるカバーを確認したい方向け</p>
+            <a class="cbv4-pick-media" href="#cbv4-detail-1">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=400x400" alt="ねどっこ 犬用介護ベッド" loading="lazy">
             </a>
-            <div class="cbv3-product-body">
-              <p class="cbv3-product-purpose">体圧分散・防水を重視</p>
-              <p class="cbv3-product-name"><a href="/go?content_id=6&amp;product_id=10&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">ねどっこ 犬用介護ベッド</a></p>
-              <p class="cbv3-product-desc">犬用の介護ベッドで、体圧分散・防水・カバーが洗える点が商品情報から確認できます。</p>
-              <ul class="cbv3-product-features">
-                <li>犬用</li>
-                <li>体圧分散</li>
-                <li>防水</li>
-                <li>洗えるカバー</li>
+            <div class="cbv4-pick-body">
+              <p class="cbv4-pick-name">ねどっこ 犬用介護ベッド</p>
+              <ul class="cbv4-pick-points">
+                <li>犬用介護ベッド</li>
+                <li>体圧分散設計</li>
+                <li>防水・洗えるカバー</li>
               </ul>
-              <div class="cbv3-product-price-row">
-                <span class="cbv3-product-price-label">掲載時価格</span>
-                <span class="cbv3-product-price">7,990円</span>
-              </div>
-              <a class="cbv3-cta" href="/go?content_id=6&amp;product_id=10&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で商品を見る</a>
-              <p class="cbv3-product-note">価格・在庫は販売ページでご確認ください。</p>
+              <p class="cbv4-pick-price">7,990円</p>
+              <a class="cbv4-cta-secondary" href="#cbv4-detail-1">商品の詳細を見る ↓</a>
             </div>
           </article>
 
-          <article class="cbv3-product-card" id="cbv3-product-2">
-            <a class="cbv3-product-media" href="/go?content_id=6&amp;product_id=53&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
-              <span class="cbv3-product-num" aria-hidden="true">02</span>
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/idog/cabinet/202407/16299_s00.jpg?_ex=500x500" alt="IDOG&amp;ICAT UNAGE 低反発シニア コーナーベッド M" loading="lazy">
+          <article class="cbv4-pick">
+            <p class="cbv4-pick-badge">低反発・コーナー型・防水を確認したい方向け</p>
+            <a class="cbv4-pick-media" href="#cbv4-detail-2">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/idog/cabinet/202407/16299_s00.jpg?_ex=400x400" alt="IDOG&amp;ICAT UNAGE 低反発シニア コーナーベッド M" loading="lazy">
             </a>
-            <div class="cbv3-product-body">
-              <p class="cbv3-product-purpose">低反発 × 囲いのある形</p>
-              <p class="cbv3-product-name"><a href="/go?content_id=6&amp;product_id=53&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">IDOG&amp;ICAT UNAGE アンエイジ 低反発 シニア ベッド コーナーベッド Mサイズ 防水</a></p>
-              <p class="cbv3-product-desc">低反発素材でコーナー(囲いのある)形状のベッドです。老犬・シニア犬・介護に関する記載がありますが、犬猫共用の商品として案内されています。</p>
-              <ul class="cbv3-product-features">
+            <div class="cbv4-pick-body">
+              <p class="cbv4-pick-name">IDOG&amp;ICAT UNAGE 低反発シニア コーナーベッド M</p>
+              <ul class="cbv4-pick-points">
+                <li>低反発・コーナーベッド</li>
+                <li>Mサイズ・防水</li>
                 <li>犬猫共用</li>
-                <li>低反発</li>
-                <li>コーナーベッド</li>
-                <li>Mサイズ</li>
-                <li>防水</li>
               </ul>
-              <div class="cbv3-product-price-row">
-                <span class="cbv3-product-price-label">掲載時価格</span>
-                <span class="cbv3-product-price">10,450円</span>
-              </div>
-              <a class="cbv3-cta" href="/go?content_id=6&amp;product_id=53&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で商品を見る</a>
-              <p class="cbv3-product-note">価格・在庫は販売ページでご確認ください。</p>
+              <p class="cbv4-pick-price">10,450円</p>
+              <a class="cbv4-cta-secondary" href="#cbv4-detail-2">商品の詳細を見る ↓</a>
             </div>
           </article>
 
-          <article class="cbv3-product-card" id="cbv3-product-3">
-            <a class="cbv3-product-media" href="/go?content_id=6&amp;product_id=54&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
-              <span class="cbv3-product-num" aria-hidden="true">03</span>
-              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ashu/cabinet/thumb_on2/thumb_on3/cm-000m_on.jpg?_ex=500x500" alt="ペットケアマットNEO Sサイズ" loading="lazy">
+          <article class="cbv4-pick">
+            <p class="cbv4-pick-badge">高反発・ブレスエアー・夏向け仕様を確認したい方向け</p>
+            <a class="cbv4-pick-media" href="#cbv4-detail-3">
+              <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ashu/cabinet/thumb_on2/thumb_on3/cm-000m_on.jpg?_ex=400x400" alt="ペットケアマットNEO Sサイズ" loading="lazy">
             </a>
-            <div class="cbv3-product-body">
-              <p class="cbv3-product-purpose">高反発 × 通気性</p>
-              <p class="cbv3-product-name"><a href="/go?content_id=6&amp;product_id=54&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">ペットケアマットNEO Sサイズ</a></p>
-              <p class="cbv3-product-desc">高反発素材(ブレスエアー)を使ったペットケアマットです。老犬・シニア犬・介護に関する記載があり、夏用としても案内されています。</p>
-              <ul class="cbv3-product-features">
+            <div class="cbv4-pick-body">
+              <p class="cbv4-pick-name">ペットケアマットNEO Sサイズ</p>
+              <ul class="cbv4-pick-points">
+                <li>高反発・ブレスエアー</li>
+                <li>Sサイズ・夏用</li>
                 <li>犬向け</li>
-                <li>高反発</li>
-                <li>ブレスエアー</li>
-                <li>Sサイズ</li>
-                <li>夏用</li>
               </ul>
-              <div class="cbv3-product-price-row">
-                <span class="cbv3-product-price-label">掲載時価格</span>
-                <span class="cbv3-product-price">8,900円</span>
-              </div>
-              <a class="cbv3-cta" href="/go?content_id=6&amp;product_id=54&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で商品を見る</a>
-              <p class="cbv3-product-note">価格・在庫は販売ページでご確認ください。</p>
+              <p class="cbv4-pick-price">8,900円</p>
+              <a class="cbv4-cta-secondary" href="#cbv4-detail-3">商品の詳細を見る ↓</a>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="cbv3-compare" class="cbv3-section">
-        <h2 class="cbv3-section-title">3商品の違いを比較</h2>
-        <p class="cbv3-section-lead">3商品すべてで確認できた項目だけを比較しています。</p>
-        <div class="cbv3-table-wrap">
-          <table class="cbv3-table">
+      <!-- ⑤ 画像付き3商品比較表 -->
+      <section id="cbv4-compare" class="cbv4-section cbv4-section--blue">
+        <h2 class="cbv4-section-title">3商品の違いを比較</h2>
+        <p class="cbv4-section-lead">3商品すべてで確認できた項目だけを比較しています。</p>
+        <div class="cbv4-table-wrap">
+          <table class="cbv4-table">
             <thead>
               <tr>
                 <th scope="col">比較項目</th>
                 <th scope="col">
-                  <img class="cbv3-table-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=80x80" alt="" loading="lazy">
+                  <img class="cbv4-table-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=176x176" alt="" loading="lazy">
                   ねどっこ
                 </th>
                 <th scope="col">
-                  <img class="cbv3-table-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/idog/cabinet/202407/16299_s00.jpg?_ex=80x80" alt="" loading="lazy">
+                  <img class="cbv4-table-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/idog/cabinet/202407/16299_s00.jpg?_ex=176x176" alt="" loading="lazy">
                   UNAGE
                 </th>
                 <th scope="col">
-                  <img class="cbv3-table-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/ashu/cabinet/thumb_on2/thumb_on3/cm-000m_on.jpg?_ex=80x80" alt="" loading="lazy">
+                  <img class="cbv4-table-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/ashu/cabinet/thumb_on2/thumb_on3/cm-000m_on.jpg?_ex=176x176" alt="" loading="lazy">
                   ペットケアマットNEO
                 </th>
               </tr>
@@ -864,129 +969,214 @@
         </div>
       </section>
 
-      <section id="cbv3-guide" class="cbv3-section">
-        <h2 class="cbv3-section-title">シニア犬用ベッドを選ぶ5つのポイント</h2>
-        <div class="cbv3-guide-grid">
-          <div class="cbv3-guide-card">
-            <span class="cbv3-guide-num" aria-hidden="true">01</span>
-            <h3>サイズ</h3>
-            <p>体格に合った広さがあるかを確認しましょう。</p>
-          </div>
-          <div class="cbv3-guide-card">
-            <span class="cbv3-guide-num" aria-hidden="true">02</span>
-            <h3>素材・寝心地</h3>
-            <p>クッション性や、普段の寝姿勢に合った形状かを確認しましょう。</p>
-          </div>
-          <div class="cbv3-guide-card">
-            <span class="cbv3-guide-num" aria-hidden="true">03</span>
-            <h3>お手入れ</h3>
-            <p>カバーが洗えるか、拭き取りで対応できるかを確認しておくと安心です。</p>
-          </div>
-          <div class="cbv3-guide-card">
-            <span class="cbv3-guide-num" aria-hidden="true">04</span>
-            <h3>防水・対策</h3>
-            <p>粗相や水こぼれへの備えとして、防水加工の有無を確認しておくと安心です。</p>
-          </div>
-          <div class="cbv3-guide-card">
-            <span class="cbv3-guide-num" aria-hidden="true">05</span>
-            <h3>高さ・出入りやすさ</h3>
-            <p>出入りしやすい高さかどうかも選ぶ際のポイントです。</p>
+      <!-- ⑥ 購入前に確認したいポイント(③とは役割を分離: 写真ではなく
+           「番号+短い見出し+具体的な確認方法+チェック項目」のeditorial
+           layout。point画像はここでは再利用しない。) -->
+      <section id="cbv4-guide" class="cbv4-section cbv4-section--white">
+        <h2 class="cbv4-section-title">購入前に確認したいポイント</h2>
+        <p class="cbv4-section-lead">商品ページで具体的にチェックしておきたい項目です。</p>
+        <ul class="cbv4-check-list" style="list-style:none;padding:0;margin:0;">
+          <li class="cbv4-check-item">
+            <span class="cbv4-check-num" aria-hidden="true">01</span>
+            <div class="cbv4-check-body">
+              <h3>出入り</h3>
+              <p class="cbv4-check-method">→ ベッドの縁や高さを確認</p>
+            </div>
+          </li>
+          <li class="cbv4-check-item">
+            <span class="cbv4-check-num" aria-hidden="true">02</span>
+            <div class="cbv4-check-body">
+              <h3>寝心地</h3>
+              <p class="cbv4-check-method">→ 商品説明で素材・構造を確認</p>
+            </div>
+          </li>
+          <li class="cbv4-check-item">
+            <span class="cbv4-check-num" aria-hidden="true">03</span>
+            <div class="cbv4-check-body">
+              <h3>手入れ</h3>
+              <p class="cbv4-check-method">→ 防水・カバー・洗濯可否を確認</p>
+            </div>
+          </li>
+          <li class="cbv4-check-item">
+            <span class="cbv4-check-num" aria-hidden="true">04</span>
+            <div class="cbv4-check-body">
+              <h3>サイズ</h3>
+              <p class="cbv4-check-method">→ 愛犬が横になったときの余裕を確認</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ⑦⑧⑨ 商品詳細(実/goトラッキングはここに集約: image/product_name/cta ×3商品=9本) -->
+      <section id="cbv4-detail-1" class="cbv4-section cbv4-section--white">
+        <h2 class="cbv4-section-title">商品1: ねどっこ 犬用介護ベッド</h2>
+        <div class="cbv4-detail">
+          <p class="cbv4-detail-badge">体圧分散・防水を重視</p>
+          <a class="cbv4-detail-media" href="/go?content_id=6&amp;product_id=10&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/emoor-nedogko/cabinet/thum4/cy-kaigodogbed_t.jpg?_ex=500x500" alt="ねどっこ 犬用介護ベッド" loading="lazy">
+          </a>
+          <p class="cbv4-detail-name">ねどっこ 犬用介護ベッド</p>
+          <div class="cbv4-detail-body">
+            <ul class="cbv4-detail-features">
+              <li>犬用</li>
+              <li>体圧分散</li>
+              <li>防水</li>
+              <li>洗えるカバー</li>
+            </ul>
+            <ul class="cbv4-detail-points">
+              <li>犬用の介護ベッドなので、犬用品として選びやすいタイプです</li>
+              <li>体圧分散を重視したい場合に、仕様をチェックしやすい設計です</li>
+              <li>防水・洗えるカバーなので、粗相のお手入れも想定しやすい作りです</li>
+            </ul>
+            <p class="cbv4-detail-fit"><strong>向いている使い方</strong>体圧分散や防水、お手入れのしやすさを優先したい場合の候補になります。</p>
+            <p class="cbv4-detail-caution"><strong>注意点</strong>サイズ展開など詳しい仕様は商品ページでご確認ください。効果を保証するものではありません。</p>
+            <p class="cbv4-detail-link"><a href="/go?content_id=6&amp;product_id=10&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">商品ページで詳細を見る</a></p>
+            <div class="cbv4-detail-price-row">
+              <span class="cbv4-detail-price">7,990円</span>
+              <span class="cbv4-detail-price-note">価格は取得時点の情報です</span>
+            </div>
+            <a class="cbv4-cta" href="/go?content_id=6&amp;product_id=10&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で詳細を見る →</a>
           </div>
         </div>
       </section>
 
-      <section id="cbv3-callouts" class="cbv3-section">
-        <h2 class="cbv3-section-title">選ぶときのチェックポイント</h2>
-        <div class="cbv3-callout-grid">
-          <div class="cbv3-callout-card">
-            <strong>関節への負担</strong>
-            <p>加齢により関節に負担がかかりやすくなるため、体圧分散を意識した選び方が重要になります。</p>
-          </div>
-          <div class="cbv3-callout-card">
-            <strong>寝返り・体勢変化</strong>
-            <p>シニア犬は寝返りや体勢を変える動作が増えることがあるため、十分な広さがあるかを確認しておきたいポイントです。</p>
-          </div>
-          <div class="cbv3-callout-card">
-            <strong>出入りのしやすさ</strong>
-            <p>自力での出入りが難しくなる場合があるため、高さや周囲の段差も選ぶ際の判断材料になります。</p>
+      <section id="cbv4-detail-2" class="cbv4-section cbv4-section--white">
+        <h2 class="cbv4-section-title">商品2: IDOG&amp;ICAT UNAGE</h2>
+        <div class="cbv4-detail">
+          <p class="cbv4-detail-badge">低反発・囲まれた形を確認</p>
+          <a class="cbv4-detail-media" href="/go?content_id=6&amp;product_id=53&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/idog/cabinet/202407/16299_s00.jpg?_ex=500x500" alt="IDOG&amp;ICAT UNAGE 低反発シニア コーナーベッド M" loading="lazy">
+          </a>
+          <p class="cbv4-detail-name">IDOG&amp;ICAT UNAGE アンエイジ 低反発 シニア ベッド コーナーベッド Mサイズ 防水</p>
+          <div class="cbv4-detail-body">
+            <ul class="cbv4-detail-features">
+              <li>犬猫共用</li>
+              <li>低反発</li>
+              <li>コーナーベッド</li>
+              <li>Mサイズ</li>
+              <li>防水</li>
+            </ul>
+            <ul class="cbv4-detail-points">
+              <li>低反発素材なので、柔らかめの寝心地を探している場合に合いやすいタイプです</li>
+              <li>コーナー形状で囲いがあり、寄り添って寝られる落ち着いた作りです</li>
+              <li>老犬・シニア犬・介護の記載があり、シニア期の使用を想定した案内です</li>
+            </ul>
+            <p class="cbv4-detail-fit"><strong>向いている使い方</strong>低反発の柔らかさや、囲いのある落ち着ける形状を優先したい場合の候補になります。</p>
+            <p class="cbv4-detail-caution"><strong>注意点</strong>犬猫共用として案内されている商品です。サイズ展開など詳しい仕様は商品ページでご確認ください。効果を保証するものではありません。</p>
+            <p class="cbv4-detail-link"><a href="/go?content_id=6&amp;product_id=53&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">商品ページで詳細を見る</a></p>
+            <div class="cbv4-detail-price-row">
+              <span class="cbv4-detail-price">10,450円</span>
+              <span class="cbv4-detail-price-note">価格は取得時点の情報です</span>
+            </div>
+            <a class="cbv4-cta" href="/go?content_id=6&amp;product_id=53&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で詳細を見る →</a>
           </div>
         </div>
       </section>
 
-      <section id="cbv3-decision" class="cbv3-section">
-        <h2 class="cbv3-section-title">迷ったら、重視するポイントから確認</h2>
-        <ul class="cbv3-decision-list" style="list-style:none;padding:0;margin:0;">
+      <section id="cbv4-detail-3" class="cbv4-section cbv4-section--white">
+        <h2 class="cbv4-section-title">商品3: ペットケアマットNEO</h2>
+        <div class="cbv4-detail">
+          <p class="cbv4-detail-badge">高反発・通気性を確認</p>
+          <a class="cbv4-detail-media" href="/go?content_id=6&amp;product_id=54&amp;placement=image" target="_blank" rel="nofollow sponsored noopener">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ashu/cabinet/thumb_on2/thumb_on3/cm-000m_on.jpg?_ex=500x500" alt="ペットケアマットNEO Sサイズ" loading="lazy">
+          </a>
+          <p class="cbv4-detail-name">ペットケアマットNEO Sサイズ</p>
+          <div class="cbv4-detail-body">
+            <ul class="cbv4-detail-features">
+              <li>犬向け</li>
+              <li>高反発</li>
+              <li>ブレスエアー</li>
+              <li>Sサイズ</li>
+              <li>夏用</li>
+            </ul>
+            <ul class="cbv4-detail-points">
+              <li>高反発素材(ブレスエアー)なので、しっかりした寝心地を探している場合に合いやすいタイプです</li>
+              <li>老犬・シニア犬・介護の記載があり、シニア期の使用を想定した案内です</li>
+              <li>夏用としても案内されており、季節に応じた使い分けもしやすい仕様です</li>
+            </ul>
+            <p class="cbv4-detail-fit"><strong>向いている使い方</strong>高反発の寝心地や、季節に応じた通気性を優先したい場合の候補になります。</p>
+            <p class="cbv4-detail-caution"><strong>注意点</strong>サイズ展開など詳しい仕様は商品ページでご確認ください。効果を保証するものではありません。</p>
+            <p class="cbv4-detail-link"><a href="/go?content_id=6&amp;product_id=54&amp;placement=product_name" target="_blank" rel="nofollow sponsored noopener">商品ページで詳細を見る</a></p>
+            <div class="cbv4-detail-price-row">
+              <span class="cbv4-detail-price">8,900円</span>
+              <span class="cbv4-detail-price-note">価格は取得時点の情報です</span>
+            </div>
+            <a class="cbv4-cta" href="/go?content_id=6&amp;product_id=54&amp;placement=cta" target="_blank" rel="nofollow sponsored noopener">楽天で詳細を見る →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑩ 迷ったときの選び方 -->
+      <section id="cbv4-decision" class="cbv4-section cbv4-section--pink">
+        <h2 class="cbv4-section-title">迷ったときの選び方</h2>
+        <ul class="cbv4-decision-list" style="list-style:none;padding:0;margin:0;">
           <li>
-            <a class="cbv3-decision-row" href="#cbv3-product-1">
-              <span class="cbv3-decision-condition">防水・体圧分散を確認したい</span>
-              <span class="cbv3-decision-reason">犬用の介護ベッドで、体圧分散・防水が確認できます</span>
-              <span class="cbv3-decision-link">ねどっこを見る →</span>
+            <a class="cbv4-decision-row" href="#cbv4-detail-1">
+              <span class="cbv4-decision-condition">体圧分散・防水を確認したい</span>
+              <span class="cbv4-decision-result">ねどっこを見る →</span>
             </a>
           </li>
           <li>
-            <a class="cbv3-decision-row" href="#cbv3-product-2">
-              <span class="cbv3-decision-condition">低反発＋コーナー型を確認したい</span>
-              <span class="cbv3-decision-reason">低反発素材で、囲いのあるコーナー形状です</span>
-              <span class="cbv3-decision-link">UNAGEを見る →</span>
+            <a class="cbv4-decision-row" href="#cbv4-detail-2">
+              <span class="cbv4-decision-condition">低反発＋コーナー型を確認したい</span>
+              <span class="cbv4-decision-result">UNAGEを見る →</span>
             </a>
           </li>
           <li>
-            <a class="cbv3-decision-row" href="#cbv3-product-3">
-              <span class="cbv3-decision-condition">高反発マット型を確認したい</span>
-              <span class="cbv3-decision-reason">高反発素材(ブレスエアー)のペットケアマットです</span>
-              <span class="cbv3-decision-link">ペットケアマットNEOを見る →</span>
+            <a class="cbv4-decision-row" href="#cbv4-detail-3">
+              <span class="cbv4-decision-condition">高反発マット型を確認したい</span>
+              <span class="cbv4-decision-result">ペットケアマットNEOを見る →</span>
             </a>
           </li>
         </ul>
       </section>
 
-      <section id="cbv3-faq" class="cbv3-section">
-        <h2 class="cbv3-section-title">よくある質問</h2>
-        <div class="cbv3-faq-list">
-          <details class="cbv3-faq-item">
-            <summary>シニア犬には低反発と高反発のどちらがいい？</summary>
-            <p>どちらが良いかは一律には決まらず、愛犬の寝姿勢や好み、商品ごとの仕様によって異なります。気になる場合は各商品ページの説明も確認してみてください。</p>
+      <!-- ⑪ FAQ -->
+      <section id="cbv4-faq" class="cbv4-section cbv4-section--white">
+        <h2 class="cbv4-section-title">よくある質問</h2>
+        <div class="cbv4-faq-list">
+          <details class="cbv4-faq-item">
+            <summary>シニア犬にはどのようなベッドがよいですか？</summary>
+            <p>一律に決まるものではなく、愛犬の関節の状態や寝姿勢によって適した形状は異なります。体圧分散や防水など、気になるポイントを確認して選ぶとよいでしょう。</p>
           </details>
-          <details class="cbv3-faq-item">
-            <summary>防水は必要？</summary>
-            <p>粗相や水こぼれがあった際のお手入れのしやすさという観点で、防水加工の有無を確認しておくと安心です。医学的に必要というものではありません。</p>
+          <details class="cbv4-faq-item">
+            <summary>ベッドの高さはどう考えればよいですか？</summary>
+            <p>自力での出入りが難しくなる場合があるため、低めの高さや、周囲の段差が少ない形状かを確認しておくと安心です。</p>
           </details>
-          <details class="cbv3-faq-item">
-            <summary>サイズはどう選ぶ？</summary>
+          <details class="cbv4-faq-item">
+            <summary>洗濯できるものを選ぶべきですか？</summary>
+            <p>必須ではありませんが、粗相や水こぼれへの備えとして、カバーが洗えるか、防水加工があるかを確認しておくとお手入れがしやすくなります。</p>
+          </details>
+          <details class="cbv4-faq-item">
+            <summary>サイズはどう選びますか？</summary>
             <p>愛犬が普段どのような姿勢で寝ているかを確認し、各商品ページに記載のサイズ・寸法情報と照らし合わせて選ぶとよいでしょう。</p>
           </details>
-          <details class="cbv3-faq-item">
-            <summary>犬猫共用の商品でも大丈夫？</summary>
-            <p>商品によっては犬猫共用として案内されているものもあります。ご家庭の環境や愛犬の様子に合わせて、商品ページの説明もあわせてご確認ください。</p>
-          </details>
         </div>
       </section>
 
-      <section id="cbv3-summary" class="cbv3-section">
-        <h2 class="cbv3-section-title">3商品をもう一度確認</h2>
-        <div class="cbv3-summary-grid">
-          <a class="cbv3-summary-item" href="#cbv3-product-1">
-            <span class="cbv3-summary-item-name">ねどっこ</span>
-            <span class="cbv3-summary-item-meta">7,990円・体圧分散</span>
-          </a>
-          <a class="cbv3-summary-item" href="#cbv3-product-2">
-            <span class="cbv3-summary-item-name">UNAGE</span>
-            <span class="cbv3-summary-item-meta">10,450円・低反発</span>
-          </a>
-          <a class="cbv3-summary-item" href="#cbv3-product-3">
-            <span class="cbv3-summary-item-name">ペットケアマットNEO</span>
-            <span class="cbv3-summary-item-meta">8,900円・高反発</span>
-          </a>
+      <!-- ⑫ まとめ -->
+      <section id="cbv4-summary" class="cbv4-section cbv4-section--green">
+        <h2 class="cbv4-section-title">まとめ</h2>
+        <div class="cbv4-summary-box">
+          <p>タイプの異なる3商品を比較しました。どの条件を優先するかで、候補が絞り込めます。</p>
+          <ul class="cbv4-conclusion-list">
+            <li>お手入れのしやすさを優先 → ねどっこ</li>
+            <li>低反発・囲まれた形を優先 → UNAGE</li>
+            <li>高反発・通気性を優先 → ペットケアマットNEO</li>
+          </ul>
         </div>
-        <div class="cbv3-summary-box">
-          <p>今回紹介した3商品は、介護ベッド(ねどっこ)・低反発コーナーベッド(UNAGE)・高反発マット(ペットケアマットNEO)という異なるタイプです。お手入れのしやすさ、囲いのある形状、素材の反発タイプなど、重視したいポイントに合わせて商品ページで詳しい仕様をご確認ください。</p>
-        </div>
+        <p class="cbv4-summary-links">
+          <a href="#cbv4-picks">目的別おすすめ3選に戻る</a>
+          <a href="#cbv4-compare">比較表を見る</a>
+        </p>
       </section>
 
-      <section id="note" class="cbv3-section">
-        <h2>ご注意</h2>
-        <p>本記事は一般的な情報提供を目的としており、治療や医学的な助言を行うものではありません。愛犬の健康状態について気になる点がある場合は、獣医師にご相談ください。</p>
-      </section>
+      <div class="cbv4-hero-below">
+        <section id="note">
+          <h2>ご注意</h2>
+          <p>本記事は一般的な情報提供を目的としており、治療や医学的な助言を行うものではありません。愛犬の健康状態について気になる点がある場合は、獣医師にご相談ください。</p>
+        </section>
+      </div>
 <!-- AUTO-GENERATED:RELATED:START (managed by scripts/generate_site.py -- do not edit by hand) -->
 <section class="related-articles" aria-labelledby="related-heading">
   <h2 id="related-heading">関連記事</h2>
