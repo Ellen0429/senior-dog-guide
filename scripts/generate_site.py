@@ -200,6 +200,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "drive-box": "mobility-support",
     "retractable-leash": "mobility-support",
     "dog-socks": "mobility-support",
+    "pet-cart": "mobility-support",
 }
 
 MAX_RELATED_ARTICLES = 3

@@ -49,5 +49,9 @@ export default {
   },
   "27": {
     "52": "https://hb.afl.rakuten.co.jp/hgc/g00um37o.bhvod27f.g00um37o.bhvoe480/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fetlifeshop001%2Fsocks%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fetlifeshop001%2Fi%2F10000002%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "28": {
+    "55": "https://hb.afl.rakuten.co.jp/hgc/g00ppglo.bhvod76d.g00ppglo.bhvoeeff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftansu%2F84100004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftansu%2Fi%2F10056830%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "56": "https://hb.afl.rakuten.co.jp/hgc/g00rv3wo.bhvodc27.g00rv3wo.bhvoece3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-iyashi%2Fcoco-0010s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-iyashi%2Fi%2F10000159%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };

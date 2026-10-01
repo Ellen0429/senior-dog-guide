@@ -1,0 +1,756 @@
+/* pet-cart記事専用スタイル。
+   care-bed記事(articles/care-bed/)の比較型レイアウト(HERO/ポイント/
+   目的別3選/比較表/商品詳細/迷ったときの選び方/FAQ/まとめ)を構成・品質
+   基準として踏襲しているが、文章・画像・care-bed.css自体は一切コピーして
+   いない。クラス名はcare-bedの.cbv4-と混同しないよう全面的に.pcv1-へ
+   変更した別名前空間。articles/care-bed/index.htmlと同じCSP対応方針
+   (インライン<style>ではなく外部CSSファイルを<link>で読み込む)を最初から
+   採用しているため、STEP:CSP対応のような後からの切り出し作業は不要。
+   assets/css/style.css(全17記事共有)・assets/css/care-bed.css は無変更。
+
+   HERO(.pcv1-hero-media)・4ポイント(.pcv1-point-visual)は、
+   assets/images/pet-cart/配下の実lifestyle写真(<img>)を表示する
+   (care-bedと同じ設計)。背景のグラデーション/単色はimg読み込み前の
+   一瞬や万一の画像欠落時のフォールバックとして残している。 */
+
+.pcv1-page {
+  --pcv1-warm: var(--color-notice-bg);
+  --pcv1-green: #eaf4ec;
+  --pcv1-green-border: #bfe0c6;
+  --pcv1-blue: #eaf1fb;
+  --pcv1-blue-border: #c3d8f2;
+  --pcv1-pink: #fdecf0;
+  --pcv1-pink-border: #f3c7d3;
+  --pcv1-navy: #2b3446;
+  --pcv1-coral: #ff5277;
+}
+
+.pcv1-page h2,
+.pcv1-page h3 {
+  color: var(--pcv1-navy);
+}
+
+/* ---------- 1. HERO ---------- */
+.pcv1-hero {
+  margin: 0.5rem -1.25rem 0;
+  border-radius: 0;
+}
+
+.pcv1-hero-media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(160deg, #f6ead9 0%, #f1e2c9 35%, var(--pcv1-green) 100%);
+  overflow: hidden;
+}
+
+.pcv1-hero-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pcv1-hero-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem 1.25rem 1.4rem;
+  background: linear-gradient(0deg, rgba(20, 22, 18, 0.72) 0%, rgba(20, 22, 18, 0.42) 55%, rgba(20, 22, 18, 0) 100%);
+}
+
+.pcv1-hero-title {
+  margin: 0 0 0.6rem;
+  color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 1.28;
+  font-weight: 800;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+.pcv1-hero-sub {
+  margin: 0;
+  color: #f4f0ea;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pcv1-hero-meta {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+}
+
+.pcv1-hero-below {
+  padding: 0 1.25rem;
+}
+
+/* ---------- 2. この記事の結論 ---------- */
+.pcv1-conclusion-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.6rem;
+}
+
+.pcv1-conclusion-box .pcv1-section-title {
+  font-size: 1.02rem;
+  margin: 0 0 0.45rem;
+}
+
+.pcv1-conclusion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.55rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.pcv1-conclusion-list li {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.pcv1-conclusion-list li::before {
+  content: "✓";
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: 800;
+}
+
+.pcv1-callout-green {
+  background-color: var(--pcv1-green);
+  border: 1px solid var(--pcv1-green-border);
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+}
+
+.pcv1-callout-green strong {
+  display: block;
+  color: var(--color-accent-dark);
+  font-size: 0.82rem;
+  margin-bottom: 0.15rem;
+}
+
+.pcv1-callout-green p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+/* ---------- shared section shell ---------- */
+.pcv1-section {
+  margin: 2rem -1.25rem 0;
+  padding: 1.5rem 1.25rem;
+}
+
+.pcv1-section--white {
+  background-color: var(--color-surface);
+}
+
+.pcv1-section--warm {
+  background-color: var(--pcv1-warm);
+}
+
+.pcv1-section--blue {
+  background-color: var(--pcv1-blue);
+}
+
+.pcv1-section--pink {
+  background-color: var(--pcv1-pink);
+}
+
+.pcv1-section--green {
+  background-color: var(--pcv1-green);
+}
+
+.pcv1-section-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.pcv1-section-lead {
+  margin: 0 0 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- 3 / 6. 4ポイント(compact / detailed) ---------- */
+.pcv1-point-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.pcv1-point {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.pcv1-point-num {
+  flex: none;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+  align-self: flex-start;
+  padding-top: 0.15rem;
+}
+
+.pcv1-point-visual {
+  flex: none;
+  width: 36%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--pcv1-green);
+  border: 1px solid var(--color-border);
+}
+
+.pcv1-point-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pcv1-point-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pcv1-point h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.96rem;
+}
+
+.pcv1-point p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+/* ---------- 6. 購入前に確認したいポイント(editorial, 写真なし) ---------- */
+.pcv1-check-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.pcv1-check-item {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  background-color: var(--pcv1-warm);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+}
+
+.pcv1-check-num {
+  flex: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+}
+
+.pcv1-check-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.pcv1-check-body h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  flex: none;
+}
+
+.pcv1-check-method {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- 4. 目的別おすすめ3選 ---------- */
+.pcv1-pick-list {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.pcv1-pick {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.pcv1-pick-badge {
+  display: block;
+  margin: 0.9rem 0.9rem 0;
+  background-color: var(--pcv1-green);
+  border: 1px solid var(--pcv1-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.pcv1-pick-media {
+  /* 商品画像の縦横比が商品ごとに異なる(正方形/横長/AIR-CRUISERのような
+     縦長)ため、カード幅いっぱいの横長ボックスにすると縦長画像が
+     極端に細く表示され、左右に大きな余白が生まれてしまう。幅を
+     固定した正方形ボックスに画像を中央配置することで、縦横比に
+     関わらず3商品の画像エリアの見た目を統一している。 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  max-width: 48%;
+  background-color: #ffffff;
+  margin: 0.7rem auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pcv1-pick-media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pcv1-pick-body {
+  padding: 0.65rem 0.9rem 0.8rem;
+}
+
+.pcv1-pick-name {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.pcv1-pick-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.55rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.pcv1-pick-points li {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.pcv1-pick-points li::before {
+  content: "✓";
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: 800;
+}
+
+.pcv1-pick-price {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0 0 0.55rem;
+}
+
+.pcv1-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--pcv1-coral);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 14px rgba(255, 82, 119, 0.35);
+}
+
+.pcv1-cta:hover,
+.pcv1-cta:focus {
+  background-color: #e63e63;
+  color: #ffffff;
+}
+
+.pcv1-cta-secondary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-surface);
+  color: var(--color-accent-dark);
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid var(--color-accent);
+}
+
+/* ---------- 5. 比較表 ---------- */
+.pcv1-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--pcv1-blue-border);
+  border-radius: 14px;
+  background-color: var(--color-surface);
+}
+
+.pcv1-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.pcv1-table th,
+.pcv1-table td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--pcv1-blue-border);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.pcv1-table th:first-child,
+.pcv1-table td:first-child {
+  text-align: left;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.pcv1-table thead th {
+  background-color: var(--pcv1-blue);
+  color: var(--pcv1-navy);
+  font-weight: 800;
+}
+
+.pcv1-table-thumb {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  margin: 0 auto 0.4rem;
+}
+
+.pcv1-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- 7/8/9. 商品詳細 ---------- */
+.pcv1-detail {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.pcv1-detail-badge {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+  background-color: var(--pcv1-green);
+  border: 1px solid var(--pcv1-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.26rem 0.75rem;
+  border-radius: 999px;
+}
+
+.pcv1-detail-name {
+  margin: 0.7rem 1rem 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.pcv1-detail-media {
+  /* pcv1-pick-mediaと同じ理由(商品ごとに縦横比が異なる)で、カード幅
+     いっぱいの正方形ではなく、幅を固定した正方形ボックスに画像を
+     中央配置している。 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  max-width: 70%;
+  background-color: #ffffff;
+  margin: 0.7rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.pcv1-detail-media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pcv1-detail-body {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.pcv1-detail-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.pcv1-detail-features li {
+  background-color: var(--pcv1-warm);
+  border-radius: 999px;
+  padding: 0.24rem 0.7rem;
+  font-size: 0.78rem;
+  color: var(--color-accent-dark);
+}
+
+.pcv1-detail-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.85rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.pcv1-detail-points li {
+  display: flex;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.pcv1-detail-points li::before {
+  content: "✓";
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: 800;
+}
+
+.pcv1-detail-fit,
+.pcv1-detail-caution {
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 0 0 0.7rem;
+}
+
+.pcv1-detail-link {
+  margin: 0 0 0.9rem;
+}
+
+.pcv1-detail-link a {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+}
+
+.pcv1-detail-fit {
+  background-color: var(--pcv1-blue);
+  color: var(--color-text);
+}
+
+.pcv1-detail-caution {
+  background-color: var(--pcv1-pink);
+  color: var(--color-text);
+}
+
+.pcv1-detail-fit strong,
+.pcv1-detail-caution strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--pcv1-navy);
+}
+
+.pcv1-detail-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.pcv1-detail-price {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.pcv1-detail-price-note {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 10. 迷ったときの選び方 ---------- */
+.pcv1-decision-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.pcv1-decision-row {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--pcv1-pink-border);
+  border-radius: 12px;
+  padding: 0.75rem 0.95rem;
+  text-decoration: none;
+}
+
+.pcv1-decision-condition {
+  display: block;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.pcv1-decision-condition::before {
+  content: "✓ ";
+  color: var(--color-accent-dark);
+}
+
+.pcv1-decision-result {
+  display: block;
+  color: var(--color-accent-dark);
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+
+/* ---------- 11. FAQ ---------- */
+.pcv1-faq-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.pcv1-faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0 1.1rem;
+}
+
+.pcv1-faq-item summary {
+  cursor: pointer;
+  padding: 0.75rem 0;
+  font-weight: 700;
+  list-style: none;
+}
+
+.pcv1-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pcv1-faq-item summary::before {
+  content: "Q. ";
+  color: var(--color-accent-dark);
+}
+
+.pcv1-faq-item p {
+  margin: 0 0 0.85rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ---------- 12. まとめ ---------- */
+.pcv1-summary-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.05rem 1.15rem;
+  margin-bottom: 0.9rem;
+}
+
+.pcv1-summary-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.pcv1-summary-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* ---------- タブレット以上 ---------- */
+@media (min-width: 680px) {
+  .pcv1-hero-media {
+    aspect-ratio: 2 / 1;
+  }
+
+  .pcv1-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .pcv1-point-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pcv1-point-visual {
+    max-width: 190px;
+  }
+
+  /* 目的別おすすめ2選は意図的にPCでも横並びにしない -- 1商品ずつ
+     大きな写真で見せるため、単一カラムのまま最大幅だけ絞る。 */
+  .pcv1-pick-list {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* 2商品のみの比較表はPC幅いっぱいに引き伸ばすと列間が不自然に
+     広がるため、目的別おすすめ2選と同じ最大幅に揃えて中央寄せする。 */
+  .pcv1-table-wrap {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .pcv1-pick-media {
+    width: 190px;
+    height: 190px;
+  }
+
+  .pcv1-faq-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
