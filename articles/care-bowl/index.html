@@ -18,10 +18,15 @@
      assets/css/style.css・assets/css/care-bed.css・assets/css/pet-cart.css・
      他記事のHTMLは無変更。
 
-     HEROはOwner承認済みのChatGPT生成ビジュアル1枚(タイトル・サブタイトル・
-     選び方4ポイントが1枚に完成形として収まった複合グラフィック)を使用。
-     比率を保ったまま等倍表示し、選び方4ポイントの個別画像は使用していない
-     (本文の4ポイント説明文は、同じ内容を文章として残すために維持)。 -->
+     HEROおよび選び方4ポイントの画像は、Owner承認済みのChatGPT生成ビジュアル
+     v2(assets/images/care-bowl/care-bowl-guide-v2.png、1024×1536の
+     縦長インフォグラフィック)から、品質を落とさず該当部分だけを切り出して
+     使用している(拡大・粗い切り抜きは行っていない)。HEROにはタイトル・
+     サブタイトル・3アイコンバッジ部分(hero.png)のみを使用し、選び方4
+     ポイントが表紙に集中しすぎないようにしている。4ポイントの説明文の
+     近くには、それぞれ対応する個別画像(point-1-assist.png〜
+     point-4-care.png)を配置している。元のv2画像ファイル自体はリポジトリに
+     含めていない(切り出し後の5枚のみを使用)。 -->
 <link rel="stylesheet" href="/assets/css/care-bowl.css">
 
 <!-- AUTO-GENERATED:JSONLD:START (managed by scripts/generate_site.py -- do not edit by hand) -->
@@ -73,13 +78,14 @@
 </nav>
 <!-- AUTO-GENERATED:BREADCRUMB:END -->
 
-      <!-- ① HERO: Owner承認済みのChatGPT生成ビジュアル(タイトル・サブタイトル・
-           選び方4ポイントが1枚に完成形として収まった複合グラフィック)を
-           比率そのまま等倍表示。H1はこの画像内の装飾テキストとは別に、
-           SEO/アクセシビリティ用の本物の見出しとして画像の下に配置している。 -->
+      <!-- ① HERO: Owner承認済みのChatGPT生成ビジュアル(v2)から、タイトル・
+           サブタイトル・3アイコンバッジの部分だけを切り出して使用。
+           選び方4ポイントは本文③で個別画像として表示するため、HEROには
+           含めない(情報が表紙に集中しすぎるとのOwnerフィードバックに
+           対応)。比率は保ったまま等倍表示。 -->
       <section class="cbwv1-hero">
         <div class="cbwv1-hero-media">
-          <img src="/assets/images/care-bowl/care-bowl-guide.png" alt="老犬・シニア犬の食事をやさしくサポート。犬の状態に合わせて選べる介護用食器3タイプを比較。選び方4ポイント: 1.食事を介助しやすい(持ち手付きで口元まで運べる) 2.高さ・角度で食べやすく(15度の傾斜と高さ調整でシニア犬の負担を軽減) 3.滑りにくく安定(底面の滑り止めで食事中も安心) 4.お手入れしやすく清潔(食洗機対応などで毎日清潔に使える)" loading="eager">
+          <img src="/assets/images/care-bowl/hero.png" alt="老犬・シニア犬の食事をやさしくサポート。犬の状態に合わせて選べる介護用食器3タイプを比較。" loading="eager">
         </div>
         <div class="cbwv1-hero-below-media">
           <h1 class="cbwv1-hero-title">老犬・シニア犬の介護用食器の選び方とおすすめ3選</h1>
@@ -138,6 +144,7 @@
           </li>
         </ul>
         <p class="cbwv1-summary-links"><a href="#cbwv1-points">4つの選び方ポイントで詳しく確認 ↓</a></p>
+        <p style="margin:0.8rem 0 0;font-size:0.85rem;color:var(--color-text-muted);">まだ自力で食べられる・食器の高さだけ調整したい場合は、<a href="/articles/dish-stand/">シニア犬に最適な食器スタンドの選び方</a>もあわせてご参照ください。</p>
       </section>
 
       <!-- ④ 食器選び4ポイント(コンパクト) -->
@@ -147,6 +154,7 @@
         <div class="cbwv1-point-list">
           <div class="cbwv1-point cbwv1-point--compact">
             <span class="cbwv1-point-num" aria-hidden="true">01</span>
+            <div class="cbwv1-point-visual"><img src="/assets/images/care-bowl/point-1-assist.png" alt="持ち手付き食器で口元まで運んで食事を介助している様子" loading="lazy"></div>
             <div class="cbwv1-point-body">
               <h3>食事介助のしやすさ</h3>
               <p>口元まで運んで介助する場合は、持ち手の有無や正面の低さを確認しましょう。</p>
@@ -154,6 +162,7 @@
           </div>
           <div class="cbwv1-point cbwv1-point--compact">
             <span class="cbwv1-point-num" aria-hidden="true">02</span>
+            <div class="cbwv1-point-visual"><img src="/assets/images/care-bowl/point-2-angle.png" alt="高さ・傾斜のある食器で食べている様子" loading="lazy"></div>
             <div class="cbwv1-point-body">
               <h3>高さ・傾斜</h3>
               <p>自力で食べる場合は、首や関節への負担を抑えられる高さ調整・傾斜角度を確認しましょう。</p>
@@ -161,6 +170,7 @@
           </div>
           <div class="cbwv1-point cbwv1-point--compact">
             <span class="cbwv1-point-num" aria-hidden="true">03</span>
+            <div class="cbwv1-point-visual"><img src="/assets/images/care-bowl/point-3-nonslip.png" alt="食器底面の滑り止めの一例" loading="lazy"></div>
             <div class="cbwv1-point-body">
               <h3>滑り止め</h3>
               <p>食事中に食器がずれないよう、滑り止め加工の有無を確認しましょう。</p>
@@ -168,6 +178,7 @@
           </div>
           <div class="cbwv1-point cbwv1-point--compact">
             <span class="cbwv1-point-num" aria-hidden="true">04</span>
+            <div class="cbwv1-point-visual"><img src="/assets/images/care-bowl/point-4-care.png" alt="食器を洗ってお手入れしている様子" loading="lazy"></div>
             <div class="cbwv1-point-body">
               <h3>お手入れ</h3>
               <p>食洗機対応かどうかなど、日々のお手入れのしやすさを確認しましょう。</p>

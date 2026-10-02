@@ -7,17 +7,16 @@
    <link>で読み込む)は最初から採用。assets/css/style.css・
    assets/css/care-bed.css・assets/css/pet-cart.cssは無変更。
 
-   HERO(.cbwv1-hero-media)はOwner承認済みのChatGPT生成ビジュアル1枚
-   (assets/images/care-bowl/care-bowl-guide.png)を表示する。この画像は
-   タイトル・サブタイトル・選び方4ポイントが1枚に完成形として収まった
-   複合グラフィックのため、care-bed/pet-cartのような「写真の上に暗い
-   グラデーション+白文字のH1を重ねる」実装はせず、比率を保ったまま
-   画像全体を等倍表示し(object-fit:cover/aspect-ratio固定は使わない)、
-   H1はSEO/アクセシビリティ用に画像の下へ別途プレーンテキストとして
-   配置している(画像内の装飾テキストとは別に、スクリーンリーダー等でも
-   読み取れる本物のH1を必ず用意するため)。選び方4ポイントは画像内に
-   含まれているため、.cbwv1-point-visualの画像スロットは使用していない
-   (本文側は4ポイントの説明文のみ残し、同じビジュアルを4回繰り返さない)。 */
+   HERO(.cbwv1-hero-media)はOwner承認済みのChatGPT生成ビジュアルv2から
+   タイトル・サブタイトル・3アイコンバッジ部分だけを切り出したhero.pngを
+   表示する。care-bed/pet-cartのような「写真の上に暗いグラデーション+
+   白文字のH1を重ねる」実装はせず、比率を保ったまま画像全体を等倍表示し
+   (object-fit:cover/aspect-ratio固定は使わない)、H1はSEO/アクセシビリティ
+   用に画像の下へ別途プレーンテキストとして配置している。選び方4ポイント
+   (.cbwv1-point-visual)には、同じv2ビジュアルから各ポイントに対応する
+   部分を個別に切り出した画像(point-1-assist.png〜point-4-care.png)を
+   表示する(HEROの表紙に情報を集中させすぎず、本文の説明文の近くに
+   対応画像を置くため)。 */
 
 .cbwv1-page {
   --cbwv1-warm: var(--color-notice-bg);
