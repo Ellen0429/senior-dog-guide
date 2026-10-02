@@ -53,5 +53,10 @@ export default {
   "28": {
     "55": "https://hb.afl.rakuten.co.jp/hgc/g00ppglo.bhvod76d.g00ppglo.bhvoeeff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftansu%2F84100004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftansu%2Fi%2F10056830%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "56": "https://hb.afl.rakuten.co.jp/hgc/g00rv3wo.bhvodc27.g00rv3wo.bhvoece3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-iyashi%2Fcoco-0010s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-iyashi%2Fi%2F10000159%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "29": {
+    "57": "https://hb.afl.rakuten.co.jp/hgc/g00qfyeo.bhvodd93.g00qfyeo.bhvoe35d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-nikkashop%2Fnk-f25%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-nikkashop%2Fi%2F10007282%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "58": "https://hb.afl.rakuten.co.jp/hgc/g00q6sro.bhvodf3c.g00q6sro.bhvoebd3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faimu%2F4903588224584%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faimu%2Fi%2F10021210%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "59": "https://hb.afl.rakuten.co.jp/hgc/g00uih7o.bhvod29a.g00uih7o.bhvoec15/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpalpia%2Fpf-tw-007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpalpia%2Fi%2F10000056%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
