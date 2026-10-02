@@ -63,5 +63,10 @@ export default {
     "60": "https://hb.afl.rakuten.co.jp/hgc/g00qcuoo.bhvod35e.g00qcuoo.bhvoe52b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamakishi%2F35903512%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamakishi%2Fi%2F10111607%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "61": "https://hb.afl.rakuten.co.jp/hgc/g00tfbho.bhvod97f.g00tfbho.bhvoe4aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnext-online%2F10000184%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnext-online%2Fi%2F10000185%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "62": "https://hb.afl.rakuten.co.jp/hgc/g00r13ko.bhvodc41.g00r13ko.bhvoe8e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-roadster%2F10007255%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-roadster%2Fi%2F10007255%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "31": {
+    "63": "https://hb.afl.rakuten.co.jp/hgc/g00urswo.bhvod368.g00urswo.bhvoedc4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecshopfind1%2F01260710%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecshopfind1%2Fi%2F10001187%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "64": "https://hb.afl.rakuten.co.jp/hgc/g00tkyoo.bhvod0d7.g00tkyoo.bhvoe2fd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoolshopvulcan%2F10001760%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoolshopvulcan%2Fi%2F10001760%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "65": "https://hb.afl.rakuten.co.jp/hgc/g00ue8go.bhvod84a.g00ue8go.bhvoee0a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnagapo%2Fpet-006%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnagapo%2Fi%2F10000100%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
