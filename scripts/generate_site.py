@@ -176,6 +176,10 @@ CATEGORIES: dict[str, dict[str, str]] = {
         "name": "見守り・安全対策",
         "description": "留守番中や夜間など、シニア犬の様子を見守るための考え方を紹介します。",
     },
+    "play-enrichment": {
+        "name": "知育・遊び用品",
+        "description": "無理のない範囲で体や鼻を使って遊ぶ、知育・遊び用品選びの考え方を紹介します。",
+    },
 }
 
 # Every discovered article slug must appear here exactly once. A newly
@@ -206,6 +210,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "lost-prevention": "safety-monitoring",
     "ear-eye-care": "daily-grooming",
     "disaster-prep": "safety-monitoring",
+    "play-toys": "play-enrichment",
 }
 
 MAX_RELATED_ARTICLES = 3

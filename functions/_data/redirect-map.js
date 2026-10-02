@@ -78,5 +78,10 @@ export default {
     "69": "https://hb.afl.rakuten.co.jp/hgc/g00pr3zo.bhvod411.g00pr3zo.bhvoebea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdog-kan%2F113004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdog-kan%2Fi%2F10199457%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "70": "https://hb.afl.rakuten.co.jp/hgc/g00trp7o.bhvod20e.g00trp7o.bhvoe2cc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frecshop%2Ft-07dr01-01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frecshop%2Fi%2F10001368%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "71": "https://hb.afl.rakuten.co.jp/hgc/g00t0p4o.bhvod49d.g00t0p4o.bhvoe37b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdogcat-shop%2Fcard01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdogcat-shop%2Fi%2F10000028%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "34": {
+    "72": "https://hb.afl.rakuten.co.jp/hgc/g00ue2qo.bhvod1a1.g00ue2qo.bhvoecc8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdearkm%2Fkm796g%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdearkm%2Fi%2F10009587%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "73": "https://hb.afl.rakuten.co.jp/hgc/g00tpxzo.bhvod0ff.g00tpxzo.bhvoefab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbubblee%2Fpetwfh018%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbubblee%2Fi%2F10007446%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "74": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4976555858006%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10019687%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
