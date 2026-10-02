@@ -68,5 +68,10 @@ export default {
     "63": "https://hb.afl.rakuten.co.jp/hgc/g00urswo.bhvod368.g00urswo.bhvoedc4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecshopfind1%2F01260710%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecshopfind1%2Fi%2F10001187%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "64": "https://hb.afl.rakuten.co.jp/hgc/g00tkyoo.bhvod0d7.g00tkyoo.bhvoe2fd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoolshopvulcan%2F10001760%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoolshopvulcan%2Fi%2F10001760%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "65": "https://hb.afl.rakuten.co.jp/hgc/g00ue8go.bhvod84a.g00ue8go.bhvoee0a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnagapo%2Fpet-006%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnagapo%2Fi%2F10000100%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "32": {
+    "66": "https://hb.afl.rakuten.co.jp/hgc/g00q3b1o.bhvod40f.g00q3b1o.bhvoeb1c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetnext%2Fq1600041-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetnext%2Fi%2F10002864%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "67": "https://hb.afl.rakuten.co.jp/hgc/g00rtv0o.bhvod884.g00rtv0o.bhvoe04e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foganic%2F100000777-045%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foganic%2Fi%2F10000313%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "68": "https://hb.afl.rakuten.co.jp/hgc/g00uokoo.bhvod858.g00uokoo.bhvoecc2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmerrily-shop%2F100336%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmerrily-shop%2Fi%2F10000996%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };

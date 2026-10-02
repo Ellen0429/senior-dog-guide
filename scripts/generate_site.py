@@ -204,6 +204,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "care-bowl": "feeding-support",
     "water-feeder": "feeding-support",
     "lost-prevention": "safety-monitoring",
+    "ear-eye-care": "daily-grooming",
 }
 
 MAX_RELATED_ARTICLES = 3
