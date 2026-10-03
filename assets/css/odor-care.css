@@ -8,10 +8,8 @@
    CSP対応方針(外部CSSファイルを<link>で読み込む)は最初から採用。
    assets/css/style.css・他記事専用CSSはいずれも無変更。
 
-   HERO(.ocv1-hero-media)・選び方4ポイント(.ocv1-point-visual)の視覚
-   要素は外部画像を一切使わず、グラデーション背景+絵文字アイコン+
-   短いラベルのみで構成している(CSPの都合で外部CSSファイルを<link>
-   読み込みする方針は変わらない)。 */
+   HERO(.ocv1-hero-media)・選び方4ポイント(.ocv1-point-visual)には、
+   /assets/images/odor-care/ の既存生成画像を表示する。 */
 
 .ocv1-page {
   --ocv1-warm: var(--color-notice-bg);
@@ -37,16 +35,13 @@
 }
 
 .ocv1-hero-media {
-  background: linear-gradient(160deg, #eaf1fb 0%, #eaf4ec 100%);
-  min-height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
-.ocv1-hero-icon {
-  font-size: 4.5rem;
-  line-height: 1;
+.ocv1-hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .ocv1-hero-below-media {
@@ -208,27 +203,14 @@
   aspect-ratio: 1 / 1;
   border-radius: 10px;
   overflow: hidden;
-  background: linear-gradient(160deg, var(--ocv1-green) 0%, var(--ocv1-blue) 100%);
   border: 1px solid var(--color-border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
-  padding: 0.4rem;
-  text-align: center;
 }
 
-.ocv1-point-icon {
-  font-size: 1.9rem;
-  line-height: 1;
-}
-
-.ocv1-point-visual-label {
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: var(--ocv1-navy);
-  line-height: 1.25;
+.ocv1-point-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .ocv1-point-body {
