@@ -86,6 +86,11 @@ export default {
     "79": "https://hb.afl.rakuten.co.jp/hgc/g00sbglo.bhvod020.g00sbglo.bhvoe835/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarmall%2F4560191494928%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstarmall%2Fi%2F10064784%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "80": "https://hb.afl.rakuten.co.jp/hgc/g00rj4zo.bhvod01e.g00rj4zo.bhvoe9ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmineters-dogfood%2Ftrial-set-009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmineters-dogfood%2Fi%2F10000764%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "37": {
+    "81": "https://hb.afl.rakuten.co.jp/hgc/g00rtv0o.bhvod884.g00rtv0o.bhvoe04e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foganic%2F100000777-777%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foganic%2Fi%2F10000135%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "82": "https://hb.afl.rakuten.co.jp/hgc/g00r6h3o.bhvoda93.g00r6h3o.bhvoed44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-fit%2Fppp518%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-fit%2Fi%2F10011909%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "83": "https://hb.afl.rakuten.co.jp/hgc/g00rtv0o.bhvod884.g00rtv0o.bhvoe04e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foganic%2F100000777-778%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foganic%2Fi%2F10000137%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "6": {
     "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "53": "https://hb.afl.rakuten.co.jp/hgc/g00pwhco.bhvod376.g00pwhco.bhvoec07/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fidog%2F16299%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fidog%2Fi%2F10018241%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
