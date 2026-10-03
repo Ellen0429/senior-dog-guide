@@ -19,11 +19,9 @@
      空間にしている。詳細はassets/css/odor-care.css冒頭コメントを参照。
      assets/css/style.css・他記事のCSS・HTMLは無変更。
 
-     HERO・選び方4ポイントの視覚要素は、外部画像ファイルを使わず
-     HTML/CSSのみ(絵文字アイコン+短いラベル+グラデーション背景)で
-     構成している。商品3点のサムネイル画像は楽天Ichiba Item Search
-     APIで確認済みのimage_urlをそのまま参照している(本記事用に新規
-     生成した画像ではない)。 -->
+     HERO・選び方4ポイントの視覚要素は、本記事用の既存生成画像を
+     /assets/images/odor-care/ から表示する。商品3点のサムネイル画像は
+     楽天Ichiba Item Search APIで確認済みのimage_urlをそのまま参照している。 -->
 <link rel="stylesheet" href="/assets/css/odor-care.css">
 
 <!-- AUTO-GENERATED:JSONLD:START (managed by scripts/generate_site.py -- do not edit by hand) -->
@@ -75,11 +73,10 @@
 </nav>
 <!-- AUTO-GENERATED:BREADCRUMB:END -->
 
-      <!-- ① HERO: 外部画像を使わず、グラデーション背景+絵文字アイコン
-           1つだけのシンプルな構成(文字要素なし)。 -->
+      <!-- ① HERO -->
       <section class="ocv1-hero">
         <div class="ocv1-hero-media">
-          <span class="ocv1-hero-icon" role="img" aria-label="消臭・ニオイケアのイメージ">🌿</span>
+          <img src="/assets/images/odor-care/hero.png" alt="シニア犬の消臭・ニオイケア用品を選ぶイメージ">
         </div>
         <div class="ocv1-hero-below-media">
           <h1 class="ocv1-hero-title">老犬・シニア犬の消臭・ニオイケア用品の選び方とおすすめ3選</h1>
@@ -148,8 +145,7 @@
           <div class="ocv1-point ocv1-point--compact">
             <span class="ocv1-point-num" aria-hidden="true">01</span>
             <div class="ocv1-point-visual">
-              <span class="ocv1-point-icon" aria-hidden="true">📍</span>
-              <span class="ocv1-point-visual-label">使う場所で選ぶ</span>
+              <img src="/assets/images/odor-care/point-1-usage.png" alt="使う場所で選ぶポイントのイメージ" loading="lazy">
             </div>
             <div class="ocv1-point-body">
               <h3>使う場所</h3>
@@ -159,8 +155,7 @@
           <div class="ocv1-point ocv1-point--compact">
             <span class="ocv1-point-num" aria-hidden="true">02</span>
             <div class="ocv1-point-visual">
-              <span class="ocv1-point-icon" aria-hidden="true">🧪</span>
-              <span class="ocv1-point-visual-label">成分・タイプを確認</span>
+              <img src="/assets/images/odor-care/point-2-ingredient.png" alt="成分表示を確認するポイントのイメージ" loading="lazy">
             </div>
             <div class="ocv1-point-body">
               <h3>成分表示</h3>
@@ -170,8 +165,7 @@
           <div class="ocv1-point ocv1-point--compact">
             <span class="ocv1-point-num" aria-hidden="true">03</span>
             <div class="ocv1-point-visual">
-              <span class="ocv1-point-icon" aria-hidden="true">🧵</span>
-              <span class="ocv1-point-visual-label">使える素材・場所を確認</span>
+              <img src="/assets/images/odor-care/point-3-material.png" alt="対象素材を確認するポイントのイメージ" loading="lazy">
             </div>
             <div class="ocv1-point-body">
               <h3>対象素材</h3>
@@ -181,8 +175,7 @@
           <div class="ocv1-point ocv1-point--compact">
             <span class="ocv1-point-num" aria-hidden="true">04</span>
             <div class="ocv1-point-visual">
-              <span class="ocv1-point-icon" aria-hidden="true">🔁</span>
-              <span class="ocv1-point-visual-label">続けやすいケア</span>
+              <img src="/assets/images/odor-care/point-4-care.png" alt="お手入れのしやすさを確認するポイントのイメージ" loading="lazy">
             </div>
             <div class="ocv1-point-body">
               <h3>お手入れのしやすさ</h3>
