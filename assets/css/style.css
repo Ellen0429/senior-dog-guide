@@ -186,6 +186,18 @@ main section {
   font-size: 1.05rem;
 }
 
+/* リード文の直後から、本文末尾の商品紹介セクションへ早期に案内する
+   クイックリンク。新しい商品情報は追加せず、既存の#products内容への
+   ジャンプのみを行う。 */
+.article-cta-jump {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+}
+
+.article-cta-jump a {
+  font-weight: 600;
+}
+
 /* 商品準備中の告知ボックス */
 .notice-box {
   background-color: var(--color-notice-bg);

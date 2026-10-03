@@ -211,6 +211,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "ear-eye-care": "daily-grooming",
     "disaster-prep": "safety-monitoring",
     "play-toys": "play-enrichment",
+    "odor-care": "toilet-care",
 }
 
 MAX_RELATED_ARTICLES = 3

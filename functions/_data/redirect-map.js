@@ -83,5 +83,10 @@ export default {
     "72": "https://hb.afl.rakuten.co.jp/hgc/g00ue2qo.bhvod1a1.g00ue2qo.bhvoecc8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdearkm%2Fkm796g%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdearkm%2Fi%2F10009587%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "73": "https://hb.afl.rakuten.co.jp/hgc/g00tpxzo.bhvod0ff.g00tpxzo.bhvoefab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbubblee%2Fpetwfh018%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbubblee%2Fi%2F10007446%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "74": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4976555858006%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10019687%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "35": {
+    "75": "https://hb.afl.rakuten.co.jp/hgc/g00sre8o.bhvod21c.g00sre8o.bhvoe4d7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukuryusen%2F10000003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukuryusen%2Fi%2F10000004%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "76": "https://hb.afl.rakuten.co.jp/hgc/g00qewfo.bhvoda5e.g00qewfo.bhvoec77/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fg-sarai%2F10000074%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fg-sarai%2Fi%2F10000074%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "77": "https://hb.afl.rakuten.co.jp/hgc/g00ugyno.bhvod44e.g00ugyno.bhvoe651/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakutensokuhaimart%2F4987072096789%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakutensokuhaimart%2Fi%2F10027941%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
