@@ -133,5 +133,10 @@ export default {
     "102": "https://hb.afl.rakuten.co.jp/hgc/g00pixyo.bhvod702.g00pixyo.bhvoe859/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwide%2F73860-3-%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwide%2Fi%2F10065905%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "103": "https://hb.afl.rakuten.co.jp/hgc/g00rhq6o.bhvod960.g00rhq6o.bhvoe819/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-funksstore%2Fdog-scale150%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-funksstore%2Fi%2F10011839%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "104": "https://hb.afl.rakuten.co.jp/hgc/g00u9nmo.bhvod4b1.g00u9nmo.bhvoe64f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanita%2Fca100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftanita%2Fi%2F10000020%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "45": {
+    "105": "https://hb.afl.rakuten.co.jp/hgc/g00tkndo.bhvoda40.g00tkndo.bhvoe825/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcivil-life%2Fj-1106-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcivil-life%2Fi%2F10002062%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "106": "https://hb.afl.rakuten.co.jp/hgc/g00tiy6o.bhvod2a1.g00tiy6o.bhvoe6d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcocoiine%2Ff-t00279%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcocoiine%2Fi%2F10001015%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "107": "https://hb.afl.rakuten.co.jp/hgc/g00t4w0o.bhvodbdd.g00t4w0o.bhvoe149/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomusubiya%2Flead_rainbow%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fomusubiya%2Fi%2F10000067%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
