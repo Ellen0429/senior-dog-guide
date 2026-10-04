@@ -225,6 +225,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "pet-blanket": "sleep-comfort",
     "pet-water-bottle": "mobility-support",
     "pet-drive-seat": "mobility-support",
+    "pet-food-storage": "feeding-support",
 }
 
 MAX_RELATED_ARTICLES = 3

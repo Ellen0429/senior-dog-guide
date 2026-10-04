@@ -153,5 +153,10 @@ export default {
     "114": "https://hb.afl.rakuten.co.jp/hgc/g00tmr6o.bhvodc45.g00tmr6o.bhvoe041/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauto1direct%2Fa0579petjo%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauto1direct%2Fi%2F10001205%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "115": "https://hb.afl.rakuten.co.jp/hgc/g00u47io.bhvodfaf.g00u47io.bhvoe49a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkansai-healthlab%2Ffz1964%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkansai-healthlab%2Fi%2F10000798%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "116": "https://hb.afl.rakuten.co.jp/hgc/g00ugw7o.bhvod844.g00ugw7o.bhvoe77c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpettena%2Fyy%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpettena%2Fi%2F10000186%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "49": {
+    "117": "https://hb.afl.rakuten.co.jp/hgc/g00tyoyo.bhvod7fc.g00tyoyo.bhvoee27/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunscat%2Fhola30111a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsunscat%2Fi%2F10002269%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "118": "https://hb.afl.rakuten.co.jp/hgc/g00pum9o.bhvodd80.g00pum9o.bhvoe4e5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falamode%2F3605-2350%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Falamode%2Fi%2F10022422%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "119": "https://hb.afl.rakuten.co.jp/hgc/g00pz5qo.bhvodfe4.g00pz5qo.bhvoe7e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fimportshopaqua%2F51002391%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fimportshopaqua%2Fi%2F10011367%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
