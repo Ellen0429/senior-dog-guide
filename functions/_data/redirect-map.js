@@ -148,5 +148,10 @@ export default {
     "111": "https://hb.afl.rakuten.co.jp/hgc/g00u5lko.bhvod012.g00u5lko.bhvoe3fd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhitsumi%2F0113%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhitsumi%2Fi%2F10000100%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "112": "https://hb.afl.rakuten.co.jp/hgc/g00uih7o.bhvod29a.g00uih7o.bhvoec15/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpalpia%2Fpf-tw-005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpalpia%2Fi%2F10000054%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "113": "https://hb.afl.rakuten.co.jp/hgc/g00tnteo.bhvod07c.g00tnteo.bhvoe98e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fk-digital%2Finb-wbt-550%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fk-digital%2Fi%2F10000228%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "48": {
+    "114": "https://hb.afl.rakuten.co.jp/hgc/g00tmr6o.bhvodc45.g00tmr6o.bhvoe041/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauto1direct%2Fa0579petjo%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauto1direct%2Fi%2F10001205%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "115": "https://hb.afl.rakuten.co.jp/hgc/g00u47io.bhvodfaf.g00u47io.bhvoe49a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkansai-healthlab%2Ffz1964%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkansai-healthlab%2Fi%2F10000798%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "116": "https://hb.afl.rakuten.co.jp/hgc/g00ugw7o.bhvod844.g00ugw7o.bhvoe77c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpettena%2Fyy%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpettena%2Fi%2F10000186%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
