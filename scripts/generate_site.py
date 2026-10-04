@@ -220,6 +220,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "pet-auto-feeder": "feeding-support",
     "pet-gate": "safety-monitoring",
     "pet-dryer": "daily-grooming",
+    "pet-scale": "safety-monitoring",
 }
 
 MAX_RELATED_ARTICLES = 3

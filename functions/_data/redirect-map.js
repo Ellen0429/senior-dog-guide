@@ -128,5 +128,10 @@ export default {
     "99": "https://hb.afl.rakuten.co.jp/hgc/g00svmto.bhvoda7f.g00svmto.bhvoe07b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmecu%2Fdry-pet%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmecu%2Fi%2F10002622%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "100": "https://hb.afl.rakuten.co.jp/hgc/g00u114o.bhvod325.g00u114o.bhvoe9b5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhearttoheart001%2Fs583355499270-59590%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhearttoheart001%2Fi%2F10000101%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "101": "https://hb.afl.rakuten.co.jp/hgc/g00tdplo.bhvod83f.g00tdplo.bhvoebf8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmax-hikari%2Fep023%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmax-hikari%2Fi%2F10046241%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "44": {
+    "102": "https://hb.afl.rakuten.co.jp/hgc/g00pixyo.bhvod702.g00pixyo.bhvoe859/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwide%2F73860-3-%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwide%2Fi%2F10065905%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "103": "https://hb.afl.rakuten.co.jp/hgc/g00rhq6o.bhvod960.g00rhq6o.bhvoe819/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-funksstore%2Fdog-scale150%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-funksstore%2Fi%2F10011839%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "104": "https://hb.afl.rakuten.co.jp/hgc/g00u9nmo.bhvod4b1.g00u9nmo.bhvoe64f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanita%2Fca100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftanita%2Fi%2F10000020%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
