@@ -216,6 +216,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-shampoo": "daily-grooming",
     "dog-coat": "mobility-support",
     "dog-probiotics": "feeding-support",
+    "pet-carrier-bag": "mobility-support",
 }
 
 MAX_RELATED_ARTICLES = 3

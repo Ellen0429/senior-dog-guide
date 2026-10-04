@@ -101,6 +101,11 @@ export default {
     "88": "https://hb.afl.rakuten.co.jp/hgc/g00rj4zo.bhvod01e.g00rj4zo.bhvoe9ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmineters-dogfood%2Fpet-nyuusankin%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmineters-dogfood%2Fi%2F10000914%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "89": "https://hb.afl.rakuten.co.jp/hgc/g00qct7o.bhvod4bc.g00qct7o.bhvoee3c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedenki%2Fed3028195%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedenki%2Fi%2F18595780%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "40": {
+    "90": "https://hb.afl.rakuten.co.jp/hgc/g00upe8o.bhvod7b0.g00upe8o.bhvoe712/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashi-picks%2Fb0020%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurashi-picks%2Fi%2F10000021%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "91": "https://hb.afl.rakuten.co.jp/hgc/g00upsao.bhvodaff.g00upsao.bhvoe667/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnextdaily%2Fdjj26821%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnextdaily%2Fi%2F10001029%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "92": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fkt-carebag%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000466%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "6": {
     "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "53": "https://hb.afl.rakuten.co.jp/hgc/g00pwhco.bhvod376.g00pwhco.bhvoec07/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fidog%2F16299%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fidog%2Fi%2F10018241%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
