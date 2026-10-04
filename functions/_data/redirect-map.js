@@ -143,5 +143,10 @@ export default {
     "108": "https://hb.afl.rakuten.co.jp/hgc/g00t3t6o.bhvod88f.g00t3t6o.bhvoe3df/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstepmarket%2Fsm-09%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstepmarket%2Fi%2F10000017%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "109": "https://hb.afl.rakuten.co.jp/hgc/g00u99bo.bhvodde6.g00u99bo.bhvoe6d3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjoypets-store%2Fjps-08%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjoypets-store%2Fi%2F10000008%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "110": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fhi-emhp-pet%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000235%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "47": {
+    "111": "https://hb.afl.rakuten.co.jp/hgc/g00u5lko.bhvod012.g00u5lko.bhvoe3fd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhitsumi%2F0113%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhitsumi%2Fi%2F10000100%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "112": "https://hb.afl.rakuten.co.jp/hgc/g00uih7o.bhvod29a.g00uih7o.bhvoec15/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpalpia%2Fpf-tw-005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpalpia%2Fi%2F10000054%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "113": "https://hb.afl.rakuten.co.jp/hgc/g00tnteo.bhvod07c.g00tnteo.bhvoe98e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fk-digital%2Finb-wbt-550%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fk-digital%2Fi%2F10000228%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
