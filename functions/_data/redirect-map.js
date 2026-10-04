@@ -3,6 +3,14 @@
 // Regenerate and replace this whole file when published content
 // changes; do not add/remove entries by hand.
 export default {
+  "6": {
+    "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "53": "https://hb.afl.rakuten.co.jp/hgc/g00pwhco.bhvod376.g00pwhco.bhvoec07/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fidog%2F16299%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fidog%2Fi%2F10018241%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "54": "https://hb.afl.rakuten.co.jp/hgc/g00pyeeo.bhvod20b.g00pyeeo.bhvoe311/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fashu%2Fcm-000im%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fashu%2Fi%2F10007208%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "7": {
+    "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "10": {
     "18": "https://hb.afl.rakuten.co.jp/hgc/g00tyj6o.bhvod18b.g00tyj6o.bhvoe3db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flifeideas%2Fwjpppethotm01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flifeideas%2Fi%2F10023538%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
@@ -111,12 +119,9 @@ export default {
     "94": "https://hb.afl.rakuten.co.jp/hgc/g00tnrso.bhvod9e0.g00tnrso.bhvoee67/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flatuna%2F10000016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flatuna%2Fi%2F10000068%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "95": "https://hb.afl.rakuten.co.jp/hgc/g00t8ouo.bhvod512.g00t8ouo.bhvoe8cb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fioroi%2Fxxtsq3lsp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fioroi%2Fi%2F10001281%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
-  "6": {
-    "10": "https://hb.afl.rakuten.co.jp/hgc/g00t1v2o.bhvoded6.g00t1v2o.bhvoe178/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femoor-nedogko%2Fcy-kaigodogbed%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femoor-nedogko%2Fi%2F10000366%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
-    "53": "https://hb.afl.rakuten.co.jp/hgc/g00pwhco.bhvod376.g00pwhco.bhvoec07/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fidog%2F16299%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fidog%2Fi%2F10018241%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
-    "54": "https://hb.afl.rakuten.co.jp/hgc/g00pyeeo.bhvod20b.g00pyeeo.bhvoe311/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fashu%2Fcm-000im%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fashu%2Fi%2F10007208%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
-  },
-  "7": {
-    "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  "42": {
+    "96": "https://hb.afl.rakuten.co.jp/hgc/g00upc8o.bhvod570.g00upc8o.bhvoebad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Famber888%2Fwl1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Famber888%2Fi%2F10000103%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "97": "https://hb.afl.rakuten.co.jp/hgc/g00u12to.bhvodda4.g00u12to.bhvoefed/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmiki-tomo%2Fck1050%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmiki-tomo%2Fi%2F10000424%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "98": "https://hb.afl.rakuten.co.jp/hgc/g00t1jto.bhvod8dc.g00t1jto.bhvoee36/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetselect%2F1920004400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetselect%2Fi%2F10000043%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
