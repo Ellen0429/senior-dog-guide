@@ -123,5 +123,10 @@ export default {
     "96": "https://hb.afl.rakuten.co.jp/hgc/g00upc8o.bhvod570.g00upc8o.bhvoebad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Famber888%2Fwl1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Famber888%2Fi%2F10000103%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "97": "https://hb.afl.rakuten.co.jp/hgc/g00u12to.bhvodda4.g00u12to.bhvoefed/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmiki-tomo%2Fck1050%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmiki-tomo%2Fi%2F10000424%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "98": "https://hb.afl.rakuten.co.jp/hgc/g00t1jto.bhvod8dc.g00t1jto.bhvoee36/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetselect%2F1920004400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetselect%2Fi%2F10000043%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "43": {
+    "99": "https://hb.afl.rakuten.co.jp/hgc/g00svmto.bhvoda7f.g00svmto.bhvoe07b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmecu%2Fdry-pet%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmecu%2Fi%2F10002622%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "100": "https://hb.afl.rakuten.co.jp/hgc/g00u114o.bhvod325.g00u114o.bhvoe9b5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhearttoheart001%2Fs583355499270-59590%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhearttoheart001%2Fi%2F10000101%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "101": "https://hb.afl.rakuten.co.jp/hgc/g00tdplo.bhvod83f.g00tdplo.bhvoebf8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmax-hikari%2Fep023%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmax-hikari%2Fi%2F10046241%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };

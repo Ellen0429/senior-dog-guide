@@ -219,6 +219,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "pet-carrier-bag": "mobility-support",
     "pet-auto-feeder": "feeding-support",
     "pet-gate": "safety-monitoring",
+    "pet-dryer": "daily-grooming",
 }
 
 MAX_RELATED_ARTICLES = 3
