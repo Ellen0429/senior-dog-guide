@@ -158,5 +158,10 @@ export default {
     "117": "https://hb.afl.rakuten.co.jp/hgc/g00tyoyo.bhvod7fc.g00tyoyo.bhvoee27/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunscat%2Fhola30111a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsunscat%2Fi%2F10002269%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "118": "https://hb.afl.rakuten.co.jp/hgc/g00pum9o.bhvodd80.g00pum9o.bhvoe4e5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falamode%2F3605-2350%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Falamode%2Fi%2F10022422%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "119": "https://hb.afl.rakuten.co.jp/hgc/g00pz5qo.bhvodfe4.g00pz5qo.bhvoe7e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fimportshopaqua%2F51002391%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fimportshopaqua%2Fi%2F10011367%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "50": {
+    "120": "https://hb.afl.rakuten.co.jp/hgc/g00u3huo.bhvod5f4.g00u3huo.bhvoe46c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Feternalheart%2Fapro-b0d626dg73-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Feternalheart%2Fi%2F10004925%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "121": "https://hb.afl.rakuten.co.jp/hgc/g00ulf6o.bhvod44b.g00ulf6o.bhvoe262/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftcobuppan%2Fa-25%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftcobuppan%2Fi%2F10000028%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "122": "https://hb.afl.rakuten.co.jp/hgc/g00ts7fo.bhvodd1d.g00ts7fo.bhvoe982/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdaiya-store%2Fzai-mup-20270600mup%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdaiya-store%2Fi%2F10000040%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
