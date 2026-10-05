@@ -230,6 +230,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "pet-raincoat": "mobility-support",
     "dog-skin-supplement": "daily-grooming",
     "pet-walk-bag": "mobility-support",
+    "dog-collar": "mobility-support",
 }
 
 MAX_RELATED_ARTICLES = 3
