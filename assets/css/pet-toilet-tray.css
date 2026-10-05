@@ -260,11 +260,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
-  max-width: 48%;
+  width: 120px;
+  height: 120px;
+  max-width: 40%;
   background-color: #ffffff;
-  margin: 0.7rem auto 0;
+  margin: 0.5rem auto 0;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -278,7 +278,7 @@
   object-fit: contain;
 }
 
-.pttv1-pick-body { padding: 0.65rem 0.9rem 0.8rem; }
+.pttv1-pick-body { padding: 0.5rem 0.9rem 0.8rem; }
 .pttv1-pick-name { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; line-height: 1.4; }
 .pttv1-pick-points { list-style: none; padding: 0; margin: 0 0 0.55rem; display: grid; gap: 0.25rem; }
 .pttv1-pick-points li { display: flex; gap: 0.4rem; font-size: 0.85rem; color: var(--color-text-muted); }
@@ -514,6 +514,6 @@
   .pttv1-point-visual { max-width: 190px; }
   .pttv1-pick-list { max-width: 640px; margin: 0 auto; }
   .pttv1-table-wrap { max-width: 560px; margin: 0 auto; }
-  .pttv1-pick-media { width: 190px; height: 190px; }
+  .pttv1-pick-media { width: 150px; height: 150px; }
   .pttv1-faq-list { grid-template-columns: repeat(2, 1fr); }
 }
