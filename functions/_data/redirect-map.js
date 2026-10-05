@@ -193,5 +193,10 @@ export default {
     "138": "https://hb.afl.rakuten.co.jp/hgc/g00tfofo.bhvod4cb.g00tfofo.bhvoe657/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-faith%2F0726-001389%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-faith%2Fi%2F10000015%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "139": "https://hb.afl.rakuten.co.jp/hgc/g00t5fso.bhvodf4e.g00t5fso.bhvoee2f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsasayama-bee%2F10000224%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsasayama-bee%2Fi%2F10000224%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "140": "https://hb.afl.rakuten.co.jp/hgc/g00u9dlo.bhvod23e.g00u9dlo.bhvoe0f3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmedicat-shop%2F007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmedicat-shop%2Fi%2F10000011%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "57": {
+    "141": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4975023667898%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10001272%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "142": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4903588249907%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10022057%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "143": "https://hb.afl.rakuten.co.jp/hgc/g00q04vo.bhvodce1.g00q04vo.bhvoecf3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fparty-honpo%2Fpw-115881s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fparty-honpo%2Fi%2F10494081%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
