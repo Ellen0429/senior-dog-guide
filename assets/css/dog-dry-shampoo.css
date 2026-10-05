@@ -1,0 +1,518 @@
+/* dog-dry-shampoo(老犬・シニア犬のドライシャンプー)記事専用
+   スタイル。pet-auto-feeder/care-bed/odor-care等のレイアウト構成を品質
+   基準として踏襲しているが、文章・画像・CSS本体はいずれからもコピー
+   していない。クラス名は.ddsv1-という別名前空間にしている(他記事の
+   .pfv1-/.pgv1-/.pdv1-/.psv1-/.pwv1-/.pbkv1-/.pwbv1-/.pdsv1-/.pfsv1-/
+   .ptbv1-/.prcv1-/.dssv1-/.pwkv1-/.dcv2-等と衝突しないことを確認済み)。
+   CSP対応方針(外部CSSファイルを<link>で読み込む)は最初から採用。
+   assets/css/style.css・他記事専用CSSはいずれも無変更。
+
+   HERO(.ddsv1-hero-media)・選び方4ポイント(.ddsv1-point-visual)には、
+   /assets/images/dog-dry-shampoo/ の画像(import_article_image_pack.py
+   経由で配置)を表示する。配置までの間は淡いグラデーションの
+   プレースホルダーとして表示される。 */
+
+.ddsv1-page {
+  --ddsv1-warm: var(--color-notice-bg);
+  --ddsv1-green: #eaf4ec;
+  --ddsv1-green-border: #bfe0c6;
+  --ddsv1-blue: #eaf1fb;
+  --ddsv1-blue-border: #c3d8f2;
+  --ddsv1-pink: #fdecf0;
+  --ddsv1-pink-border: #f3c7d3;
+  --ddsv1-navy: #2b3446;
+  --ddsv1-coral: #ff5277;
+}
+
+.ddsv1-page h2,
+.ddsv1-page h3 {
+  color: var(--ddsv1-navy);
+}
+
+/* ---------- 1. HERO ---------- */
+.ddsv1-hero {
+  margin: 0.5rem -1.25rem 0;
+  border-radius: 0;
+}
+
+.ddsv1-hero-media {
+  background: linear-gradient(160deg, #eaf1fb 0%, #eaf4ec 100%);
+  min-height: 220px;
+  line-height: 0;
+}
+
+.ddsv1-hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ddsv1-hero-below-media {
+  padding: 0.9rem 1.25rem 0;
+}
+
+.ddsv1-hero-title {
+  margin: 0 0 0.4rem;
+  color: var(--ddsv1-navy);
+  font-size: 1.3rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.ddsv1-hero-sub {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.ddsv1-hero-meta {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+}
+
+.ddsv1-hero-below {
+  padding: 0 1.25rem;
+}
+
+/* ---------- 2. この記事の結論 ---------- */
+.ddsv1-conclusion-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.6rem;
+}
+
+.ddsv1-conclusion-box .ddsv1-section-title {
+  font-size: 1.02rem;
+  margin: 0 0 0.45rem;
+}
+
+.ddsv1-conclusion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.55rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.ddsv1-conclusion-list li {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.ddsv1-conclusion-list li::before {
+  content: "✓";
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: 800;
+}
+
+.ddsv1-callout-green {
+  background-color: var(--ddsv1-green);
+  border: 1px solid var(--ddsv1-green-border);
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+}
+
+.ddsv1-callout-green strong {
+  display: block;
+  color: var(--color-accent-dark);
+  font-size: 0.82rem;
+  margin-bottom: 0.15rem;
+}
+
+.ddsv1-callout-green p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+/* ---------- shared section shell ---------- */
+.ddsv1-section {
+  margin: 2rem -1.25rem 0;
+  padding: 1.5rem 1.25rem;
+}
+
+.ddsv1-section--white { background-color: var(--color-surface); }
+.ddsv1-section--warm { background-color: var(--ddsv1-warm); }
+.ddsv1-section--blue { background-color: var(--ddsv1-blue); }
+.ddsv1-section--pink { background-color: var(--ddsv1-pink); }
+.ddsv1-section--green { background-color: var(--ddsv1-green); }
+
+.ddsv1-section-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.ddsv1-section-lead {
+  margin: 0 0 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- 3. 4ポイント ---------- */
+.ddsv1-point-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.ddsv1-point {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.ddsv1-point-num {
+  flex: none;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+  align-self: flex-start;
+  padding-top: 0.15rem;
+}
+
+.ddsv1-point-visual {
+  flex: none;
+  width: 36%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--ddsv1-green);
+  border: 1px solid var(--color-border);
+}
+
+.ddsv1-point-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ddsv1-point-body { flex: 1; min-width: 0; }
+.ddsv1-point h3 { margin: 0 0 0.3rem; font-size: 0.96rem; }
+.ddsv1-point p { margin: 0; color: var(--color-text-muted); font-size: 0.85rem; line-height: 1.55; }
+
+/* ---------- 購入前に確認したいポイント ---------- */
+.ddsv1-check-list { display: grid; gap: 0.7rem; }
+
+.ddsv1-check-item {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  background-color: var(--ddsv1-warm);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+}
+
+.ddsv1-check-num {
+  flex: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+}
+
+.ddsv1-check-body { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; }
+.ddsv1-check-body h3 { margin: 0; font-size: 0.92rem; flex: none; }
+.ddsv1-check-method { margin: 0; color: var(--color-text-muted); font-size: 0.85rem; }
+
+/* ---------- 用途別おすすめ3選 ---------- */
+.ddsv1-pick-list { display: grid; gap: 1.1rem; }
+
+.ddsv1-pick {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ddsv1-pick-badge {
+  display: block;
+  margin: 0.9rem 0.9rem 0;
+  background-color: var(--ddsv1-green);
+  border: 1px solid var(--ddsv1-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.ddsv1-pick-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  max-width: 48%;
+  background-color: #ffffff;
+  margin: 0.7rem auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ddsv1-pick-media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ddsv1-pick-body { padding: 0.65rem 0.9rem 0.8rem; }
+.ddsv1-pick-name { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; line-height: 1.4; }
+.ddsv1-pick-points { list-style: none; padding: 0; margin: 0 0 0.55rem; display: grid; gap: 0.25rem; }
+.ddsv1-pick-points li { display: flex; gap: 0.4rem; font-size: 0.85rem; color: var(--color-text-muted); }
+.ddsv1-pick-points li::before { content: "✓"; flex: none; color: var(--color-accent-dark); font-weight: 800; }
+.ddsv1-pick-price { font-size: 1.15rem; font-weight: 800; margin: 0 0 0.55rem; }
+
+.ddsv1-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--ddsv1-coral);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 14px rgba(255, 82, 119, 0.35);
+}
+
+.ddsv1-cta:hover, .ddsv1-cta:focus { background-color: #e63e63; color: #ffffff; }
+
+.ddsv1-cta-secondary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-surface);
+  color: var(--color-accent-dark);
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid var(--color-accent);
+}
+
+/* ---------- 比較表 ---------- */
+.ddsv1-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--ddsv1-blue-border);
+  border-radius: 14px;
+  background-color: var(--color-surface);
+}
+
+.ddsv1-table { width: 100%; min-width: 480px; border-collapse: collapse; font-size: 0.86rem; }
+
+.ddsv1-table th, .ddsv1-table td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--ddsv1-blue-border);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.ddsv1-table th:first-child, .ddsv1-table td:first-child {
+  text-align: left;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.ddsv1-table thead th {
+  background-color: var(--ddsv1-blue);
+  color: var(--ddsv1-navy);
+  font-weight: 800;
+}
+
+.ddsv1-table-thumb {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  margin: 0 auto 0.4rem;
+}
+
+.ddsv1-table tbody tr:last-child td { border-bottom: none; }
+
+/* ---------- 商品詳細 ---------- */
+.ddsv1-detail {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.ddsv1-detail-badge {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+  background-color: var(--ddsv1-green);
+  border: 1px solid var(--ddsv1-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.26rem 0.75rem;
+  border-radius: 999px;
+}
+
+.ddsv1-detail-name {
+  margin: 0.7rem 1rem 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.ddsv1-detail-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  max-width: 70%;
+  background-color: #ffffff;
+  margin: 0.7rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.ddsv1-detail-media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ddsv1-detail-body { padding: 0.9rem 1rem 1.1rem; }
+
+.ddsv1-detail-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.ddsv1-detail-features li {
+  background-color: var(--ddsv1-warm);
+  border-radius: 999px;
+  padding: 0.24rem 0.7rem;
+  font-size: 0.78rem;
+  color: var(--color-accent-dark);
+}
+
+.ddsv1-detail-points { list-style: none; padding: 0; margin: 0 0 0.85rem; display: grid; gap: 0.35rem; }
+.ddsv1-detail-points li { display: flex; gap: 0.45rem; font-size: 0.88rem; color: var(--color-text); }
+.ddsv1-detail-points li::before { content: "✓"; flex: none; color: var(--color-accent-dark); font-weight: 800; }
+
+.ddsv1-detail-fit, .ddsv1-detail-caution {
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 0 0 0.7rem;
+}
+
+.ddsv1-detail-link { margin: 0 0 0.9rem; }
+.ddsv1-detail-link a { font-size: 0.86rem; font-weight: 600; color: var(--color-accent-dark); }
+.ddsv1-detail-fit { background-color: var(--ddsv1-blue); color: var(--color-text); }
+.ddsv1-detail-caution { background-color: var(--ddsv1-pink); color: var(--color-text); }
+.ddsv1-detail-fit strong, .ddsv1-detail-caution strong { display: block; margin-bottom: 0.2rem; color: var(--ddsv1-navy); }
+
+.ddsv1-detail-price-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.8rem; }
+.ddsv1-detail-price { font-size: 1.3rem; font-weight: 800; }
+.ddsv1-detail-price-note { font-size: 0.72rem; color: var(--color-text-muted); }
+
+/* ---------- 迷ったときの選び方 ---------- */
+.ddsv1-decision-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.55rem; }
+
+.ddsv1-decision-row {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--ddsv1-pink-border);
+  border-radius: 12px;
+  padding: 0.75rem 0.95rem;
+  text-decoration: none;
+}
+
+.ddsv1-decision-condition {
+  display: block;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.ddsv1-decision-condition::before { content: "✓ "; color: var(--color-accent-dark); }
+.ddsv1-decision-result { display: block; color: var(--color-accent-dark); font-weight: 700; font-size: 0.86rem; }
+
+/* ---------- FAQ ---------- */
+.ddsv1-faq-list { display: grid; gap: 0.55rem; }
+
+.ddsv1-faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0 1.1rem;
+}
+
+.ddsv1-faq-item summary { cursor: pointer; padding: 0.75rem 0; font-weight: 700; list-style: none; }
+.ddsv1-faq-item summary::-webkit-details-marker { display: none; }
+.ddsv1-faq-item summary::before { content: "Q. "; color: var(--color-accent-dark); }
+.ddsv1-faq-item p { margin: 0 0 0.85rem; color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.6; }
+
+/* ---------- まとめ ---------- */
+.ddsv1-summary-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.05rem 1.15rem;
+  margin-bottom: 0.9rem;
+}
+
+.ddsv1-summary-box p { margin: 0; font-size: 0.9rem; line-height: 1.65; }
+
+.ddsv1-summary-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* ---------- タブレット以上 ---------- */
+@media (min-width: 680px) {
+  .ddsv1-hero-title { font-size: 1.6rem; }
+  .ddsv1-point-list { grid-template-columns: repeat(2, 1fr); }
+  .ddsv1-point-visual { max-width: 190px; }
+  .ddsv1-pick-list { max-width: 640px; margin: 0 auto; }
+  .ddsv1-table-wrap { max-width: 560px; margin: 0 auto; }
+  .ddsv1-pick-media { width: 190px; height: 190px; }
+  .ddsv1-faq-list { grid-template-columns: repeat(2, 1fr); }
+}

@@ -183,5 +183,10 @@ export default {
     "132": "https://hb.afl.rakuten.co.jp/hgc/g00srj4o.bhvod598.g00srj4o.bhvoec56/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplotoner%2F10000040%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplotoner%2Fi%2F10000040%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "133": "https://hb.afl.rakuten.co.jp/hgc/g00tnj7o.bhvodbd7.g00tnj7o.bhvoe1ea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flebenwood%2F10004789%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flebenwood%2Fi%2F10004789%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "134": "https://hb.afl.rakuten.co.jp/hgc/g00qoqqo.bhvod885.g00qoqqo.bhvoe7bb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fddiissmm%2Fcf-c-npink%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fddiissmm%2Fi%2F10009818%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "55": {
+    "135": "https://hb.afl.rakuten.co.jp/hgc/g00u09go.bhvod123.g00u09go.bhvoe18d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcocosmile-online%2F4562347092729%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcocosmile-online%2Fi%2F10000223%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "136": "https://hb.afl.rakuten.co.jp/hgc/g00rz29o.bhvod568.g00rz29o.bhvoea90/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkumokumo-square%2F10050756%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkumokumo-square%2Fi%2F10070627%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "137": "https://hb.afl.rakuten.co.jp/hgc/g00urqco.bhvode03.g00urqco.bhvoe4ce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnatulineshop%2Fnxt00104%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnatulineshop%2Fi%2F10000009%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
