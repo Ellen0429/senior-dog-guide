@@ -168,5 +168,10 @@ export default {
     "123": "https://hb.afl.rakuten.co.jp/hgc/g00ukapo.bhvoda97.g00ukapo.bhvoe7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiway%2Fhw-xgyy01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiway%2Fi%2F10000162%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "124": "https://hb.afl.rakuten.co.jp/hgc/g00u5n9o.bhvodfc0.g00u5n9o.bhvoe7ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoysboxstore%2Fra47710%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoysboxstore%2Fi%2F10000005%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "125": "https://hb.afl.rakuten.co.jp/hgc/g00s3bgo.bhvod417.g00s3bgo.bhvoe75b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flulu-couture%2Frain-dog3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flulu-couture%2Fi%2F10000705%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "52": {
+    "126": "https://hb.afl.rakuten.co.jp/hgc/g00tdh7o.bhvod70c.g00tdh7o.bhvoef4c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcordy%2Fcordy-set%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcordy%2Fi%2F10000703%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "127": "https://hb.afl.rakuten.co.jp/hgc/g00q1mvo.bhvod9e8.g00q1mvo.bhvoe979/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdogparadise%2F4582583294015%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdogparadise%2Fi%2F10040629%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "128": "https://hb.afl.rakuten.co.jp/hgc/g00sjsno.bhvod1ff.g00sjsno.bhvoe747/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsallyanddario%2Fomega3_100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsallyanddario%2Fi%2F10000036%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
