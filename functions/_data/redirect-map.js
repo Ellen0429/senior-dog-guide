@@ -188,5 +188,10 @@ export default {
     "135": "https://hb.afl.rakuten.co.jp/hgc/g00u09go.bhvod123.g00u09go.bhvoe18d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcocosmile-online%2F4562347092729%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcocosmile-online%2Fi%2F10000223%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "136": "https://hb.afl.rakuten.co.jp/hgc/g00rz29o.bhvod568.g00rz29o.bhvoea90/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkumokumo-square%2F10050756%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkumokumo-square%2Fi%2F10070627%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "137": "https://hb.afl.rakuten.co.jp/hgc/g00urqco.bhvode03.g00urqco.bhvoe4ce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnatulineshop%2Fnxt00104%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnatulineshop%2Fi%2F10000009%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "56": {
+    "138": "https://hb.afl.rakuten.co.jp/hgc/g00tfofo.bhvod4cb.g00tfofo.bhvoe657/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-faith%2F0726-001389%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-faith%2Fi%2F10000015%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "139": "https://hb.afl.rakuten.co.jp/hgc/g00t5fso.bhvodf4e.g00t5fso.bhvoee2f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsasayama-bee%2F10000224%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsasayama-bee%2Fi%2F10000224%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "140": "https://hb.afl.rakuten.co.jp/hgc/g00u9dlo.bhvod23e.g00u9dlo.bhvoe0f3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmedicat-shop%2F007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmedicat-shop%2Fi%2F10000011%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
