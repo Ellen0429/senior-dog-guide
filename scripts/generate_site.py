@@ -239,6 +239,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "pet-meal-bib": "daily-grooming",
     "dog-manner-belt": "toilet-care",
     "dog-poop-bag": "toilet-care",
+    "dog-cooling-bandana": "mobility-support",
 }
 
 MAX_RELATED_ARTICLES = 3
