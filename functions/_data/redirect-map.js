@@ -231,6 +231,11 @@ export default {
     "164": "https://hb.afl.rakuten.co.jp/hgc/g00rzcxo.bhvod374.g00rzcxo.bhvoe92e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fberykoko%2F11000016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fberykoko%2Fi%2F10001057%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "165": "https://hb.afl.rakuten.co.jp/hgc/g00u76mo.bhvod8c2.g00u76mo.bhvoe86c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetrry%2Fr_lg_ca002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetrry%2Fi%2F10000323%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "65": {
+    "166": "https://hb.afl.rakuten.co.jp/hgc/g00uunbo.bhvod1fa.g00uunbo.bhvoec05/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffampa%2Fcococo1118%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffampa%2Fi%2F10003125%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "167": "https://hb.afl.rakuten.co.jp/hgc/g00r6h3o.bhvoda93.g00r6h3o.bhvoed44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-fit%2Fppp580%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-fit%2Fi%2F10012007%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "168": "https://hb.afl.rakuten.co.jp/hgc/g00rtr2o.bhvoddf5.g00rtr2o.bhvoefc1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsolve-online%2F227972%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsolve-online%2Fi%2F10000004%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "7": {
     "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
