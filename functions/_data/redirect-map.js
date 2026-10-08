@@ -226,6 +226,11 @@ export default {
     "161": "https://hb.afl.rakuten.co.jp/hgc/g00rl7wo.bhvod25d.g00rl7wo.bhvoe4e4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fk-city%2Fmd88091%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fk-city%2Fi%2F10428857%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "162": "https://hb.afl.rakuten.co.jp/hgc/g00tfguo.bhvod6f5.g00tfguo.bhvoe015/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshitamachi-pet%2Fdog001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshitamachi-pet%2Fi%2F10000001%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "64": {
+    "163": "https://hb.afl.rakuten.co.jp/hgc/g00ufqxo.bhvod9dc.g00ufqxo.bhvoe50b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-branche%2F13-0045%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-branche%2Fi%2F10004369%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "164": "https://hb.afl.rakuten.co.jp/hgc/g00rzcxo.bhvod374.g00rzcxo.bhvoe92e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fberykoko%2F11000016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fberykoko%2Fi%2F10001057%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "165": "https://hb.afl.rakuten.co.jp/hgc/g00u76mo.bhvod8c2.g00u76mo.bhvoe86c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetrry%2Fr_lg_ca002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetrry%2Fi%2F10000323%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "7": {
     "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
