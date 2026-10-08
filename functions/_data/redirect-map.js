@@ -211,6 +211,11 @@ export default {
     "152": "https://hb.afl.rakuten.co.jp/hgc/g00utl7o.bhvod68b.g00utl7o.bhvoe9fb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonoffshop%2Foff12108642591b%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonoffshop%2Fi%2F10004162%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "153": "https://hb.afl.rakuten.co.jp/hgc/g00umsio.bhvodfab.g00umsio.bhvoe3ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmzymzy%2Fjp77yebt5fym4pquqncsttsmby-alm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmzymzy%2Fi%2F11182896%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "61": {
+    "154": "https://hb.afl.rakuten.co.jp/hgc/g00tavoo.bhvod1b6.g00tavoo.bhvoec32/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbwear%2Fkm539g%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbwear%2Fi%2F10001703%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "155": "https://hb.afl.rakuten.co.jp/hgc/g00upe8o.bhvod7b0.g00upe8o.bhvoe712/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashi-picks%2Fk0030%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurashi-picks%2Fi%2F10000026%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "156": "https://hb.afl.rakuten.co.jp/hgc/g00qyjuo.bhvoddec.g00qyjuo.bhvoe293/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsnowdrop%2Fsd144%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsnowdrop%2Fi%2F10005311%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "7": {
     "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
