@@ -206,6 +206,11 @@ export default {
     "53": "https://hb.afl.rakuten.co.jp/hgc/g00pwhco.bhvod376.g00pwhco.bhvoec07/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fidog%2F16299%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fidog%2Fi%2F10018241%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "54": "https://hb.afl.rakuten.co.jp/hgc/g00pyeeo.bhvod20b.g00pyeeo.bhvoe311/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fashu%2Fcm-000im%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fashu%2Fi%2F10007208%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "60": {
+    "151": "https://hb.afl.rakuten.co.jp/hgc/g00um9ro.bhvod45c.g00um9ro.bhvoe02e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoyonichi%2Fzmk040301750%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoyonichi%2Fi%2F10017717%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "152": "https://hb.afl.rakuten.co.jp/hgc/g00utl7o.bhvod68b.g00utl7o.bhvoe9fb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonoffshop%2Foff12108642591b%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonoffshop%2Fi%2F10004162%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "153": "https://hb.afl.rakuten.co.jp/hgc/g00umsio.bhvodfab.g00umsio.bhvoe3ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmzymzy%2Fjp77yebt5fym4pquqncsttsmby-alm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmzymzy%2Fi%2F11182896%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "7": {
     "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
