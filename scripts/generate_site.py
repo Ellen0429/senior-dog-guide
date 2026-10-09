@@ -242,6 +242,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-cooling-bandana": "mobility-support",
     "dog-flea-comb": "daily-grooming",
     "dog-thermometer": "safety-monitoring",
+    "dog-muzzle": "mobility-support",
 }
 
 MAX_RELATED_ARTICLES = 3

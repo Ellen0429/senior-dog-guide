@@ -236,6 +236,11 @@ export default {
     "167": "https://hb.afl.rakuten.co.jp/hgc/g00r6h3o.bhvoda93.g00r6h3o.bhvoed44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-fit%2Fppp580%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-fit%2Fi%2F10012007%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "168": "https://hb.afl.rakuten.co.jp/hgc/g00rtr2o.bhvoddf5.g00rtr2o.bhvoefc1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsolve-online%2F227972%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsolve-online%2Fi%2F10000004%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "66": {
+    "169": "https://hb.afl.rakuten.co.jp/hgc/g00rgtao.bhvod4d5.g00rgtao.bhvoed63/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fheart-ns%2Fpetg00030%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fheart-ns%2Fi%2F10004484%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "170": "https://hb.afl.rakuten.co.jp/hgc/g00ulyfo.bhvod316.g00ulyfo.bhvoec8f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fk-s-one%2Fksja1953%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fk-s-one%2Fi%2F10000013%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "171": "https://hb.afl.rakuten.co.jp/hgc/g00tqe8o.bhvod862.g00tqe8o.bhvoe1b2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffromseed%2Fmfit%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffromseed%2Fi%2F10000123%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "7": {
     "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
