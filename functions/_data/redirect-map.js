@@ -263,5 +263,10 @@ export default {
     "181": "https://hb.afl.rakuten.co.jp/hgc/g00te5jo.bhvod179.g00te5jo.bhvoe777/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnipponseal%2F001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnipponseal%2Fi%2F10000000%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "182": "https://hb.afl.rakuten.co.jp/hgc/g00q4z0o.bhvod2d1.g00q4z0o.bhvoe9ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop405%2Fketore-cleaner%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop405%2Fi%2F11291493%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "183": "https://hb.afl.rakuten.co.jp/hgc/g00u59no.bhvod4b7.g00u59no.bhvoec8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fheartland-online%2Fu-086%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fheartland-online%2Fi%2F10000115%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "71": {
+    "184": "https://hb.afl.rakuten.co.jp/hgc/g00q0bco.bhvodc75.g00q0bco.bhvoed10/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkirara2%2F10137568%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkirara2%2Fi%2F10137568%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "185": "https://hb.afl.rakuten.co.jp/hgc/g00unwco.bhvod5d9.g00unwco.bhvoe16f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopaz%2F01-20241212-054206%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshopaz%2Fi%2F10044677%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "186": "https://hb.afl.rakuten.co.jp/hgc/g00s0zuo.bhvod751.g00s0zuo.bhvoe8d8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcatfood%2Fot-000098%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcatfood%2Fi%2F10057368%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
