@@ -268,5 +268,10 @@ export default {
     "184": "https://hb.afl.rakuten.co.jp/hgc/g00q0bco.bhvodc75.g00q0bco.bhvoed10/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkirara2%2F10137568%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkirara2%2Fi%2F10137568%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "185": "https://hb.afl.rakuten.co.jp/hgc/g00unwco.bhvod5d9.g00unwco.bhvoe16f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopaz%2F01-20241212-054206%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshopaz%2Fi%2F10044677%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "186": "https://hb.afl.rakuten.co.jp/hgc/g00s0zuo.bhvod751.g00s0zuo.bhvoe8d8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcatfood%2Fot-000098%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcatfood%2Fi%2F10057368%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "72": {
+    "187": "https://hb.afl.rakuten.co.jp/hgc/g00teqto.bhvodb2e.g00teqto.bhvoe042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjsusa%2Fra57302-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjsusa%2Fi%2F10000070%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "188": "https://hb.afl.rakuten.co.jp/hgc/g00teqto.bhvodb2e.g00teqto.bhvoe042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjsusa%2Fra44311%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjsusa%2Fi%2F10004597%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "189": "https://hb.afl.rakuten.co.jp/hgc/g00teqto.bhvodb2e.g00teqto.bhvoe042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjsusa%2Fra71102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjsusa%2Fi%2F10000057%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
