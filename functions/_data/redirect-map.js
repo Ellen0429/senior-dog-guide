@@ -273,5 +273,10 @@ export default {
     "187": "https://hb.afl.rakuten.co.jp/hgc/g00teqto.bhvodb2e.g00teqto.bhvoe042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjsusa%2Fra57302-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjsusa%2Fi%2F10000070%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "188": "https://hb.afl.rakuten.co.jp/hgc/g00teqto.bhvodb2e.g00teqto.bhvoe042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjsusa%2Fra44311%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjsusa%2Fi%2F10004597%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "189": "https://hb.afl.rakuten.co.jp/hgc/g00teqto.bhvodb2e.g00teqto.bhvoe042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjsusa%2Fra71102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjsusa%2Fi%2F10000057%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "73": {
+    "190": "https://hb.afl.rakuten.co.jp/hgc/g00qmhao.bhvod202.g00qmhao.bhvoec9d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplusnao%2Fpet-83660%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplusnao%2Fi%2F10359986%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "191": "https://hb.afl.rakuten.co.jp/hgc/g00qmhao.bhvod202.g00qmhao.bhvoec9d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplusnao%2Fpet-38953%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplusnao%2Fi%2F10326425%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "192": "https://hb.afl.rakuten.co.jp/hgc/g00tng7o.bhvod620.g00tng7o.bhvoed1a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsevenbridge%2Fh0402%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsevenbridge%2Fi%2F10000280%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
