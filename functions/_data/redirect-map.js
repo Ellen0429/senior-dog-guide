@@ -246,6 +246,11 @@ export default {
     "173": "https://hb.afl.rakuten.co.jp/hgc/g00urzuo.bhvod16f.g00urzuo.bhvoe0ff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpyonpyonshop%2Fpy-4512%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpyonpyonshop%2Fi%2F10004706%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "174": "https://hb.afl.rakuten.co.jp/hgc/g00uvt2o.bhvodd7d.g00uvt2o.bhvoe730/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmyrise%2Fmyr-ts-pet166%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmyrise%2Fi%2F10000317%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   },
+  "68": {
+    "175": "https://hb.afl.rakuten.co.jp/hgc/g00tfofo.bhvod4cb.g00tfofo.bhvoe657/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-faith%2Fdognosecream30%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-faith%2Fi%2F10000662%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "176": "https://hb.afl.rakuten.co.jp/hgc/g00qqkro.bhvod4ff.g00qqkro.bhvoe1c6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-smilecube%2F101885%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-smilecube%2Fi%2F10001521%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "177": "https://hb.afl.rakuten.co.jp/hgc/g00svi8o.bhvod183.g00svi8o.bhvoe805/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstorch%2Fwildwash-nosebalm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstorch%2Fi%2F10000192%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
   "7": {
     "12": "https://hb.afl.rakuten.co.jp/hgc/g00ukrao.bhvod94f.g00ukrao.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonlineshop-yk%2Fcompass1719386324%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonlineshop-yk%2Fi%2F10000033%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
