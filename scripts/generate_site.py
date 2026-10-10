@@ -245,6 +245,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-muzzle": "mobility-support",
     "dog-ear-muff": "mobility-support",
     "dog-nose-balm": "daily-grooming",
+    "dog-dental-gel": "daily-grooming",
 }
 
 MAX_RELATED_ARTICLES = 3
