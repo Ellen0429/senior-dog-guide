@@ -278,5 +278,10 @@ export default {
     "190": "https://hb.afl.rakuten.co.jp/hgc/g00qmhao.bhvod202.g00qmhao.bhvoec9d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplusnao%2Fpet-83660%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplusnao%2Fi%2F10359986%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "191": "https://hb.afl.rakuten.co.jp/hgc/g00qmhao.bhvod202.g00qmhao.bhvoec9d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplusnao%2Fpet-38953%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplusnao%2Fi%2F10326425%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "192": "https://hb.afl.rakuten.co.jp/hgc/g00tng7o.bhvod620.g00tng7o.bhvoed1a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsevenbridge%2Fh0402%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsevenbridge%2Fi%2F10000280%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "74": {
+    "193": "https://hb.afl.rakuten.co.jp/hgc/g00ufj7o.bhvod559.g00ufj7o.bhvoe2a6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakinai-r%2F4562188860587%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakinai-r%2Fi%2F10001569%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "194": "https://hb.afl.rakuten.co.jp/hgc/g00rz29o.bhvod568.g00rz29o.bhvoea90/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkumokumo-square%2F10047760%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkumokumo-square%2Fi%2F10067749%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "195": "https://hb.afl.rakuten.co.jp/hgc/g00sxbto.bhvodc34.g00sxbto.bhvoe9dd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhinatabocco-shop%2F4528636804329_s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhinatabocco-shop%2Fi%2F10002812%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
