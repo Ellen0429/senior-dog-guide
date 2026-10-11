@@ -308,5 +308,10 @@ export default {
     "208": "https://hb.afl.rakuten.co.jp/hgc/g00s2dgo.bhvodec2.g00s2dgo.bhvoedb2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshoesgarage%2F7988450%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshoesgarage%2Fi%2F10038522%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "209": "https://hb.afl.rakuten.co.jp/hgc/g00siqmo.bhvod363.g00siqmo.bhvoec77/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fforthon%2Fr116%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fforthon%2Fi%2F10000094%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "210": "https://hb.afl.rakuten.co.jp/hgc/g00tlxuo.bhvod651.g00tlxuo.bhvoecff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgluck-g%2Flan2183%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgluck-g%2Fi%2F10007533%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "80": {
+    "211": "https://hb.afl.rakuten.co.jp/hgc/g00sksdo.bhvod6cc.g00sksdo.bhvoe923/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstandardstore%2Fca339r%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstandardstore%2Fi%2F10000359%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "212": "https://hb.afl.rakuten.co.jp/hgc/g00upe8o.bhvod7b0.g00upe8o.bhvoe712/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashi-picks%2Fb0017%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurashi-picks%2Fi%2F10000018%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "213": "https://hb.afl.rakuten.co.jp/hgc/g00sbhpo.bhvodd5b.g00sbhpo.bhvoe500/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanowl-poh%2F10001654%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fanowl-poh%2Fi%2F10001654%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
