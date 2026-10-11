@@ -293,5 +293,10 @@ export default {
     "199": "https://hb.afl.rakuten.co.jp/hgc/g00tnqqo.bhvod763.g00tnqqo.bhvoe11b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Funibizonlinestore%2Fch179danitori%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Funibizonlinestore%2Fi%2F10000891%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "200": "https://hb.afl.rakuten.co.jp/hgc/g00u1z9o.bhvod318.g00u1z9o.bhvoe1e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpompshop%2F10000387%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpompshop%2Fi%2F10000387%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "201": "https://hb.afl.rakuten.co.jp/hgc/g00un0vo.bhvod235.g00un0vo.bhvoe6ed/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecprime500%2F20241107145222_187%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecprime500%2Fi%2F10075701%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "77": {
+    "202": "https://hb.afl.rakuten.co.jp/hgc/g00qza6o.bhvod6e8.g00qza6o.bhvoef6f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fip-plus%2F4573151203027%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fip-plus%2Fi%2F10032896%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "203": "https://hb.afl.rakuten.co.jp/hgc/g00qcnfo.bhvodbf2.g00qcnfo.bhvoee76/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnatural-living%2Fu850087%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnatural-living%2Fi%2F10022531%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "204": "https://hb.afl.rakuten.co.jp/hgc/g00s42ro.bhvod440.g00s42ro.bhvoe216/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsaens%2Fsd9341756%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsaens%2Fi%2F10004495%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };

@@ -253,6 +253,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-insect-repellent": "daily-grooming",
     "dog-flea-tick-collar": "daily-grooming",
     "dog-tick-remover": "daily-grooming",
+    "dog-diaper-pail": "toilet-care",
 }
 
 MAX_RELATED_ARTICLES = 3
