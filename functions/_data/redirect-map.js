@@ -303,5 +303,10 @@ export default {
     "205": "https://hb.afl.rakuten.co.jp/hgc/g00ubl3o.bhvodd94.g00ubl3o.bhvoe940/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelleplage%2Fclippers1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbelleplage%2Fi%2F10000110%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "206": "https://hb.afl.rakuten.co.jp/hgc/g00rk79o.bhvod11f.g00rk79o.bhvoe298/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetio-online-shop%2F4903588262715%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetio-online-shop%2Fi%2F10010346%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "207": "https://hb.afl.rakuten.co.jp/hgc/g00tfbho.bhvod97f.g00tfbho.bhvoe4aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnext-online%2Fpet-trimera%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnext-online%2Fi%2F10000161%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "79": {
+    "208": "https://hb.afl.rakuten.co.jp/hgc/g00s2dgo.bhvodec2.g00s2dgo.bhvoedb2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshoesgarage%2F7988450%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshoesgarage%2Fi%2F10038522%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "209": "https://hb.afl.rakuten.co.jp/hgc/g00siqmo.bhvod363.g00siqmo.bhvoec77/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fforthon%2Fr116%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fforthon%2Fi%2F10000094%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "210": "https://hb.afl.rakuten.co.jp/hgc/g00tlxuo.bhvod651.g00tlxuo.bhvoecff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgluck-g%2Flan2183%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgluck-g%2Fi%2F10007533%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };

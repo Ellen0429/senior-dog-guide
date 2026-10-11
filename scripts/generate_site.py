@@ -255,6 +255,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-tick-remover": "daily-grooming",
     "dog-diaper-pail": "toilet-care",
     "dog-paw-trimmer": "daily-grooming",
+    "dog-grooming-glove": "daily-grooming",
 }
 
 MAX_RELATED_ARTICLES = 3
