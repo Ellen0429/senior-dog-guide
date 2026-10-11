@@ -298,5 +298,10 @@ export default {
     "202": "https://hb.afl.rakuten.co.jp/hgc/g00qza6o.bhvod6e8.g00qza6o.bhvoef6f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fip-plus%2F4573151203027%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fip-plus%2Fi%2F10032896%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "203": "https://hb.afl.rakuten.co.jp/hgc/g00qcnfo.bhvodbf2.g00qcnfo.bhvoee76/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnatural-living%2Fu850087%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnatural-living%2Fi%2F10022531%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "204": "https://hb.afl.rakuten.co.jp/hgc/g00s42ro.bhvod440.g00s42ro.bhvoe216/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsaens%2Fsd9341756%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsaens%2Fi%2F10004495%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "78": {
+    "205": "https://hb.afl.rakuten.co.jp/hgc/g00ubl3o.bhvodd94.g00ubl3o.bhvoe940/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelleplage%2Fclippers1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbelleplage%2Fi%2F10000110%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "206": "https://hb.afl.rakuten.co.jp/hgc/g00rk79o.bhvod11f.g00rk79o.bhvoe298/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetio-online-shop%2F4903588262715%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetio-online-shop%2Fi%2F10010346%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "207": "https://hb.afl.rakuten.co.jp/hgc/g00tfbho.bhvod97f.g00tfbho.bhvoe4aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnext-online%2Fpet-trimera%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnext-online%2Fi%2F10000161%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
