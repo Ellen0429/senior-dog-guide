@@ -259,6 +259,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-car-seatbelt": "safety-monitoring",
     "dog-pet-circle": "safety-monitoring",
     "dog-cognitive-supplement": "feeding-support",
+    "dog-soft-food": "feeding-support",
 }
 
 MAX_RELATED_ARTICLES = 3
