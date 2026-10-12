@@ -318,5 +318,10 @@ export default {
     "214": "https://hb.afl.rakuten.co.jp/hgc/g00uc0lo.bhvoddbf.g00uc0lo.bhvoe273/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoopu%2Fksa03%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoopu%2Fi%2F10000094%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "215": "https://hb.afl.rakuten.co.jp/hgc/g00prbao.bhvod966.g00prbao.bhvoe2d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmaxshare%2Fmax-a09192%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmaxshare%2Fi%2F10057617%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "216": "https://hb.afl.rakuten.co.jp/hgc/g00pr3zo.bhvod411.g00pr3zo.bhvoebea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdog-kan%2F251990%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdog-kan%2Fi%2F10173140%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "82": {
+    "217": "https://hb.afl.rakuten.co.jp/hgc/g00tnhpo.bhvod492.g00tnhpo.bhvoefce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fguppies%2F10000139%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fguppies%2Fi%2F10000139%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "218": "https://hb.afl.rakuten.co.jp/hgc/g00sovmo.bhvodd56.g00sovmo.bhvoe413/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fporto3%2Fdog-harness003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fporto3%2Fi%2F10000400%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "219": "https://hb.afl.rakuten.co.jp/hgc/g00ux0eo.bhvod795.g00ux0eo.bhvoe755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshiawase01%2F984447801494728%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshiawase01%2Fi%2F10024188%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
