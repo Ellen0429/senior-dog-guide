@@ -323,5 +323,10 @@ export default {
     "217": "https://hb.afl.rakuten.co.jp/hgc/g00tnhpo.bhvod492.g00tnhpo.bhvoefce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fguppies%2F10000139%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fguppies%2Fi%2F10000139%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "218": "https://hb.afl.rakuten.co.jp/hgc/g00sovmo.bhvodd56.g00sovmo.bhvoe413/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fporto3%2Fdog-harness003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fporto3%2Fi%2F10000400%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "219": "https://hb.afl.rakuten.co.jp/hgc/g00ux0eo.bhvod795.g00ux0eo.bhvoe755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshiawase01%2F984447801494728%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshiawase01%2Fi%2F10024188%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "83": {
+    "220": "https://hb.afl.rakuten.co.jp/hgc/g00t8y3o.bhvoddfd.g00t8y3o.bhvoe124/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetlifepotter%2Fcv00252%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetlifepotter%2Fi%2F10020740%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "221": "https://hb.afl.rakuten.co.jp/hgc/g00svu8o.bhvoda3b.g00svu8o.bhvoe1f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foga012%2Fh00110201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foga012%2Fi%2F10000090%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "222": "https://hb.afl.rakuten.co.jp/hgc/g00ujreo.bhvod443.g00ujreo.bhvoe4aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmicchan-no-ouchi%2Fcompass1729795857%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmicchan-no-ouchi%2Fi%2F10000164%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
