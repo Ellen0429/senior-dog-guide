@@ -1,0 +1,529 @@
+/* dog-carry-sling専用スタイル。dog-pressure-care-mat/dog-soft-food/
+   dog-cognitive-supplement等のレイアウト構成を品質基準として踏襲して
+   いるが、文章・画像・CSS本体はいずれからもコピーしていない。クラス名は
+   .dclv1-という別名前空間にしている(既存の .dpcmv1-/.dsfv1-/.dcnv1-/
+   .care-harness系(.dmzv1-/他)等とは衝突しない)。既存のcare-harness
+   (歩行補助ハーネス)・pet-cart(ペットカート)・pet-carrier-bag(通院・
+   旅行用キャリーバッグ)とは異なり、後ろ足や股関節が弱ったシニア犬を
+   短距離だけ両手を使わず持ち上げて移動させるための「抱っこ紐・スリング
+   単体」のみを扱う。商品3点(content_id=87, product_id=229/230/231)は
+   実Rakuten Item Search APIのkeyword検索で確認済みのname/price/
+   image_url/affiliate_urlをそのまま参照している(商品画像は全箇所で
+   DBの実image_urlのみを使用、架空パスは使用していない)。医療効果の
+   断定表現は使わず、一般的な情報提供の範囲にとどめている。
+   HERO・選び方4ポイントの画像(計5枚)はimport_article_image_pack.py
+   経由で配置予定。配置ディレクトリ(assets/images/dog-carry-sling/)
+   のみ用意済みで、画像が揃うまでの間は淡いグラデーションのプレース
+   ホルダーとして表示される。
+   【確定ファイル名(image-specと一致、変更禁止)】
+     hero.webp                … HERO
+     point-1-capacity.webp    … 選び方01(耐荷重・対応体重)
+     point-2-support.webp     … 選び方02(犬を支える構造・安定性)
+     point-3-material.webp   … 選び方03(素材・持ちやすさ)
+     point-4-usage.webp      … 選び方04(使う場面・持ち運びやすさ)
+   */
+
+.dclv1-page {
+  --dclv1-warm: var(--color-notice-bg);
+  --dclv1-green: #eaf4ec;
+  --dclv1-green-border: #bfe0c6;
+  --dclv1-blue: #eaf1fb;
+  --dclv1-blue-border: #c3d8f2;
+  --dclv1-pink: #fdecf0;
+  --dclv1-pink-border: #f3c7d3;
+  --dclv1-navy: #2b3446;
+  --dclv1-coral: #ff5277;
+}
+
+.dclv1-page h2,
+.dclv1-page h3 {
+  color: var(--dclv1-navy);
+}
+
+/* ---------- 1. HERO ---------- */
+.dclv1-hero {
+  margin: 0.5rem -1.25rem 0;
+  border-radius: 0;
+}
+
+.dclv1-hero-media {
+  background: linear-gradient(160deg, #eaf1fb 0%, #eaf4ec 100%);
+  min-height: 220px;
+  line-height: 0;
+}
+
+.dclv1-hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dclv1-hero-below-media {
+  padding: 0.9rem 1.25rem 0;
+}
+
+.dclv1-hero-title {
+  margin: 0 0 0.4rem;
+  color: var(--dclv1-navy);
+  font-size: 1.3rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.dclv1-hero-sub {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.dclv1-hero-meta {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+}
+
+.dclv1-hero-below {
+  padding: 0 1.25rem;
+}
+
+/* ---------- 2. この記事の結論 ---------- */
+.dclv1-conclusion-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.6rem;
+}
+
+.dclv1-conclusion-box .dclv1-section-title {
+  font-size: 1.02rem;
+  margin: 0 0 0.45rem;
+}
+
+.dclv1-conclusion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.55rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.dclv1-conclusion-list li {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.dclv1-conclusion-list li::before {
+  content: "✓";
+  flex: none;
+  color: var(--color-accent-dark);
+  font-weight: 800;
+}
+
+.dclv1-callout-green {
+  background-color: var(--dclv1-green);
+  border: 1px solid var(--dclv1-green-border);
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+}
+
+.dclv1-callout-green strong {
+  display: block;
+  color: var(--color-accent-dark);
+  font-size: 0.82rem;
+  margin-bottom: 0.15rem;
+}
+
+.dclv1-callout-green p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+/* ---------- shared section shell ---------- */
+.dclv1-section {
+  margin: 2rem -1.25rem 0;
+  padding: 1.5rem 1.25rem;
+}
+
+.dclv1-section--white { background-color: var(--color-surface); }
+.dclv1-section--warm { background-color: var(--dclv1-warm); }
+.dclv1-section--blue { background-color: var(--dclv1-blue); }
+.dclv1-section--pink { background-color: var(--dclv1-pink); }
+.dclv1-section--green { background-color: var(--dclv1-green); }
+
+.dclv1-section-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.dclv1-section-lead {
+  margin: 0 0 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- 3. 4ポイント ---------- */
+.dclv1-point-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.dclv1-point {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.dclv1-point-num {
+  flex: none;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+  align-self: flex-start;
+  padding-top: 0.15rem;
+}
+
+.dclv1-point-visual {
+  flex: none;
+  width: 36%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--dclv1-green);
+  border: 1px solid var(--color-border);
+}
+
+.dclv1-point-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dclv1-point-body { flex: 1; min-width: 0; }
+.dclv1-point h3 { margin: 0 0 0.3rem; font-size: 0.96rem; }
+.dclv1-point p { margin: 0; color: var(--color-text-muted); font-size: 0.85rem; line-height: 1.55; }
+
+/* ---------- 購入前に確認したいポイント ---------- */
+.dclv1-check-list { display: grid; gap: 0.7rem; }
+
+.dclv1-check-item {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  background-color: var(--dclv1-warm);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+}
+
+.dclv1-check-num {
+  flex: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-accent-dark);
+  line-height: 1;
+}
+
+.dclv1-check-body { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; }
+.dclv1-check-body h3 { margin: 0; font-size: 0.92rem; flex: none; }
+.dclv1-check-method { margin: 0; color: var(--color-text-muted); font-size: 0.85rem; }
+
+/* ---------- 用途別おすすめ3選 ---------- */
+.dclv1-pick-list { display: grid; gap: 1.1rem; }
+
+.dclv1-pick {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.dclv1-pick-badge {
+  display: block;
+  margin: 0.9rem 0.9rem 0;
+  background-color: var(--dclv1-green);
+  border: 1px solid var(--dclv1-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.dclv1-pick-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  max-width: 40%;
+  background-color: #ffffff;
+  margin: 0.5rem auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dclv1-pick-media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.dclv1-pick-body { padding: 0.5rem 0.9rem 0.8rem; }
+.dclv1-pick-name { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; line-height: 1.4; }
+.dclv1-pick-points { list-style: none; padding: 0; margin: 0 0 0.55rem; display: grid; gap: 0.25rem; }
+.dclv1-pick-points li { display: flex; gap: 0.4rem; font-size: 0.85rem; color: var(--color-text-muted); }
+.dclv1-pick-points li::before { content: "✓"; flex: none; color: var(--color-accent-dark); font-weight: 800; }
+.dclv1-pick-price { font-size: 1.15rem; font-weight: 800; margin: 0 0 0.55rem; }
+
+.dclv1-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--dclv1-coral);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 14px rgba(255, 82, 119, 0.35);
+}
+
+.dclv1-cta:hover, .dclv1-cta:focus { background-color: #e63e63; color: #ffffff; }
+
+.dclv1-cta-secondary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-surface);
+  color: var(--color-accent-dark);
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid var(--color-accent);
+}
+
+/* ---------- 比較表 ---------- */
+.dclv1-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--dclv1-blue-border);
+  border-radius: 14px;
+  background-color: var(--color-surface);
+}
+
+.dclv1-table { width: 100%; min-width: 480px; border-collapse: collapse; font-size: 0.86rem; }
+
+.dclv1-table th, .dclv1-table td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--dclv1-blue-border);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.dclv1-table th:first-child, .dclv1-table td:first-child {
+  text-align: left;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.dclv1-table thead th {
+  background-color: var(--dclv1-blue);
+  color: var(--dclv1-navy);
+  font-weight: 800;
+}
+
+.dclv1-table-thumb {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  margin: 0 auto 0.4rem;
+}
+
+.dclv1-table tbody tr:last-child td { border-bottom: none; }
+
+/* ---------- 商品詳細 ---------- */
+.dclv1-detail {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.dclv1-detail-badge {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+  background-color: var(--dclv1-green);
+  border: 1px solid var(--dclv1-green-border);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.26rem 0.75rem;
+  border-radius: 999px;
+}
+
+.dclv1-detail-name {
+  margin: 0.7rem 1rem 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.dclv1-detail-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  max-width: 70%;
+  background-color: #ffffff;
+  margin: 0.7rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.dclv1-detail-media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.dclv1-detail-body { padding: 0.9rem 1rem 1.1rem; }
+
+.dclv1-detail-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.dclv1-detail-features li {
+  background-color: var(--dclv1-warm);
+  border-radius: 999px;
+  padding: 0.24rem 0.7rem;
+  font-size: 0.78rem;
+  color: var(--color-accent-dark);
+}
+
+.dclv1-detail-points { list-style: none; padding: 0; margin: 0 0 0.85rem; display: grid; gap: 0.35rem; }
+.dclv1-detail-points li { display: flex; gap: 0.45rem; font-size: 0.88rem; color: var(--color-text); }
+.dclv1-detail-points li::before { content: "✓"; flex: none; color: var(--color-accent-dark); font-weight: 800; }
+
+.dclv1-detail-fit, .dclv1-detail-caution {
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 0 0 0.7rem;
+}
+
+.dclv1-detail-link { margin: 0 0 0.9rem; }
+.dclv1-detail-link a { font-size: 0.86rem; font-weight: 600; color: var(--color-accent-dark); }
+.dclv1-detail-fit { background-color: var(--dclv1-blue); color: var(--color-text); }
+.dclv1-detail-caution { background-color: var(--dclv1-pink); color: var(--color-text); }
+.dclv1-detail-fit strong, .dclv1-detail-caution strong { display: block; margin-bottom: 0.2rem; color: var(--dclv1-navy); }
+
+.dclv1-detail-price-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.8rem; }
+.dclv1-detail-price { font-size: 1.3rem; font-weight: 800; }
+.dclv1-detail-price-note { font-size: 0.72rem; color: var(--color-text-muted); }
+
+/* ---------- 迷ったときの選び方 ---------- */
+.dclv1-decision-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.55rem; }
+
+.dclv1-decision-row {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--dclv1-pink-border);
+  border-radius: 12px;
+  padding: 0.75rem 0.95rem;
+  text-decoration: none;
+}
+
+.dclv1-decision-condition {
+  display: block;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.dclv1-decision-condition::before { content: "✓ "; color: var(--color-accent-dark); }
+.dclv1-decision-result { display: block; color: var(--color-accent-dark); font-weight: 700; font-size: 0.86rem; }
+
+/* ---------- FAQ ---------- */
+.dclv1-faq-list { display: grid; gap: 0.55rem; }
+
+.dclv1-faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0 1.1rem;
+}
+
+.dclv1-faq-item summary { cursor: pointer; padding: 0.75rem 0; font-weight: 700; list-style: none; }
+.dclv1-faq-item summary::-webkit-details-marker { display: none; }
+.dclv1-faq-item summary::before { content: "Q. "; color: var(--color-accent-dark); }
+.dclv1-faq-item p { margin: 0 0 0.85rem; color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.6; }
+
+/* ---------- まとめ ---------- */
+.dclv1-summary-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.05rem 1.15rem;
+  margin-bottom: 0.9rem;
+}
+
+.dclv1-summary-box p { margin: 0; font-size: 0.9rem; line-height: 1.65; }
+
+.dclv1-summary-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* ---------- タブレット以上 ---------- */
+@media (min-width: 680px) {
+  .dclv1-hero-title { font-size: 1.6rem; }
+  .dclv1-point-list { grid-template-columns: repeat(2, 1fr); }
+  .dclv1-point-visual { max-width: 190px; }
+  .dclv1-pick-list { max-width: 640px; margin: 0 auto; }
+  .dclv1-table-wrap { max-width: 560px; margin: 0 auto; }
+  .dclv1-pick-media { width: 150px; height: 150px; }
+  .dclv1-faq-list { grid-template-columns: repeat(2, 1fr); }
+}

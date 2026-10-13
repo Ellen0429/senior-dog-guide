@@ -342,5 +342,10 @@ export default {
     "226": "https://hb.afl.rakuten.co.jp/hgc/g00qqw5o.bhvod7d4.g00qqw5o.bhvoe3d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwalajinu%2F2tf0020-45s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwalajinu%2Fi%2F10008137%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "227": "https://hb.afl.rakuten.co.jp/hgc/g00sma8o.bhvod320.g00sma8o.bhvoef4f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frugly%2F1019389%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frugly%2Fi%2F10008404%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "228": "https://hb.afl.rakuten.co.jp/hgc/g00t2w3o.bhvod4a1.g00t2w3o.bhvoe854/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsovie-deco%2Fsdpm-001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsovie-deco%2Fi%2F10000604%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "87": {
+    "229": "https://hb.afl.rakuten.co.jp/hgc/g00u3p7o.bhvod47e.g00u3p7o.bhvoee32/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffk-store%2Fa-0019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffk-store%2Fi%2F10000018%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "230": "https://hb.afl.rakuten.co.jp/hgc/g00uinoo.bhvod945.g00uinoo.bhvoe809/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flilfam%2Fsl02-20241124%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flilfam%2Fi%2F10000008%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "231": "https://hb.afl.rakuten.co.jp/hgc/g00ridho.bhvod600.g00ridho.bhvoebea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchocoshop%2Fmbsling%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchocoshop%2Fi%2F10002389%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
