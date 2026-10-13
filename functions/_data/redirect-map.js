@@ -333,5 +333,14 @@ export default {
     "223": "https://hb.afl.rakuten.co.jp/hgc/g00sjsno.bhvod1ff.g00sjsno.bhvoe747/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsallyanddario%2Fretort_o%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsallyanddario%2Fi%2F10000079%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "224": "https://hb.afl.rakuten.co.jp/hgc/g00rejfo.bhvod8f0.g00rejfo.bhvoe181/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkazariya01%2F160914in86%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkazariya01%2Fi%2F10095224%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "225": "https://hb.afl.rakuten.co.jp/hgc/g00s0zuo.bhvod751.g00s0zuo.bhvoe8d8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcatfood%2Ftge-091181%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcatfood%2Fi%2F10059128%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "85": {
+    "226": "https://hb.afl.rakuten.co.jp/hgc/g00qqw5o.bhvod7d4.g00qqw5o.bhvoe3d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwalajinu%2F2tf0020-45s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwalajinu%2Fi%2F10008137%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "227": "https://hb.afl.rakuten.co.jp/hgc/g00sma8o.bhvod320.g00sma8o.bhvoef4f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frugly%2F1019389%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frugly%2Fi%2F10008404%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "86": {
+    "226": "https://hb.afl.rakuten.co.jp/hgc/g00qqw5o.bhvod7d4.g00qqw5o.bhvoe3d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwalajinu%2F2tf0020-45s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwalajinu%2Fi%2F10008137%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "227": "https://hb.afl.rakuten.co.jp/hgc/g00sma8o.bhvod320.g00sma8o.bhvoef4f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frugly%2F1019389%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frugly%2Fi%2F10008404%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "228": "https://hb.afl.rakuten.co.jp/hgc/g00t2w3o.bhvod4a1.g00t2w3o.bhvoe854/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsovie-deco%2Fsdpm-001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsovie-deco%2Fi%2F10000604%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
