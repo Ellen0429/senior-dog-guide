@@ -347,5 +347,10 @@ export default {
     "229": "https://hb.afl.rakuten.co.jp/hgc/g00u3p7o.bhvod47e.g00u3p7o.bhvoee32/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffk-store%2Fa-0019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffk-store%2Fi%2F10000018%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "230": "https://hb.afl.rakuten.co.jp/hgc/g00uinoo.bhvod945.g00uinoo.bhvoe809/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flilfam%2Fsl02-20241124%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flilfam%2Fi%2F10000008%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "231": "https://hb.afl.rakuten.co.jp/hgc/g00ridho.bhvod600.g00ridho.bhvoebea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchocoshop%2Fmbsling%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchocoshop%2Fi%2F10002389%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "88": {
+    "232": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4560191497172%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10022804%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "233": "https://hb.afl.rakuten.co.jp/hgc/g00pymio.bhvod072.g00pymio.bhvoece7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhc7%2F4560191494096%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhc7%2Fi%2F12744637%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "234": "https://hb.afl.rakuten.co.jp/hgc/g00sr78o.bhvodbc6.g00sr78o.bhvoe1fa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvetslabo%2Fdo000055%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvetslabo%2Fi%2F10005340%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
