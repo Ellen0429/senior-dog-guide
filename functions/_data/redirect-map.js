@@ -352,5 +352,10 @@ export default {
     "232": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4560191497172%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10022804%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "233": "https://hb.afl.rakuten.co.jp/hgc/g00pymio.bhvod072.g00pymio.bhvoece7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhc7%2F4560191494096%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhc7%2Fi%2F12744637%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "234": "https://hb.afl.rakuten.co.jp/hgc/g00sr78o.bhvodbc6.g00sr78o.bhvoe1fa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvetslabo%2Fdo000055%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvetslabo%2Fi%2F10005340%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "89": {
+    "235": "https://hb.afl.rakuten.co.jp/hgc/g00unrro.bhvod2b4.g00unrro.bhvoeb74/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdogs-life%2Fkoc-49%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdogs-life%2Fi%2F10000054%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "236": "https://hb.afl.rakuten.co.jp/hgc/g00rtdko.bhvode87.g00rtdko.bhvoea56/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurikakewan%2Ffurikakewan_otameshi%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffurikakewan%2Fi%2F10000035%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "237": "https://hb.afl.rakuten.co.jp/hgc/g00ug9no.bhvod4a8.g00ug9no.bhvoe4ae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmomizistore%2Fb0cwsjphm2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmomizistore%2Fi%2F10000460%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };

@@ -261,6 +261,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-pet-circle": "safety-monitoring",
     "dog-cognitive-supplement": "feeding-support",
     "dog-medication-aid": "feeding-support",
+    "dog-food-topper": "feeding-support",
     "dog-soft-food": "feeding-support",
     "dog-pressure-care-mat": "sleep-comfort",
 }
