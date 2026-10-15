@@ -596,6 +596,11 @@ def render_category_page(category_key: str, final_order: list[str], members: dic
       <a href="/privacy/">プライバシーポリシー</a>
       <a href="/disclosure/">広告・アフィリエイトについて</a>
     </nav>
+    <p class="rakuten-credit">
+      <!-- Rakuten Web Services Attribution Snippet FROM HERE -->
+      <a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a>
+      <!-- Rakuten Web Services Attribution Snippet TO HERE -->
+    </p>
     <p class="copyright">&copy; 2026 シニア犬のくらし手帖</p>
   </div>
 </footer>
@@ -673,6 +678,11 @@ def render_articles_index_page(final_order: list[str], members: dict[str, list[s
       <a href="/privacy/">プライバシーポリシー</a>
       <a href="/disclosure/">広告・アフィリエイトについて</a>
     </nav>
+    <p class="rakuten-credit">
+      <!-- Rakuten Web Services Attribution Snippet FROM HERE -->
+      <a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a>
+      <!-- Rakuten Web Services Attribution Snippet TO HERE -->
+    </p>
     <p class="copyright">&copy; 2026 シニア犬のくらし手帖</p>
   </div>
 </footer>
