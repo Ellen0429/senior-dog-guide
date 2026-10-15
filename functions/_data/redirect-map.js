@@ -357,5 +357,10 @@ export default {
     "235": "https://hb.afl.rakuten.co.jp/hgc/g00unrro.bhvod2b4.g00unrro.bhvoeb74/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdogs-life%2Fkoc-49%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdogs-life%2Fi%2F10000054%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "236": "https://hb.afl.rakuten.co.jp/hgc/g00rtdko.bhvode87.g00rtdko.bhvoea56/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurikakewan%2Ffurikakewan_otameshi%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffurikakewan%2Fi%2F10000035%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "237": "https://hb.afl.rakuten.co.jp/hgc/g00ug9no.bhvod4a8.g00ug9no.bhvoe4ae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmomizistore%2Fb0cwsjphm2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmomizistore%2Fi%2F10000460%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "90": {
+    "238": "https://hb.afl.rakuten.co.jp/hgc/g00u0jzo.bhvodaf1.g00u0jzo.bhvoea77/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnextpremium%2Fpg20p%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnextpremium%2Fi%2F10000123%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "239": "https://hb.afl.rakuten.co.jp/hgc/g00us4to.bhvode8e.g00us4to.bhvoe0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgogo2ban%2Ffootpatch%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgogo2ban%2Fi%2F10000002%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "240": "https://hb.afl.rakuten.co.jp/hgc/g00rhyqo.bhvod378.g00rhyqo.bhvoee4f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwide02%2F79011-400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwide02%2Fi%2F10022144%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };

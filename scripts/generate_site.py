@@ -264,6 +264,7 @@ ARTICLE_CATEGORIES: dict[str, str] = {
     "dog-food-topper": "feeding-support",
     "dog-soft-food": "feeding-support",
     "dog-pressure-care-mat": "sleep-comfort",
+    "dog-paw-grip-pad": "mobility-support",
 }
 
 MAX_RELATED_ARTICLES = 3
