@@ -367,5 +367,10 @@ export default {
     "241": "https://hb.afl.rakuten.co.jp/hgc/g00rzdwo.bhvoddd6.g00rzdwo.bhvoe3d0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowerbird-by-charley%2F50008%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowerbird-by-charley%2Fi%2F10002393%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "242": "https://hb.afl.rakuten.co.jp/hgc/g00rzdwo.bhvoddd6.g00rzdwo.bhvoe3d0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowerbird-by-charley%2F50010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowerbird-by-charley%2Fi%2F10002392%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "243": "https://hb.afl.rakuten.co.jp/hgc/g00ush5o.bhvoda88.g00ush5o.bhvoeb04/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fweoriginal-dogcat%2F102007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fweoriginal-dogcat%2Fi%2F10000013%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "92": {
+    "244": "https://hb.afl.rakuten.co.jp/hgc/g00sxsmo.bhvodd83.g00sxsmo.bhvoe5f0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgooddoglife%2F4903588145957%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgooddoglife%2Fi%2F10010304%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "245": "https://hb.afl.rakuten.co.jp/hgc/g00url8o.bhvodc36.g00url8o.bhvoe2da/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Finues%2Fkinari_strawberrymix%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Finues%2Fi%2F10000023%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "246": "https://hb.afl.rakuten.co.jp/hgc/g00ukweo.bhvod208.g00ukweo.bhvoe29d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhcgooday%2F1205237%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhcgooday%2Fi%2F10001253%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
