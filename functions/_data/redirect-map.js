@@ -362,5 +362,10 @@ export default {
     "238": "https://hb.afl.rakuten.co.jp/hgc/g00u0jzo.bhvodaf1.g00u0jzo.bhvoea77/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnextpremium%2Fpg20p%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnextpremium%2Fi%2F10000123%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "239": "https://hb.afl.rakuten.co.jp/hgc/g00us4to.bhvode8e.g00us4to.bhvoe0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgogo2ban%2Ffootpatch%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgogo2ban%2Fi%2F10000002%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "240": "https://hb.afl.rakuten.co.jp/hgc/g00rhyqo.bhvod378.g00rhyqo.bhvoee4f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwide02%2F79011-400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwide02%2Fi%2F10022144%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "91": {
+    "241": "https://hb.afl.rakuten.co.jp/hgc/g00rzdwo.bhvoddd6.g00rzdwo.bhvoe3d0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowerbird-by-charley%2F50008%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowerbird-by-charley%2Fi%2F10002393%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "242": "https://hb.afl.rakuten.co.jp/hgc/g00rzdwo.bhvoddd6.g00rzdwo.bhvoe3d0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowerbird-by-charley%2F50010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowerbird-by-charley%2Fi%2F10002392%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "243": "https://hb.afl.rakuten.co.jp/hgc/g00ush5o.bhvoda88.g00ush5o.bhvoeb04/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fweoriginal-dogcat%2F102007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fweoriginal-dogcat%2Fi%2F10000013%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
