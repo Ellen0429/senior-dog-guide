@@ -377,5 +377,10 @@ export default {
     "247": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-8809058114439%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10001653%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "248": "https://hb.afl.rakuten.co.jp/hgc/g00pyeeo.bhvod20b.g00pyeeo.bhvoe311/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fashu%2Ftge-091010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fashu%2Fi%2F10008468%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "249": "https://hb.afl.rakuten.co.jp/hgc/g00pyjho.bhvod4de.g00pyjho.bhvoefd8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchanet%2F261679%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchanet%2Fi%2F11067048%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "94": {
+    "250": "https://hb.afl.rakuten.co.jp/hgc/g00u9zso.bhvod45e.g00u9zso.bhvoe462/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faniviaworks%2F3761%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faniviaworks%2Fi%2F10000112%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "251": "https://hb.afl.rakuten.co.jp/hgc/g00teqto.bhvodb2e.g00teqto.bhvoe042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjsusa%2Fra15812%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjsusa%2Fi%2F10005926%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "252": "https://hb.afl.rakuten.co.jp/hgc/g00smayo.bhvodf2b.g00smayo.bhvoe7e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Felizabethwear%2F13-06112-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Felizabethwear%2Fi%2F10000001%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
