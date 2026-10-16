@@ -372,5 +372,10 @@ export default {
     "244": "https://hb.afl.rakuten.co.jp/hgc/g00sxsmo.bhvodd83.g00sxsmo.bhvoe5f0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgooddoglife%2F4903588145957%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgooddoglife%2Fi%2F10010304%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "245": "https://hb.afl.rakuten.co.jp/hgc/g00url8o.bhvodc36.g00url8o.bhvoe2da/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Finues%2Fkinari_strawberrymix%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Finues%2Fi%2F10000023%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
     "246": "https://hb.afl.rakuten.co.jp/hgc/g00ukweo.bhvod208.g00ukweo.bhvoe29d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhcgooday%2F1205237%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhcgooday%2Fi%2F10001253%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
+  },
+  "93": {
+    "247": "https://hb.afl.rakuten.co.jp/hgc/g00uirho.bhvod6ef.g00uirho.bhvoef6c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-8809058114439%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10001653%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "248": "https://hb.afl.rakuten.co.jp/hgc/g00pyeeo.bhvod20b.g00pyeeo.bhvoe311/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fashu%2Ftge-091010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fashu%2Fi%2F10008468%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821",
+    "249": "https://hb.afl.rakuten.co.jp/hgc/g00pyjho.bhvod4de.g00pyjho.bhvoefd8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchanet%2F261679%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchanet%2Fi%2F11067048%2F&rafcid=wsc_i_is_56671c4a-e7ee-4387-8d8d-d1636facc821"
   }
 };
