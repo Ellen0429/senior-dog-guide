@@ -1,0 +1,162 @@
+/* ホームページ刷新プロトタイプ専用スタイル(style.css の変数を継承)
+   非公開試作用。既存の記事ページCSSには一切影響しない。 */
+
+.coco-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.coco-photo-placeholder {
+  flex: none;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e9e2d3, #d9e5d1);
+  border: 2px dashed var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.coco-photo-placeholder::after {
+  content: "\1F43E"; /* paw print */
+}
+
+.coco-card-text h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+}
+
+.coco-card-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.coco-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--color-accent-dark);
+  background-color: var(--color-notice-bg);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  margin-bottom: 0.3rem;
+}
+
+/* coco紹介セクション(詳細) */
+.coco-intro {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.coco-intro-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.coco-photo-placeholder--large {
+  width: 120px;
+  height: 120px;
+  font-size: 2.4rem;
+}
+
+.coco-intro-quote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  color: var(--color-text);
+  font-style: italic;
+  margin: 1rem 0 0;
+}
+
+.coco-photo-note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+/* 悩み別導線チップ(Design A: 小さめのチップ) */
+.worry-chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.worry-chips a {
+  display: inline-block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.worry-chips a:hover,
+.worry-chips a:focus {
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
+}
+
+/* 悩み別導線カード(Design B: 大きめのタップしやすいカード) */
+.worry-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.worry-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.worry-card a {
+  display: block;
+  padding: 1.1rem 1.25rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.worry-card-label {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.worry-card-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .worry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* タブレット以上: coco-card横並びの余白調整 */
+@media (min-width: 600px) {
+  .coco-intro-header {
+    gap: 1.5rem;
+  }
+}
